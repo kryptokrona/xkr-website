@@ -1,0 +1,128 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    --backgound-color: #202020;
+    --logo-color: #ffffff;
+    --nav-backgound-color: rgba(32, 32, 32, 0.9);
+    --nav-link-color: #ffffff;
+    --title-color: rgba(255, 255, 255, 0.8);
+    --text-color: rgba(255, 255, 255, 0.5);
+    --green: #5ff281;
+    --border-color: rgba(255, 255, 255, 0.1);
+    --card-border: rgba(255, 255, 255, 0.5);
+    --hamburger: rgba(255, 255, 255, 0.5);
+    --website-width: 1400px;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --backgound-color: #ffffff;
+    --logo-color: #000000;
+    --nav-backgound-color: rgba(0, 0, 0, 0.9);
+    --nav-link-color: #000000;
+    --title-color: rgba(32, 32, 32, 0.8);
+    --text-color: rgba(32, 32, 32, 0.6);
+    --green: #5ff281;
+    --border-color: rgba(32, 32, 32, 0.5);
+    --card-border: rgba(32, 32, 32, 0.5);
+    --hamburger: rgba(32, 32, 32, 0.5);
+    --website-width: 1400px;
+  }
+}
+
+@font-face {
+  font-family: 'Droid Sans Mono Slashed';
+  src: url('/static/fonts/DroidSansMonoSlashed.woff') format('woff'),
+  url('/static/fonts/DroidSansMonoSlashed.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: auto;
+}
+
+body {
+  margin: 0;
+  background-color: var(--backgound-color);
+  font-family: Arial;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Arial;
+  color: var(--title-color);
+  margin: 5px;
+}
+
+p {
+  font-family: "Droid Sans Mono Slashed";
+  color: var(--text-color);
+  margin: 5px;
+}
+
+@keyframes rgb {
+  0%, 100% {
+    background: #5f86f2;
+  }
+  12.5% {
+    background: #a65ff2;
+  }
+  25% {
+    background: #f25fd0;
+  }
+  37.5% {
+    background: #f25f61;
+  }
+  50% {
+    background: #f2cb5f;
+  }
+  62.5% {
+    background: #abf25f;
+  }
+  75% {
+    background: #5ff281;
+  }
+  87.5% {
+    background: #5ff2f0;
+  }
+}
+
+.rgb {
+  background: #5f86f2;
+  -webkit-animation: rgb 15s ease infinite;
+  -moz-animation: rgb 15s ease infinite;
+  animation: rgb 15s ease infinite;
+  transition: 300ms ease-in-out;
+}
+
+@keyframes rgbBorder {
+  0%, 100% {
+    border-color: #5f86f2;
+  }
+  12.5% {
+    border-color: #a65ff2;
+  }
+  25% {
+    border-color: #f25fd0;
+  }
+  37.5% {
+    border-color: #f25f61;
+  }
+  50% {
+    border-color: #f2cb5f;
+  }
+  62.5% {
+    border-color: #abf25f;
+  }
+  75% {
+    border-color: #5ff281;
+  }
+  87.5% {
+    border-color: #5ff2f0;
+  }
+}
+
+.rgbBorder {
+  border-color: #5f86f2;
+  -webkit-animation: rgbBorder 15s ease infinite;
+  -moz-animation: rgbBorder 15s ease infinite;
+  animation: rgbBorder 15s ease infinite;
+  transition: 300ms ease-in-out;
+}
