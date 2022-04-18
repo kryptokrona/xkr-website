@@ -2,6 +2,7 @@
     export let title
     export let date
     export let category
+    import {draw} from 'svelte/transition'
 </script>
 
 <div>
