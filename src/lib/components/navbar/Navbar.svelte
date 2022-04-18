@@ -23,7 +23,7 @@
                           id="Symbol-White-Copy" fill="var(--logo-color)" fill-rule="nonzero"></path>
                 </svg>
             </a>
-            <svg on:click={handleClick} class="hamburger" width="30px" height="23px" viewBox="0 0 30 23" version="1.1"
+            <svg on:click={handleClick} class="hamburger" width="24px" height="20px" viewBox="0 0 30 23" version="1.1"
                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                     <g id="Group-4" fill="var(--text-color)">
@@ -35,10 +35,10 @@
             </svg>
             <div class="navigation">
                 <a href="/">Wallet</a>
-                <a href="/">Hugin</a>
+                <a href="https://hugin.chat" target="_blank">Hugin</a>
                 <a href="/">Mining</a>
                 <a href="/">Blog</a>
-                <a href="/">About</a>
+                <a href="/about">About</a>
             </div>
         </div>
         <div class="socials-wrapper">

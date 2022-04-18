@@ -24,13 +24,15 @@
 
 {#if $state.loading}
     <LoadingScreen/>
-{:else }
-    <Navbar/>
-    <main in:fade>
-        <slot/>
-    </main>
-    <Footer/>
 {/if}
+
+<Navbar/>
+<main in:fade>
+    {#if ready}
+        <slot/>
+    {/if}
+</main>
+<Footer/>
 
 <style lang="scss">
 
