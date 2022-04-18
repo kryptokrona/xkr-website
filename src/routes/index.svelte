@@ -76,7 +76,7 @@
   }
 
   .features {
-    margin: 60px 0;
+    margin: 40px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
