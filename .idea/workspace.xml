@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd63994d-c0a8-4925-b092-d7282cc60cf4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/lib/components/Contribute.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/wallet/index.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/__layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/__layout.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/Footer.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Footer.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +28,8 @@
         <option value="about/index" />
         <option value="JavaScript File" />
         <option value="Sidebar" />
+        <option value="wallet/index" />
+        <option value="Contribute" />
       </list>
     </option>
   </component>
@@ -77,7 +82,7 @@
       <updated>1650235329491</updated>
       <workItem from="1650235331146" duration="7859000" />
       <workItem from="1650244168795" duration="107000" />
-      <workItem from="1650272215182" duration="33338000" />
+      <workItem from="1650272215182" duration="34615000" />
     </task>
     <servers />
   </component>
