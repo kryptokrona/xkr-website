@@ -99,37 +99,37 @@ p {
   transition: 300ms ease-in-out;
 }
 
-@keyframes rgbBorder {
+@keyframes rgbStroke {
   0%, 100% {
-    border-color: #5f86f2;
+    stroke: #5f86f2;
   }
   12.5% {
-    border-color: #a65ff2;
+    stroke: #a65ff2;
   }
   25% {
-    border-color: #f25fd0;
+    stroke: #f25fd0;
   }
   37.5% {
-    border-color: #f25f61;
+    stroke: #f25f61;
   }
   50% {
-    border-color: #f2cb5f;
+    stroke: #f2cb5f;
   }
   62.5% {
-    border-color: #abf25f;
+    stroke: #abf25f;
   }
   75% {
-    border-color: #5ff281;
+    stroke: #5ff281;
   }
   87.5% {
-    border-color: #5ff2f0;
+    stroke: #5ff2f0;
   }
 }
 
-.rgbBorder {
-  border-color: #5f86f2;
-  -webkit-animation: rgbBorder 15s ease infinite;
-  -moz-animation: rgbBorder 15s ease infinite;
-  animation: rgbBorder 15s ease infinite;
+.rgbStroke {
+  stroke: #5f86f2;
+  -webkit-animation: rgbStroke 15s ease infinite;
+  -moz-animation: rgbStroke 15s ease infinite;
+  animation: rgbStroke 15s ease infinite;
   transition: 300ms ease-in-out;
 }
