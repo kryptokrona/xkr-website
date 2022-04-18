@@ -54,6 +54,7 @@
 
       img {
         height: 36px;
+        width: 36px;
         margin-left: 25px;
       }
     }

@@ -78,7 +78,7 @@
     align-items: center;
     padding: 3px 5px;
     border-radius: 5px;
-    width: 155px;
+    width: 170px;
     gap: 10px;
     font-size: 1rem;
     color: var(--text-color);
