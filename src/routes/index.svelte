@@ -59,7 +59,7 @@
     background-color: var(--backgound-color);
 
     @media only screen and (max-width: 700px) {
-      margin-top: 150px;
+      margin-top: 130px;
     }
   }
 
