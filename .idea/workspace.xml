@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="dd63994d-c0a8-4925-b092-d7282cc60cf4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/LoadingScreen.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/LoadingScreen.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/StatusBar.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/StatusBar.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/__layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/__layout.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +82,7 @@
       <updated>1650235329491</updated>
       <workItem from="1650235331146" duration="7859000" />
       <workItem from="1650244168795" duration="107000" />
-      <workItem from="1650272215182" duration="42550000" />
+      <workItem from="1650272215182" duration="42843000" />
     </task>
     <servers />
   </component>
