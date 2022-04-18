@@ -31,28 +31,37 @@
 }
 
 @font-face {
-  font-family: 'Droid Sans Mono Slashed';
-  src: url('/static/fonts/DroidSansMonoSlashed.woff') format('woff'),
-  url('/static/fonts/DroidSansMonoSlashed.woff2') format('woff2');
+  font-family: 'Roboto Mono';
+  src: url('/static/fonts/RobotoMono-Regular.woff') format('woff'),
+  url('/static/fonts/RobotoMono-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
-  font-display: auto;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/static/fonts/Montserrat-Regular.woff') format('woff'),
+  url('/static/fonts/Montserrat-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 body {
   margin: 0;
   background-color: var(--backgound-color);
-  font-family: Arial;
+  font-family: Montserrat;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Arial;
+  font-family: Montserrat;
   color: var(--title-color);
   margin: 5px;
 }
 
 p {
-  font-family: "Droid Sans Mono Slashed";
+  font-family: "Roboto Mono";
   color: var(--text-color);
   margin: 5px;
 }

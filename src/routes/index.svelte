@@ -1,8 +1,6 @@
 <script>
-
     import JoinDiscord from "../lib/components/JoinDiscord.svelte";
     import StatusBar from "../lib/components/StatusBar.svelte";
-    import BorderButton from "../lib/components/buttons/BorderButton.svelte";
 
     const features = [
         {title: "Nordic Crypto", text: "A growing cryptocurrency from the Nordics, you'll find people from Sweden, Norway, Denmark, Finland, but also an international audience."},
@@ -428,7 +426,6 @@
                 </g>
             </g>
         </svg>
-        <p>A Nordic Cryptocurrency to secure and simplify our future economic system. Sending and receiving money should not be expensive or slow. We work with open source code that allows you to be involved and improve the money of the future.</p>
     </div>
     <div class="features">
         {#each features as card}
@@ -439,8 +436,8 @@
         {/each}
     </div>
     <div class="status">
-        <JoinDiscord/>
         <StatusBar/>
+        <JoinDiscord/>
     </div>
 </div>
 
@@ -455,9 +452,14 @@
     overflow: hidden;
     width: 100%;
     background-color: var(--backgound-color);
+
+    @media only screen and (max-width: 700px) {
+      margin-top: 150px;
+    }
   }
 
   .hero {
+    width: 100%;
     p {
       margin-top: 20px;
     }
@@ -465,6 +467,9 @@
 
   .status {
     width:100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
     margin-top: 40px;
   }
 

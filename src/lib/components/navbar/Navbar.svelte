@@ -35,6 +35,7 @@
             </svg>
             <div class="navigation">
                 <a href="/">Wallet</a>
+                <a href="/">Hugin</a>
                 <a href="/">Mining</a>
                 <a href="/">Blog</a>
                 <a href="/">About</a>
@@ -52,7 +53,6 @@
                         </g>
                     </g>
                 </svg> Star us on Github</a>
-            <BorderButton text="Hugin" url="https://hugin.chat" target="_blank"/>
         </div>
     </div>
 </nav>
@@ -164,7 +164,7 @@
       align-items: center;
       padding: 3px 5px;
       border-radius: 5px;
-      width: 155px;
+      width: 170px;
       gap: 10px;
       font-size: 1rem;
       color: var(--text-color);

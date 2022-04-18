@@ -80,6 +80,7 @@
         margin: 30px;
         height: 18px;
         width: 18px;
+        opacity: 60%;
       }
     }
 
