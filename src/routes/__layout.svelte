@@ -8,7 +8,6 @@
     import '$lib/theme/global.scss'
 
     let ready
-
     onMount(() => {
         ready = true
     });
@@ -20,6 +19,7 @@
             }, 500)
         }
     }
+
 </script>
 
 {#if $state.loading}
