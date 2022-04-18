@@ -45,7 +45,7 @@
       box-sizing: border-box;
       max-width: var(--website-width);
       margin: 0 auto;
-      padding: 60px 40px;
+      padding: 140px 40px;
 
       @media only screen and (max-width: 600px) {
         padding: 40px 20px;
@@ -70,15 +70,13 @@
 
         a {
           text-decoration: none;
-          color: var(--text-color);
-          transition: 250ms ease-in-out;
-
-          &:hover {
-            opacity: 50%;
-          }
 
           p {
             margin: 0;
+            transition: 250ms ease-in-out;
+            &:hover {
+              color: var(--title-color);
+            }
           }
         }
 
