@@ -17,7 +17,7 @@
         if (ready) {
             setInterval(() => {
                 state.set({loading: false})
-            }, 1000)
+            }, 500)
         }
     }
 </script>
