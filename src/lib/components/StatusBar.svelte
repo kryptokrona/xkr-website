@@ -104,7 +104,7 @@ onMount(() => {
       .progress {
         animation: load 3s normal forwards;
         box-shadow: 0 10px 40px -10px #ffffff;
-        background-color: var(--green);
+        background-color: #ffffff;
         height: 8px;
         border-radius: 10em;
         width: 8%;
