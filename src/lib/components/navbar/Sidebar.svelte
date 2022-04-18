@@ -63,7 +63,7 @@
 
   .mobile-link {
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--nav-link-color);
     font-size: 2rem;
     transition: 200ms ease-in-out;
 
