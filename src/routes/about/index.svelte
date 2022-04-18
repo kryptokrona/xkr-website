@@ -106,6 +106,10 @@
     p {
       margin-top: 5px;
     }
+
+    h2 {
+      margin: 0;
+    }
   }
 
 </style>
