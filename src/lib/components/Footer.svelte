@@ -25,7 +25,7 @@
             </div>
         </div>
         <div class="other">
-            <p>Developed by Kryptokrona</p>
+            <p>Developed by Swepool</p>
         </div>
     </div>
 </footer>
