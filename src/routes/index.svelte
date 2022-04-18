@@ -1,8 +1,11 @@
 <script>
     import JoinDiscord from "../lib/components/JoinDiscord.svelte";
     import StatusBar from "../lib/components/StatusBar.svelte";
-    import {draw} from 'svelte/transition'
-    import {circInOut, quadInOut} from "svelte/easing";
+    import { draw } from 'svelte/transition'
+    import { quadInOut } from "svelte/easing";
+
+    const title = 'Kryptokrona - A decentralized communication and payment system.'
+    const pitch = 'A Nordic Cryptocurrency to secure and simplify our future economic system. Sending and receiving money should not be expensive or slow. We work with open source code that allows you to be involved and improve the money of the future.'
 
     const features = [
         {title: "Nordic Crypto", text: "A growing cryptocurrency from the Nordics, you'll find people from Sweden, Norway, Denmark, Finland, but also an international audience."},
@@ -26,8 +29,8 @@
                 </g>
             </g>
         </svg>
-        <h1>Kryptokrona - A decentralized communication and payment system. </h1>
-        <p>A Nordic Cryptocurrency to secure and simplify our future economic system. Sending and receiving money should not be expensive or slow. We work with open source code that allows you to be involved and improve the money of the future.</p>
+        <h1>{title}</h1>
+        <p>{pitch}</p>
         <div class="status">
             <StatusBar/>
         </div>
@@ -62,6 +65,19 @@
 
   .hero {
     width: 100%;
+
+    h1 {
+      font-size: 2.25rem;
+
+      @media only screen and (max-width: 900px) {
+        font-size: 2rem;
+      }
+
+      @media only screen and (max-width: 400px) {
+        font-size: 1.5rem;
+      }
+    }
+
     p {
       margin-top: 20px;
     }
