@@ -4,6 +4,7 @@
     let status
     let inputValue
     let captcha
+    let captchaTheme
 
     onMount(() => {
         fetch('https://blocksum.org/faucet/balance')
@@ -16,6 +17,10 @@
             console.log(res)
             captcha = res
         };
+
+        $: if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            captchaTheme = 'dark'
+        }
     })
 
 
@@ -65,7 +70,7 @@
 </svelte:head>
 
 <input type="text" bind:value={inputValue}>
-<div class="g-recaptcha" data-sitekey="6LeuuboeAAAAALFj2PEADpIc2jZwLYQOa3R3iiCR" data-callback="captchaCallback" data-theme="dark"></div>
+<div class="g-recaptcha" data-sitekey="6LeuuboeAAAAALFj2PEADpIc2jZwLYQOa3R3iiCR" data-callback="captchaCallback" data-theme={captchaTheme}></div>
 <button on:click|preventDefault={() => submitForm()}>Claim</button>
 <p id="status">{status}</p>
 
