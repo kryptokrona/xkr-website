@@ -2,7 +2,7 @@
     import { draw } from 'svelte/transition'
     import {quadInOut} from "svelte/easing";
     import StatusBar from "../../lib/components/StatusBar.svelte";
-    import screenshot from '/static/img.png'
+    import Faucet from "../../lib/components/Faucet.svelte";
 
 </script>
 <svg class="hugin" width="100%" height="100%" viewBox="0 0 240 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -22,6 +22,7 @@
     <p>Powered by Kryptokrona</p>
 </div>
 <StatusBar/>
+<Faucet/>
 
 
 <style lang="scss">

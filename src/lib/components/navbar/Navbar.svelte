@@ -36,7 +36,7 @@
             <div class="navigation">
                 <a href="/">Wallet</a>
                 <a href="/hugin">Hugin</a>
-                <a href="/">Mining</a>
+                <a href="/mining">Mining</a>
                 <a href="/blog">Blog</a>
                 <a href="/about">About</a>
             </div>

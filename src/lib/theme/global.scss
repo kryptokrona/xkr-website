@@ -1,32 +1,44 @@
 @media (prefers-color-scheme: dark) {
   :root {
-    --backgound-color: #202020;
     --logo-color: #ffffff;
-    --nav-backgound-color: rgba(32, 32, 32, 0.9);
-    --nav-link-color: #ffffff;
+    --backgound-color: #202020;
     --title-color: rgba(255, 255, 255, 0.8);
     --text-color: rgba(255, 255, 255, 0.5);
-    --green: #5ff281;
+
+    --nav-backgound-color: rgba(32, 32, 32, 0.9);
+    --nav-link-color: #ffffff;
     --border-color: rgba(255, 255, 255, 0.1);
     --card-border: rgba(255, 255, 255, 0.5);
     --hamburger: rgba(255, 255, 255, 0.5);
+
+    --desktop-padding: 0 40px;
+    --mobile-padding: 0 40px;
     --website-width: 1400px;
+
+    --success-color: #5ff281;
+    --warn-color: #f25f61;
   }
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    --backgound-color: #ffffff;
     --logo-color: #000000;
-    --nav-backgound-color: rgba(0, 0, 0, 0.9);
-    --nav-link-color: #000000;
+    --backgound-color: #ffffff;
     --title-color: rgba(32, 32, 32, 0.8);
     --text-color: rgba(32, 32, 32, 0.6);
-    --green: #5ff281;
+
+    --nav-backgound-color: rgba(0, 0, 0, 0.9);
+    --nav-link-color: #000000;
     --border-color: rgba(32, 32, 32, 0.5);
     --card-border: rgba(32, 32, 32, 0.5);
     --hamburger: rgba(32, 32, 32, 0.5);
+
+    --desktop-padding: 0 40px;
+    --mobile-padding: 0 40px;
     --website-width: 1400px;
+
+    --success-color: #5ff281;
+    --warn-color: #f25f61;
   }
 }
 
