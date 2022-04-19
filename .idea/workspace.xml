@@ -2,9 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd63994d-c0a8-4925-b092-d7282cc60cf4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/lib/components/FeaturedPosts.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/blog/devaluation.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/faucet/index.js.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/hugin/index.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/Footer.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Footer.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/Contribute.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Contribute.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/navbar/Navbar.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/navbar/Navbar.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/navbar/Sidebar.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/navbar/Sidebar.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/blog/_post.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/blog/_post.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/blog/post1.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/blog/hugin-avatars.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/blog/post2.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/blog/hugin-new-steps.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/blog/post3.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/favicon.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +42,9 @@
         <option value="blog/index" />
         <option value="_post.svelte" />
         <option value="JavaScript File" />
+        <option value="FeaturedPosts" />
+        <option value="index" />
+        <option value="index.js" />
       </list>
     </option>
   </component>
@@ -50,7 +65,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/routes/blog" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -62,11 +77,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static" />
       <recent name="$PROJECT_DIR$/src/routes/blog" />
       <recent name="$PROJECT_DIR$/src/lib/components" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/lib/supabase" />
-      <recent name="$PROJECT_DIR$/static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/static" />
@@ -83,7 +98,7 @@
       <updated>1650235329491</updated>
       <workItem from="1650235331146" duration="7859000" />
       <workItem from="1650244168795" duration="107000" />
-      <workItem from="1650272215182" duration="45589000" />
+      <workItem from="1650272215182" duration="52477000" />
     </task>
     <servers />
   </component>
@@ -100,5 +115,17 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/lib/components/LoadingScreen.svelte</url>
+          <line>1</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

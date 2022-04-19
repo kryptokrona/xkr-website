@@ -35,9 +35,9 @@
             </svg>
             <div class="navigation">
                 <a href="/">Wallet</a>
-                <a href="https://hugin.chat" target="_blank">Hugin</a>
+                <a href="/hugin">Hugin</a>
                 <a href="/">Mining</a>
-                <a href="/">Blog</a>
+                <a href="/blog">Blog</a>
                 <a href="/about">About</a>
             </div>
         </div>
