@@ -41,8 +41,8 @@
 <div class="hero">
     <svg width="100%" height="100%" viewBox="0 0 155 52" version="1.1" xmlns="http://www.w3.org/2000/svg"
          xmlns:xlink="http://www.w3.org/1999/xlink">
-        <g  id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-            <g class="rgbStroke" id="XKR" transform="translate(1.648000, 0.600000)" fill-rule="nonzero" stroke="var(--title-color)">
+        <g  id="Page-1" stroke="none" stroke-width="0.5" fill="none" fill-rule="evenodd">
+            <g class="rgbFill" id="XKR" transform="translate(1.648000, 0.600000)" fill-rule="nonzero" stroke="var(--title-color)">
                 <polygon in:draw="{{duration: 3500, easing: quadInOut}}" id="Path"
                          points="37.872 50.4 24.192 31.248 10.656 50.4 0 50.4 18.72 24.696 1.008 0 11.592 0 24.48 17.928 37.224 0 47.376 0 29.736 24.336 48.672 50.4"></polygon>
                 <polygon in:draw="{{duration: 2500, easing: quadInOut}}" id="Path"
