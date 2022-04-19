@@ -11,6 +11,11 @@
             .then(data => {
                 data.balance ? status = "Funds available 🥳" : status = 'No funds available 😭'
             })
+
+        window.captchaCallback = res => {
+            console.log(res)
+            captcha = res
+        };
     })
 
 
@@ -20,6 +25,7 @@
             "address": inputValue,
             "captcha": captcha
         }
+        console.log(captcha)
         const json = JSON.stringify(value)
 
         fetch("https://blocksum.org/faucet/send", {
@@ -49,12 +55,18 @@
                 }
 
             })
+        .catch(e => console.log(e))
     }
 
 </script>
 
+<svelte:head>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</svelte:head>
+
 <input type="text" bind:value={inputValue}>
-<button on:click={() => submitForm()}>Claim</button>
+<div class="g-recaptcha" data-sitekey="6LeuuboeAAAAALFj2PEADpIc2jZwLYQOa3R3iiCR" data-callback="captchaCallback" data-theme="dark"></div>
+<button on:click|preventDefault={() => submitForm()}>Claim</button>
 <p id="status">{status}</p>
 
 <style lang="scss">

@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd63994d-c0a8-4925-b092-d7282cc60cf4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lib/components/Faucet.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/navbar/Navbar.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/navbar/Navbar.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/stores/stats.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/theme/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/theme/global.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/faucet/index.js.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/mining/index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/Contribute.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Contribute.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/Faucet.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Faucet.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/hugin/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/hugin/index.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/wallet/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/wallet/index.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +89,7 @@
       <updated>1650235329491</updated>
       <workItem from="1650235331146" duration="7859000" />
       <workItem from="1650244168795" duration="107000" />
-      <workItem from="1650272215182" duration="56681000" />
+      <workItem from="1650272215182" duration="60159000" />
     </task>
     <servers />
   </component>

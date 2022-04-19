@@ -3,6 +3,36 @@
     import {quadInOut} from "svelte/easing";
     import StatusBar from "../../lib/components/StatusBar.svelte";
     import Faucet from "../../lib/components/Faucet.svelte";
+    import {onMount} from "svelte";
+
+    let latest_mac;
+    let latest_win;
+    let latest_lin;
+    let backup = 'https://github.com/kryptokrona/hugin-messenger'
+
+    onMount(() => {
+        fetch("https://api.github.com/repos/kryptokrona/hugin-messenger/releases/latest")
+            .then((response) => response.json())
+            .then((data) => {
+                let files = data.assets;
+                for (file in files) {
+                    if (files[file].name.slice(files[file].name.length - 7) === "mac.zip") {
+                        latest_mac = files[file].browser_download_url;
+                    } else if (files[file].name.slice(files[file].name.length - 3) === "exe") {
+                        latest_win = files[file].browser_download_url;
+                    } else if (files[file].name.slice(files[file].name.length - 8) === "AppImage") {
+                        latest_lin = files[file].browser_download_url;
+                    }
+                }
+                console.log(latest_mac, latest_lin, latest_win)
+            });
+    })
+
+    $: {
+        latest_lin = undefined ? latest_lin : backup
+        latest_mac = undefined ? latest_mac : backup
+        latest_win = undefined ? latest_win : backup
+    }
 
 </script>
 <svg class="hugin" width="100%" height="100%" viewBox="0 0 240 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -23,6 +53,12 @@
 </div>
 <StatusBar/>
 <Faucet/>
+
+<div class="download">
+    <a href={latest_lin}>Linux</a>
+    <a href={latest_mac}>Mac</a>
+    <a href={latest_win}>Windows</a>
+</div>
 
 
 <style lang="scss">
