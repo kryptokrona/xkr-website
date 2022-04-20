@@ -50,6 +50,10 @@
     background-color: var(--info-color);
     max-height: 80px;
     padding: 8px 0;
+
+    p {
+      color: #ffffff;
+    }
   }
 
   .warn {
@@ -57,6 +61,10 @@
     background-color: var(--warn-color);
     max-height: 80px;
     padding: 8px 0;
+
+    p {
+      color: #ffffff;
+    }
   }
 
   .alert {
@@ -66,7 +74,7 @@
     padding: 8px 0;
 
     p {
-      color: #202020;
+      color: #000000;
     }
   }
 
@@ -77,7 +85,7 @@
     padding: 8px 0;
 
     p {
-      color: #202020;
+      color: #000000;
     }
   }
 

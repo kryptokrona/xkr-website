@@ -47,12 +47,12 @@
     <svg width="100%" viewBox="0 0 155 52" version="1.1" xmlns="http://www.w3.org/2000/svg"
          xmlns:xlink="http://www.w3.org/1999/xlink">
         <g  id="Page-1" stroke="none" stroke-width="0.5" fill="none" fill-rule="evenodd">
-            <g class="rgbFill" id="XKR" transform="translate(1.648000, 0.600000)" fill-rule="nonzero" stroke="var(--title-color)">
+            <g  id="XKR" transform="translate(1.648000, 0.600000)" fill-rule="nonzero" stroke="var(--title-color)">
                 <polygon in:draw="{{duration: 3500, easing: quadInOut}}" id="Path"
                          points="37.872 50.4 24.192 31.248 10.656 50.4 0 50.4 18.72 24.696 1.008 0 11.592 0 24.48 17.928 37.224 0 47.376 0 29.736 24.336 48.672 50.4"></polygon>
                 <polygon in:draw="{{duration: 2500, easing: quadInOut}}" id="Path"
                          points="73.368 29.304 65.376 37.512 65.376 50.4 56.016 50.4 56.016 0 65.376 0 65.376 25.848 90.288 0 100.8 0 79.632 22.536 102.096 50.4 91.152 50.4"></polygon>
-                <path in:draw="{{duration: 3000, easing: quadInOut}}"
+                <path in:draw="{{duration: 4000, easing: quadInOut}}"
                       d="M141.48,50.4 L131.184,35.64 C130.752,35.688 130.104,35.712 129.24,35.712 L117.864,35.712 L117.864,50.4 L108.504,50.4 L108.504,0 L129.24,0 C133.608,0 137.412,0.72 140.652,2.16 C143.892,3.6 146.376,5.664 148.104,8.352 C149.832,11.04 150.696,14.232 150.696,17.928 C150.696,21.72 149.772,24.984 147.924,27.72 C146.076,30.456 143.424,32.496 139.968,33.84 L151.56,50.4 L141.48,50.4 Z M141.264,17.928 C141.264,14.712 140.208,12.24 138.096,10.512 C135.984,8.784 132.888,7.92 128.808,7.92 L117.864,7.92 L117.864,28.008 L128.808,28.008 C132.888,28.008 135.984,27.132 138.096,25.38 C140.208,23.628 141.264,21.144 141.264,17.928 Z"
                       id="Shape"></path>
             </g>

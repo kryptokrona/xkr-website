@@ -1,12 +1,5 @@
 <script>
     import {onMount} from "svelte";
-    import confetti from 'canvas-confetti'
-
-    confetti({
-        particleCount: 100,
-        spread: 70,
-        origin: { y: 0.6 }
-    });
 
     let status
     let inputValue
