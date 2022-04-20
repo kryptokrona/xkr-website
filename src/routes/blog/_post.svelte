@@ -13,5 +13,7 @@
 <slot />
 
 <style lang="scss">
-
+    div {
+      margin-top: 150px;
+    }
 </style>

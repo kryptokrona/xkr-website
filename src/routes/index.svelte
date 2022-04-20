@@ -3,6 +3,7 @@
     import StatusBar from "../lib/components/StatusBar.svelte";
     import {draw} from 'svelte/transition'
     import {quadInOut} from "svelte/easing";
+    import FeaturedPosts from "../lib/components/FeaturedPosts.svelte";
 
     //Hero texts
     const title = 'A decentralized private communication and payment system.'
@@ -39,7 +40,7 @@
 </script>
 
 <div class="hero">
-    <svg width="100%" height="100%" viewBox="0 0 155 52" version="1.1" xmlns="http://www.w3.org/2000/svg"
+    <svg width="100%" viewBox="0 0 155 52" version="1.1" xmlns="http://www.w3.org/2000/svg"
          xmlns:xlink="http://www.w3.org/1999/xlink">
         <g  id="Page-1" stroke="none" stroke-width="0.5" fill="none" fill-rule="evenodd">
             <g class="rgbFill" id="XKR" transform="translate(1.648000, 0.600000)" fill-rule="nonzero" stroke="var(--title-color)">
@@ -53,11 +54,11 @@
             </g>
         </g>
     </svg>
-
     <h1>{title}</h1>
     <p>{pitch}</p>
     <StatusBar/>
 </div>
+
 <div class="features">
     {#each features as card}
         <div>
@@ -66,11 +67,22 @@
         </div>
     {/each}
 </div>
+
 <JoinDiscord/>
+<FeaturedPosts/>
 
 <style lang="scss">
 
   .hero {
+    margin-top: 200px;
+
+    @media only screen and (max-width: 900px) {
+      margin-top: 150px;
+    }
+
+    @media only screen and (max-width: 400px) {
+      margin-top: 100px;
+    }
     h1 {
       font-size: 2.25rem;
 

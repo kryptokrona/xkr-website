@@ -1,7 +1,6 @@
 <script>
     import Alert from "../Alert.svelte";
     import Sidebar from "./Sidebar.svelte";
-    import BorderButton from "../buttons/BorderButton.svelte";
 
     let openMenu = false
 

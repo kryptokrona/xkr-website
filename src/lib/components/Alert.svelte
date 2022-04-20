@@ -1,26 +1,42 @@
 <script>
 
+    //enable alert
+    let setAlert = true
+
     //Add alert text here
     // eslint-disable-next-line no-unused-vars
-    let alertText
+    let alertText = "This site is under construction"
 
     //Add a link to your alert
     // eslint-disable-next-line no-unused-vars
     let link
 
+    //Select type
+    //Will change color depending on selection
+    //Green
+    let news
+    //Blue
+    let info
+    //Red
+    let warning
+    //Yellow
+    let alert = true
+
 </script>
 
-<div class="strip rgb" class:alert={alertText}>
-    {#if alertText}
-        <div class="wrapper">
-            <p>{alertText}
-                {#if link}
-                    <a href={link}> Link</a>
-                {/if}
-            </p>
+    {#if setAlert}
+        <div class:warn={warning} class:alert={alert} class:info={info} class:news={news}>
+            <div class="wrapper">
+                <p>{alertText}
+                    {#if link}
+                        <a href={link}> Link</a>
+                    {/if}
+                </p>
+            </div>
         </div>
+    {:else}
+        <div class="strip rgb"></div>
     {/if}
-</div>
 
 <style lang="scss">
 
@@ -29,8 +45,32 @@
     height: 3px;
   }
 
+  .info {
+    width: 100%;
+    background-color: var(--info-color);
+    max-height: 80px;
+    padding: 8px 0;
+  }
+
+  .warn {
+    width: 100%;
+    background-color: var(--warn-color);
+    max-height: 80px;
+    padding: 8px 0;
+  }
+
   .alert {
-    height: 40px;
+    width: 100%;
+    background-color: var(--alert-color);
+    max-height: 80px;
+    padding: 8px 0;
+  }
+
+  .news {
+    width: 100%;
+    background-color: var(--success-color);
+    max-height: 80px;
+    padding: 8px 0;
   }
 
   .wrapper {
@@ -50,13 +90,12 @@
     p {
       margin: 0;
       font-size: 0.85rem;
-      color: white;
     }
 
     a {
-      color: white;
       cursor: pointer;
       text-decoration: underline;
+      color: var(--text-color);
     }
   }
 

@@ -41,7 +41,6 @@
     max-width: var(--website-width);
     padding: 0 40px;
     box-sizing: border-box;
-    margin-top: 150px;
     width: 100%;
     transition: 250ms ease-in-out all;
 
@@ -50,7 +49,7 @@
     }
 
     @media only screen and (max-width: 700px) {
-      margin-top: 100px;
+      margin-top: 150px;
     }
   }
 

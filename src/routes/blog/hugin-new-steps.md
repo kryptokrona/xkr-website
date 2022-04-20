@@ -2,6 +2,7 @@
 title: Hugin Messenger takes new steps
 date: "2022-04-18"
 category: "news"
+summary: "Our flagship, Hugin Messenger is being developed to something completely new. "
 ---
 
 Our flagship, Hugin Messenger is being developed to something completely new. The ability to send encrypted messages with ease without middle hands is big in itself, but what Hugin Messenger (soon) will be capable of is something much bigger.
