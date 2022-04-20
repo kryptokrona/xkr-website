@@ -3,11 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="dd63994d-c0a8-4925-b092-d7282cc60cf4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/components/Alert.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Alert.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/Faucet.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Faucet.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/components/FeaturedPosts.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/FeaturedPosts.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/navbar/Navbar.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/navbar/Navbar.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/theme/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/theme/global.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/__layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/__layout.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/about/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/about/index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/api/posts.json.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api/posts.json.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/blog/_post.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/blog/_post.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/blog/devaluation.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/blog/devaluation.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/blog/hugin-avatars.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/blog/hugin-avatars.md" afterDir="false" />
@@ -15,6 +18,8 @@
       <change beforePath="$PROJECT_DIR$/src/routes/blog/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/blog/index.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/hugin/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/hugin/index.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/mining/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/mining/index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/wallet/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/wallet/index.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +103,7 @@
       <workItem from="1650244168795" duration="107000" />
       <workItem from="1650272215182" duration="63406000" />
       <workItem from="1650482570560" duration="643000" />
-      <workItem from="1650483461721" duration="5520000" />
+      <workItem from="1650483461721" duration="11717000" />
     </task>
     <servers />
   </component>

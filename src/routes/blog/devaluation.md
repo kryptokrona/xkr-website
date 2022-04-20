@@ -1,7 +1,7 @@
 ---
 title: Devaluation!
 date: "2022-04-18"
-category: "news"
+category: news
 summary: "We, the maintainers of XKR, have wondered whether the total supply of XKR was optimal at 1000 billion."
 ---
 

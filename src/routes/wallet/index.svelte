@@ -29,5 +29,9 @@
         latest_mac = undefined ? latest_mac : backup
         latest_win = undefined ? latest_win : backup
     }
-
 </script>
+
+<svelte:head>
+    <title>Kryptokrona | Wallet</title>
+    <meta name="description" content=""/>
+</svelte:head>

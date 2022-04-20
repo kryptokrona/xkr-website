@@ -1,7 +1,7 @@
 ---
 title: Hugin Messenger takes new steps
 date: "2022-04-18"
-category: "news"
+category: news
 summary: "Our flagship, Hugin Messenger is being developed to something completely new. "
 ---
 

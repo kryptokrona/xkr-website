@@ -64,6 +64,10 @@
     background-color: var(--alert-color);
     max-height: 80px;
     padding: 8px 0;
+
+    p {
+      color: #202020;
+    }
   }
 
   .news {
@@ -71,6 +75,10 @@
     background-color: var(--success-color);
     max-height: 80px;
     padding: 8px 0;
+
+    p {
+      color: #202020;
+    }
   }
 
   .wrapper {

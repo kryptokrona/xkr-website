@@ -24,6 +24,7 @@
   "type": "module",
   "dependencies": {
     "@supabase/supabase-js": "^1.34.1",
+    "canvas-confetti": "^1.5.1",
     "sass": "^1.50.0",
     "svelte-loading-spinners": "^0.1.7",
     "svelte-preprocess": "^4.10.6"

@@ -1,5 +1,12 @@
 <script>
     import {onMount} from "svelte";
+    import confetti from 'canvas-confetti'
+
+    confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { y: 0.6 }
+    });
 
     let status
     let inputValue
@@ -69,7 +76,7 @@
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </svelte:head>
 
-<input type="text" bind:value={inputValue}>
+<input id="claim" type="text" bind:value={inputValue}>
 <div class="g-recaptcha" data-sitekey="6LeuuboeAAAAALFj2PEADpIc2jZwLYQOa3R3iiCR" data-callback="captchaCallback" data-theme={captchaTheme}></div>
 <button on:click|preventDefault={() => submitForm()}>Claim</button>
 <p id="status">{status}</p>

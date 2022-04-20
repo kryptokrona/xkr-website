@@ -10,18 +10,14 @@
     })
 </script>
 
-<div>
-    <h2>Blog</h2>
-    <div class="wrapper">
+<div class="wrapper">
+    <div class="blog-wrapper">
         {#each latestPosts as post}
             <div>
-                <h2>
-                    <a href={post.path}>
-                        {post.meta.title}
-                    </a>
-                </h2>
+                <h2>{post.meta.title}</h2>
                 <p>{post.meta.summary}</p>
-                {post.meta.date}
+                <p>{post.meta.date}</p>
+                <a href={post.path}>Read more</a>
             </div>
         {/each}
 
@@ -30,22 +26,27 @@
 
 <style lang="scss">
 
-    .wrapper {
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
+  .wrapper {
 
-      @media only screen and (max-width: 1000px) {
-        flex-direction: column;
+    .text-wrapper {
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .blog-wrapper {
+      a {
+        color: var(--title-color);
+        text-decoration: none;
       }
 
-      div {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 100%;
-        max-height: 100px;
+      div{
+        padding: 20px 0;
+        border-bottom: 1px solid var(--border-color);
+      }
+
+      div:last-child {
+        border-bottom: none;
       }
     }
+  }
 
 </style>

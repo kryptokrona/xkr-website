@@ -1,12 +1,11 @@
 <script>
 
     import StatusBar from "../../lib/components/StatusBar.svelte";
+    import {onMount} from "svelte";
+    import {numberWithCommas} from "../../lib/utils";
 
+    let currentSupply
     const about = [
-        {
-            title: "Nordic Crypto",
-            text: "A growing cryptocurrency from the Nordics, you'll find people from Sweden, Norway, Denmark, Finland, but also an international audience."
-        },
         {
             title: "GPU Mining Algorithm",
             text: "We currently running on CryptoNight-Pico, which is a fairer algo than Bitcoin's SHA256 and can even be competently mined on ARM based phones!"
@@ -29,7 +28,26 @@
         }
     ]
 
+    onMount(() => {
+        fetch("https://blocksum.org/api/v1/supply")
+            .then(res => {
+                if (!res.ok) {
+                    throw Error("Couldn't fetch CoinPaprika")
+                }
+                return res.json()
+            })
+            .then(data => {
+                currentSupply = numberWithCommas(data.supply.current)
+            })
+            .catch(err => console.log(err))
+    })
+
 </script>
+
+<svelte:head>
+    <title>Kryptokrona | About</title>
+    <meta name="description" content=""/>
+</svelte:head>
 
 <div class="text-wrapper">
     <h1>About</h1>
@@ -40,10 +58,17 @@
     <p>Kryptokrona is a decentralized blockchain based on CryptoNote, which forms the basis for Monero, among others.
         CryptoNote is a so-called “application layer” protocol further developed by TurtleCoin that enables things like:
         private transactions, messages and arbitrary data storage, completely decentralized.</p>
-    <p>On 2 April 2019, the platform was launched in part as a response to the Riksbank’s digital e-krona for the people’s
+    <p>On 2 April 2019, the platform was launched in part as a response to the Riksbank’s digital e-krona for the
+        people’s
         right to create money and to safeguard the private economy without either commercial or state control.</p>
 </div>
 <div class="features">
+    <div>
+       <h2>Max Supply XKR</h2>
+        <p>1,000,000,000</p>
+        <h2>Current Supply</h2>
+        <p>{currentSupply} XKR</p>
+    </div>
     {#each about as card}
         <div>
             <h2>{card.title}</h2>

@@ -36,8 +36,12 @@
             text: "The basics of Kryptokrona allow users to stay anonymous by default, to send value and data without being revealed or traced."
         }
     ]
-
 </script>
+
+<svelte:head>
+    <title>Kryptokrona | Home</title>
+    <meta name="description" content={pitch}/>
+</svelte:head>
 
 <div class="hero">
     <svg width="100%" viewBox="0 0 155 52" version="1.1" xmlns="http://www.w3.org/2000/svg"
