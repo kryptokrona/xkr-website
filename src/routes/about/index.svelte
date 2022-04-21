@@ -3,6 +3,7 @@
     import StatusBar from "../../lib/components/StatusBar.svelte";
     import {onMount} from "svelte";
     import {numberWithCommas} from "../../lib/utils";
+    import JoinDiscord from "../../lib/components/JoinDiscord.svelte";
 
     let currentSupply
     const about = [
@@ -76,6 +77,7 @@
         </div>
     {/each}
 </div>
+<JoinDiscord/>
 <StatusBar/>
 
 <style lang="scss">

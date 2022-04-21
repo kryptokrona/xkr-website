@@ -14,6 +14,9 @@
 </script>
 
 <script>
+    import JoinDiscord from "../../lib/components/JoinDiscord.svelte";
+    import StatusBar from "../../lib/components/StatusBar.svelte";
+
     export let posts
 </script>
 
@@ -37,10 +40,13 @@
         {/each}
     </div>
 </div>
+<JoinDiscord/>
+<StatusBar/>
 
 <style lang="scss">
     .wrapper {
       margin-top: 200px;
+      margin-bottom: 40px;
 
       .text-wrapper {
         border-bottom: 1px solid var(--border-color);
