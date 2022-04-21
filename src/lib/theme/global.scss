@@ -10,7 +10,8 @@
     --nav-link-color: #ffffff;
 
     --border-color: rgba(255, 255, 255, 0.1);
-    --card-border: rgba(255, 255, 255, 0.5);
+    --card-border: #2e2e2e;
+    --card-background: #282828;
 
     --desktop-padding: 0 40px;
     --mobile-padding: 0 40px;
@@ -36,6 +37,7 @@
 
     --border-color: rgba(32, 32, 32, 0.5);
     --card-border: rgba(32, 32, 32, 0.5);
+    --card-background: #fbfcfd;
 
     --desktop-padding: 0 40px;
     --mobile-padding: 0 40px;
@@ -80,6 +82,16 @@ h1, h2, h3, h4, h5, h6 {
 p {
   font-family: "Roboto Mono";
   color: var(--text-color);
+}
+
+.blink_me {
+  animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
 
 @keyframes rgb {

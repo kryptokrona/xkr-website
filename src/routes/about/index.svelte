@@ -111,6 +111,7 @@
     div {
       padding: 20px;
       border: 1px solid var(--card-border);
+      background-color: var(--card-background);
       border-radius: 8px;
       max-width: 26%;
       width: 100%;

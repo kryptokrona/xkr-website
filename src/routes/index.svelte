@@ -115,7 +115,8 @@
     div {
       padding: 20px;
       border: 1px solid var(--card-border);
-      border-radius: 8px;
+      background-color: var(--card-background);
+      border-radius: 0.4rem;
       max-width: 26%;
       width: 100%;
       height: 160px;

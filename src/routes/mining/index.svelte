@@ -1,13 +1,11 @@
 <script>
-    import { generateConfig } from "/src/lib/utils.js";
-    let address
+    import MiningConfig from "../../lib/components/MiningConfig.svelte";
 
 </script>
 
 <div class="wrapper">
     <h1>Mining</h1>
-    <input type="text" bind:value={address}>
-    <button on:click={() => generateConfig(address)}>Generate</button>
+    <MiningConfig/>
 </div>
 
 <svelte:head>
