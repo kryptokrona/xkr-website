@@ -149,7 +149,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 3px 5px;
+      padding: 5px 10px;
       border-radius: 5px;
       width: 170px;
       gap: 10px;

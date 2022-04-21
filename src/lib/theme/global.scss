@@ -192,6 +192,39 @@ p {
   transition: 300ms ease-in-out;
 }
 
+ .border_rgb {
+   animation: border_rgb  2s linear infinite;
+   -webkit-animation: border_rgb 2s linear infinite;
+   -moz-animation: border_rgb 2s linear infinite;
+ }
+
+ @keyframes border_rgb {
+   0% {
+     border: 1px solid var(--success-color);
+     box-shadow: 0 0 10px var(--success-color);
+   }
+   20% {
+     border: 1px solid var(--alert-color);
+     box-shadow: 0 0 10px var(--alert-color);
+   }
+   40% {
+     border: 1px solid var(--warn-color);
+     box-shadow: 0 0 10px var(--warn-color);
+   }
+   60% {
+     border: 1px solid #f25fd0;;
+     box-shadow: 0 0 10px #f25fd0;;
+   }
+   80% {
+     border: 1px solid var(--info-color);
+     box-shadow: 0 0 10px var(--info-color);
+   }
+   100% {
+     border: 1px solid #5ff2f0;
+     box-shadow: 0 0 10px #5ff2f0;
+   }
+ }
+
 .fixed {
   position: fixed;
 }
