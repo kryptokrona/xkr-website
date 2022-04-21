@@ -82,27 +82,32 @@
             </g>
         </g>
     </svg>
+    <div class="text-wrapper">
+        <h1>Privacy is key, opt-out from any form of surveillance.</h1>
+        <p>Hugin uses a decentralized structure that makes cryptocurrencies work, meaning that the system cannot be taken down or be controlled by any one entity. By the use of military grade encryption, your messages are safe from the prying eyes of others.</p>
+        <p>Powered by Kryptokrona</p>
+        <button class="border_rgb">Go private</button>
+    </div>
 </div>
-<div class="text-wrapper">
-    <h1>Privacy is key, opt-out from any form of surveillance.</h1>
-    <p>Hugin uses a decentralized structure that makes cryptocurrencies work, meaning that the system cannot be taken down or be controlled by any one entity. By the use of military grade encryption, your messages are safe from the prying eyes of others.</p>
-    <p>Powered by Kryptokrona</p>
-    <button class="border_rgb">Download</button>
-</div>
-<StatusBar/>
-<Faucet/>
 
+<!--
 <div class="download">
     <a href={latest_lin}>Linux</a>
     <a href={latest_mac}>Mac</a>
     <a href={latest_win}>Windows</a>
 </div>
+-->
 
 
 <style lang="scss">
 
 .wrapper {
+  box-sizing: border-box;
   margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   @media only screen and (max-width: 1040px) {
     flex-direction: column;
@@ -114,7 +119,7 @@
       margin-top: 40px;
       max-width: 600px;
 
-      @media only screen and (max-width: 1040px) {
+      @media only screen and (max-width: 600px) {
         max-width: 100%;
       }
 
@@ -124,9 +129,10 @@
     }
 
     svg {
-      width: 600px;
+      width: 100%;
+      max-width: 600px;
 
-    @media only screen and (max-width: 1040px) {
+    @media only screen and (max-width: 600px) {
       width: 100%;
     }
     }
@@ -137,6 +143,7 @@
       color: var(--title-color);
       border-radius: 0.4rem;
       cursor: pointer;
+      margin-top: 40px;
 
       &:hover {
         background-color: var(--card-background);
