@@ -101,7 +101,7 @@
 <style lang="scss">
 
 .wrapper {
-  margin-top: 200px;
+  margin-top: 150px;
 }
 
     .text-wrapper {
