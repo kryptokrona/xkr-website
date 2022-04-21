@@ -7,7 +7,7 @@
     <div class="nav-mobile-wrapper">
         <div></div>
         <div class="navigation">
-            <a class="mobile-link" in:fade="{{delay: 250, duration: 500}}" out:fade="{{delay: 550}}" href="/">Wallet</a>
+            <a class="mobile-link" in:fade="{{delay: 250, duration: 500}}" out:fade="{{delay: 550}}" href="/wallet">Wallet</a>
             <a class="mobile-link" in:fade="{{delay: 350, duration: 500}}" out:fade="{{delay: 450}}" href="/hugin">Hugin</a>
             <a class="mobile-link" in:fade="{{delay: 450, duration: 500}}" out:fade="{{delay: 350}}" href="/mining">Mining</a>
             <a class="mobile-link" in:fade="{{delay: 550, duration: 500}}" out:fade="{{delay: 250}}" href="/blog">Blog</a>

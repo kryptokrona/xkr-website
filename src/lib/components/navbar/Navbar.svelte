@@ -34,7 +34,7 @@
                 </g>
             </svg>
             <div class="navigation">
-                <a href="/">Wallet</a>
+                <a href="/wallet">Wallet</a>
                 <a href="/hugin">Hugin</a>
                 <a href="/mining">Mining</a>
                 <a href="/blog">Blog</a>

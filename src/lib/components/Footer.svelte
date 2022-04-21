@@ -4,24 +4,24 @@
             <div class="footer-nav">
                 <h3>Site</h3>
                 <a href="/" class="footer-link"><p>Home</p></a>
-                <a href="/" class="footer-link"><p>Wallet</p></a>
-                <a href="/" class="footer-link"><p>Hugin</p></a>
-                <a href="/" class="footer-link"><p>Mining</p></a>
-                <a href="/" class="footer-link"><p>About</p></a>
+                <a href="/wallet" class="footer-link"><p>Wallet</p></a>
+                <a href="/hugin" class="footer-link"><p>Hugin</p></a>
+                <a href="/mining" class="footer-link"><p>Mining</p></a>
+                <a href="/about" class="footer-link"><p>About</p></a>
             </div>
             <div class="footer-nav">
                 <h3>XKR</h3>
-                <a href="/" class="footer-link"><p>Explorer</p></a>
+                <a href="https://explorer.kryptokrona.se" class="footer-link"><p>Explorer</p></a>
                 <a href="/" class="footer-link"><p>Whiteppaper</p></a>
-                <a href="/" class="footer-link"><p>Blog</p></a>
-                <a href="/" class="footer-link"><p>Guides</p></a>
+                <a href="/blog" class="footer-link"><p>Blog</p></a>
+                <a href="/https://docs.kryptokrona.org" class="footer-link"><p>Guides</p></a>
+                <a href="https://github.com" class="footer-link"><p>Github</p></a>
             </div>
             <div class="footer-nav">
                 <h3>Hugin</h3>
-                <a href="/" class="footer-link"><p>Webiste</p></a>
                 <a href="/" class="footer-link"><p>Whiteppaper</p></a>
                 <a href="/" class="footer-link"><p>Faucet</p></a>
-                <a href="/" class="footer-link"><p>Github</p></a>
+                <a href="https://github.com" class="footer-link"><p>Github</p></a>
             </div>
         </div>
         <div class="other">
