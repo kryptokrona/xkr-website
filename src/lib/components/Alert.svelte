@@ -5,22 +5,22 @@
 
     //Add alert text here
     // eslint-disable-next-line no-unused-vars
-    let alertText = "This site is under construction"
+    let alertText = "Munin v1.0 now live!"
 
     //Add a link to your alert
     // eslint-disable-next-line no-unused-vars
-    let link
+    let link = 'https//github.com'
 
     //Select type
     //Will change color depending on selection
     //Green
-    let news
+    let news = true
     //Blue
     let info
     //Red
     let warning
     //Yellow
-    let alert = true
+    let alert
 
 </script>
 
@@ -29,7 +29,7 @@
             <div class="wrapper">
                 <p>{alertText}
                     {#if link}
-                        <a href={link}> Link</a>
+                        <a href={link} > Link</a>
                     {/if}
                 </p>
             </div>
@@ -51,7 +51,7 @@
     max-height: 80px;
     padding: 10px 0;
 
-    p {
+    p, a {
       color: #ffffff;
     }
   }
@@ -62,7 +62,7 @@
     max-height: 80px;
     padding: 10px 0;
 
-    p {
+    p, a {
       color: #ffffff;
     }
   }
@@ -73,7 +73,7 @@
     max-height: 80px;
     padding: 10px 0;
 
-    p {
+    p, a {
       color: #000000;
     }
   }
@@ -84,7 +84,7 @@
     max-height: 80px;
     padding: 10px 0;
 
-    p {
+    p, a {
       color: #000000;
     }
   }
@@ -112,7 +112,6 @@
     a {
       cursor: pointer;
       text-decoration: underline;
-      color: var(--text-color);
     }
   }
 
