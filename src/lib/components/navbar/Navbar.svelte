@@ -4,8 +4,9 @@
 
     let openMenu = false
 
-    const handleClick = () => {
+    function handleClick() {
         openMenu = !openMenu
+        document.body.classList.toggle('fixed')
     }
 
 </script>

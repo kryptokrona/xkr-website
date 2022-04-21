@@ -49,7 +49,7 @@
     width: 100%;
     background-color: var(--info-color);
     max-height: 80px;
-    padding: 8px 0;
+    padding: 10px 0;
 
     p {
       color: #ffffff;
@@ -60,7 +60,7 @@
     width: 100%;
     background-color: var(--warn-color);
     max-height: 80px;
-    padding: 8px 0;
+    padding: 10px 0;
 
     p {
       color: #ffffff;
@@ -71,7 +71,7 @@
     width: 100%;
     background-color: var(--alert-color);
     max-height: 80px;
-    padding: 8px 0;
+    padding: 10px 0;
 
     p {
       color: #000000;
@@ -82,7 +82,7 @@
     width: 100%;
     background-color: var(--success-color);
     max-height: 80px;
-    padding: 8px 0;
+    padding: 10px 0;
 
     p {
       color: #000000;
@@ -90,6 +90,7 @@
   }
 
   .wrapper {
+    box-sizing: border-box;
     margin: 0 auto;
     display: flex;
     justify-content: center;
