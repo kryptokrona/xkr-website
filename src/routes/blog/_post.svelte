@@ -8,12 +8,23 @@
     <p>Category: {category}</p>
     <p>Published: {date}</p>
     <h1>{title}</h1>
+    <slot />
 </div>
-
-<slot />
 
 <style lang="scss">
     div {
       margin-top: 200px;
+      width: 100%;
+
+      -ms-word-break: break-all;
+      word-break: break-all;
+
+      // Non standard for webkit
+      word-break: break-word;
+
+      -webkit-hyphens: auto;
+      -moz-hyphens: auto;
+      hyphens: auto;
     }
+
 </style>
