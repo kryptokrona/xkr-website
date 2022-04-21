@@ -5,7 +5,7 @@
 
     //Add alert text here
     // eslint-disable-next-line no-unused-vars
-    let alertText = "Munin v1.0 now live!"
+    let alertText = "This site is under construction"
 
     //Add a link to your alert
     // eslint-disable-next-line no-unused-vars
@@ -14,13 +14,13 @@
     //Select type
     //Will change color depending on selection
     //Green
-    let news = true
+    let news
     //Blue
     let info
     //Red
     let warning
     //Yellow
-    let alert
+    let alert = true
 
 </script>
 

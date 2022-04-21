@@ -37,13 +37,13 @@
 </script>
 
 <svelte:head>
-    <title>Kryptokrona | Mining</title>
+    <title>Kryptokrona | Hugin</title>
     <meta name="description" content=""/>
 </svelte:head>
 
 <div class="wrapper">
 
-    <svg width="100%"  viewBox="0 0 242 203" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg  viewBox="0 0 242 203" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="Group-13" transform="translate(1.000000, 1.000000)" fill-rule="nonzero">
                 <g  id="HUGIN" transform="translate(0.000000, 0.000000)" stroke="#FFFFFF">
@@ -102,10 +102,20 @@
 
 .wrapper {
   margin-top: 150px;
+  display: flex;
+  flex-direction: column;
 }
 
     .text-wrapper {
       margin-top: 40px;
+    }
+
+    svg {
+      width: 600px;
+
+    @media only screen and (max-width: 700px) {
+      width: 100%;
+    }
     }
 
 </style>
