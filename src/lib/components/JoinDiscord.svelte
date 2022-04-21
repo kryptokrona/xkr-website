@@ -103,6 +103,7 @@
     @keyframes border_blink {
       50% {
         border: 1px solid var(--success-color);
+        box-shadow: 0 0 10px var(--success-color);
       }
     }
 
