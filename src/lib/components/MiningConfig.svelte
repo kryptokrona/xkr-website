@@ -80,6 +80,11 @@
         padding: 0 10px;
         height: 40px;
         width: 100%;
+
+        &:focus {
+          outline: 1px solid var(--title-color);
+          border: 1px solid var(--title-color);
+        }
       }
 
       select {
