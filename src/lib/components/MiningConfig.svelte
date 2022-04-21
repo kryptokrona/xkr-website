@@ -2,6 +2,7 @@
     import {generateConfig} from "/src/lib/utils.js";
 
     let address
+    let pool
 
 </script>
 
@@ -17,7 +18,12 @@
         </div>
         <dib class="input-wrapper">
             <p>Select pool: </p>
-            <input placeholder="sekr.." type="text" bind:value={address}>
+            <select name="ppool" id="pool">
+                <option value="swepool.org" selected>Swepool</option>
+                <option value="swepool.org">Swepool</option>
+                <option value="swepool.org">Swepool</option>
+            </select>
+
         </dib>
     </div>
     <button on:click={() => generateConfig(address)}>Generate</button>
@@ -67,7 +73,18 @@
 
       input {
         box-sizing: border-box;
-        background-color: #1c1c1c;
+        background-color: var(--backgound-color);
+        border: 1px solid var(--border-color);
+        border-radius: 0.4rem;
+        color: var(--title-color);
+        padding: 0 10px;
+        height: 40px;
+        width: 100%;
+      }
+
+      select {
+        box-sizing: border-box;
+        background-color: var(--backgound-color);
         border: 1px solid var(--border-color);
         border-radius: 0.4rem;
         color: var(--title-color);
@@ -84,6 +101,12 @@
         border: none;
         align-self: center;
         margin-top: 20px;
+        cursor: pointer;
+        transition: 250ms ease-in-out;
+
+        &:hover {
+          opacity: 80%;
+        }
       }
     }
 
