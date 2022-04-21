@@ -45,6 +45,10 @@ body {
   margin: 0;
   background-color: var(--backgound-color);
   font-family: Montserrat;
+  -webkit-tap-highlight-color:transparent;
+  -moz-tap-highlight-color:transparent;
+  -o-tap-highlight-color:transparent;
+  tap-highlight-color:transparent;
 }
 
 h1, h2, h3, h4, h5, h6 {
