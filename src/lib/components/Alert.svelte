@@ -9,7 +9,7 @@
 
     //Add a link to your alert
     // eslint-disable-next-line no-unused-vars
-    let link = 'https//github.com'
+    let link
 
     //Select type
     //Will change color depending on selection
