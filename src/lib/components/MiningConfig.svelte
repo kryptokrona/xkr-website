@@ -9,10 +9,9 @@
 
 <div class="card">
     <div class="card-header">
-        <h3>Generate Config</h3>
+        <h4>Generate Config</h4>
     </div>
-    <div class="content-wrapper">
-        <div class="input-wrapper">
+    <div class="content-wrapper"><div class="input-wrapper">
             <p>Address:</p>
             <input placeholder="sekr.." type="text" bind:value={address}>
         </div>
