@@ -1,9 +1,10 @@
 <script>
-
+    import {draw, fade} from "svelte/transition";
     import StatusBar from "../../lib/components/StatusBar.svelte";
     import {onMount} from "svelte";
     import {numberWithCommas} from "../../lib/utils";
     import JoinDiscord from "../../lib/components/JoinDiscord.svelte";
+    import {quadInOut} from "svelte/easing";
 
     let currentSupply
     const about = [
@@ -76,6 +77,35 @@
             <p>{card.text}</p>
         </div>
     {/each}
+
+
+    <svg width="600" viewBox="0 0 1004 475" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Group-14">
+                <line x1="337.5" y1="9.5" x2="338.5" y2="426.5" id="Line-3" stroke-opacity="0.1" stroke="#FFFFFF" stroke-linecap="square"></line>
+                <line x1="664.5" y1="9.5" x2="665.5" y2="426.5" id="Line-3-Copy-2" stroke-opacity="0.1" stroke="#FFFFFF" stroke-linecap="square"></line>
+                <line x1="989.5" y1="9.5" x2="990.5" y2="426.5" id="Line-3-Copy-3" stroke-opacity="0.1" stroke="#FFFFFF" stroke-linecap="square"></line>
+                <line x1="13.5" y1="9.5" x2="14.5" y2="426.5" id="Line-3-Copy" stroke-opacity="0.1" stroke="#FFFFFF" stroke-linecap="square"></line>
+                <path in:draw="{{duration: 3000, delay: 1000, easing: quadInOut}}" d="M13.0266485,352.116219 C36.1234073,331.490088 59.5418421,309.43291 83.2819526,285.944683 C163.541766,197.064569 275.8734,105.100247 337.262691,75.1835177 C420.902499,34.4234856 638.322927,14.0434696 989.523973,14.0434696" id="Path-19" stroke="#FFFFFF" stroke-width="3"></path>
+                <circle in:fade="{{delay: 1500}}" id="Oval" stroke="#A65FF2" stroke-width="5" fill="#FFFFFF" cx="14" cy="351" r="11.5"></circle>
+                <circle in:fade="{{delay: 1500}}" id="Oval-Copy-147" stroke="#5F86F2" stroke-width="5" fill="#FFFFFF" cx="338" cy="74" r="11.5"></circle>
+                <circle in:fade="{{delay: 2500}}" id="Oval-Copy-148" stroke="#5FF2F0" stroke-width="5" fill="#FFFFFF" cx="665" cy="23" r="11.5"></circle>
+                <circle in:fade="{{delay: 3000}}" id="Oval-Copy-149" stroke="#5FF281" stroke-width="5" fill="#FFFFFF" cx="990" cy="14" r="11.5"></circle>
+                <text id="2020" font-family="Montserrat-Medium, Montserrat" font-size="24" font-weight="400" fill="#C5C5C5">
+                    <tspan x="13" y="469">2020</tspan>
+                </text>
+                <text id="2030" font-family="Montserrat-Medium, Montserrat" font-size="24" font-weight="400" fill="#C5C5C5">
+                    <tspan x="309" y="469">2030</tspan>
+                </text>
+                <text id="2040" font-family="Montserrat-Medium, Montserrat" font-size="24" font-weight="400" fill="#C5C5C5">
+                    <tspan x="634" y="469">2040</tspan>
+                </text>
+                <text id="2050" font-family="Montserrat-Medium, Montserrat" font-size="24" font-weight="400" fill="#C5C5C5">
+                    <tspan x="930" y="469">2050</tspan>
+                </text>
+            </g>
+        </g>
+    </svg>
 </div>
 <JoinDiscord/>
 <StatusBar/>
