@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd63994d-c0a8-4925-b092-d7282cc60cf4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/routes/hugin/whitepaper.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fig1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/hugin/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/hugin/index.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +36,7 @@
         <option value="index" />
         <option value="MiningConfig" />
         <option value="faucet/index" />
+        <option value="whitepaper" />
       </list>
     </option>
   </component>
@@ -55,7 +57,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -67,8 +69,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/static" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/routes/blog" />
       <recent name="$PROJECT_DIR$/src/lib/components" />
       <recent name="$PROJECT_DIR$/src/lib/supabase" />
@@ -95,7 +97,7 @@
       <workItem from="1650721773812" duration="5214000" />
       <workItem from="1650742469014" duration="17239000" />
       <workItem from="1650794556767" duration="4742000" />
-      <workItem from="1650816691765" duration="4306000" />
+      <workItem from="1650816691765" duration="5881000" />
     </task>
     <servers />
   </component>
@@ -116,11 +118,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/lib/components/LoadingScreen.svelte</url>
-          <line>1</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/lib/components/MiningConfig.svelte</url>
           <line>92</line>

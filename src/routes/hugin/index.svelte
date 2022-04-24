@@ -112,6 +112,7 @@
         <div class="text-wrapper">
             <h1>Privacy is key, opt-out from any form of surveillance.</h1>
             <p>Hugin uses a decentralized structure that makes cryptocurrencies work, meaning that the system cannot be taken down or be controlled by any one entity. By the use of military grade encryption, your messages are safe from the prying eyes of others.</p>
+            <a href="/hugin/whitepaper">Read whitepaper</a>
             <p>Powered by Kryptokrona</p>
         </div>
     </div>
