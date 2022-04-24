@@ -16,7 +16,6 @@
 <script>
     import JoinDiscord from "../../lib/components/JoinDiscord.svelte";
     import StatusBar from "../../lib/components/StatusBar.svelte";
-    import DiApple from 'svelte-icons/di/DiApple.svelte'
 
     export let posts
 </script>
