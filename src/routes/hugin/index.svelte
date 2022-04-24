@@ -336,6 +336,14 @@
   @media only screen and (max-width: 1040px) {
     flex-direction: column;
   }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    @media only screen and (max-width: 1040px) {
+      align-items: center;
+    }
+  }
 }
 
 
