@@ -124,6 +124,7 @@
             {/each}
     </div>
 </div>
+<h2>Download Hugin Messenger</h2>
     <div class="btn-wrapper">
         <button class:border_rgb={desktop} on:click={() => handleClick('desktop')}>Desktop</button>
         <button class:border_rgb={mobile} on:click={() => handleClick('mobile')}>Mobile</button>
@@ -132,7 +133,7 @@
 
             <div class="card">
                 <div>
-                    <h2>Store on desktop</h2>
+                    <h2>Chat on desktop</h2>
                     <p>Using our wallet you can store, send and receive Kryptokrona.
                         We currently have desktop wallets for Windows, Linux and Mac!</p>
                     <div>
@@ -314,7 +315,7 @@
 
             <div class="card">
                 <div>
-                    <h2>Store on mobile</h2>
+                    <h2>Chat on mobile</h2>
                     <p>Using our wallet you can store, send and receive Kryptokrona.
                         We currently have desktop wallets for Windows, Linux and Mac!</p>
                     <a href="https://play.google.com/store/apps/details?id=com.xkr&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img style="height: 36px" src={playbtn} alt=""></a>
