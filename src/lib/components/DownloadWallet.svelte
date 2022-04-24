@@ -1105,6 +1105,7 @@
   .btn-wrapper {
     display: flex;
     gap: 10px;
+    margin: 40px 0;
 
     button {
       background-color: var(--card-background);

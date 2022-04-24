@@ -74,7 +74,6 @@
 </div>
 
 <JoinDiscord/>
-<FeaturedPosts/>
 
 <style lang="scss">
 

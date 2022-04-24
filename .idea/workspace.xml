@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd63994d-c0a8-4925-b092-d7282cc60cf4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lib/components/DownloadHugin.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/DownloadWallet.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/hugin/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/hugin/index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/DownloadWallet.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/DownloadWallet.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/wallet/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/wallet/index.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +98,7 @@
       <workItem from="1650721773812" duration="5214000" />
       <workItem from="1650742469014" duration="17239000" />
       <workItem from="1650794556767" duration="4742000" />
-      <workItem from="1650816691765" duration="6713000" />
+      <workItem from="1650816691765" duration="8261000" />
     </task>
     <servers />
   </component>
