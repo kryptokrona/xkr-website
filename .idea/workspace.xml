@@ -3,10 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="dd63994d-c0a8-4925-b092-d7282cc60cf4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/JoinDiscord.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/JoinDiscord.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/navbar/Navbar.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/navbar/Navbar.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/navbar/Sidebar.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/navbar/Sidebar.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/Alert.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Alert.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/Footer.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Footer.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/theme/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/theme/global.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/about/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/about/index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/blog/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/blog/index.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/wallet/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/wallet/index.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +97,8 @@
       <workItem from="1650482570560" duration="643000" />
       <workItem from="1650483461721" duration="22097000" />
       <workItem from="1650557863853" duration="18296000" />
-      <workItem from="1650721773812" duration="3239000" />
+      <workItem from="1650721773812" duration="5214000" />
+      <workItem from="1650742469014" duration="12196000" />
     </task>
     <servers />
   </component>

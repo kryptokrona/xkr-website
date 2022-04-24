@@ -190,13 +190,13 @@ p {
   -webkit-animation: rgbFill 15s ease infinite;
   -moz-animation: rgbFill 15s ease infinite;
   animation: rgbFill 15s ease infinite;
-  transition: 300ms ease-in-out;
 }
 
  .border_rgb {
    animation: border_rgb  2s linear infinite;
    -webkit-animation: border_rgb 2s linear infinite;
    -moz-animation: border_rgb 2s linear infinite;
+   transition: 250ms ease-in-out;
  }
 
  @keyframes border_rgb {
@@ -228,4 +228,9 @@ p {
 
 .fixed {
   position: fixed;
+}
+
+.box_light {
+  border: 1px solid #fff;
+  box-shadow: 0 0 10px #fff;
 }

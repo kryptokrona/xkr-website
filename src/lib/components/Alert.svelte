@@ -35,7 +35,7 @@
             </div>
         </div>
     {:else}
-        <div class="strip rgb"></div>
+        <div class=" border_rgb"></div>
     {/if}
 
 <style lang="scss">

@@ -16,6 +16,7 @@
 <script>
     import JoinDiscord from "../../lib/components/JoinDiscord.svelte";
     import StatusBar from "../../lib/components/StatusBar.svelte";
+    import DiApple from 'svelte-icons/di/DiApple.svelte'
 
     export let posts
 </script>
@@ -46,7 +47,7 @@
 <style lang="scss">
     .wrapper {
       margin-top: 200px;
-      margin-bottom: 40px;
+      margin-bottom: 10rem;
 
       .text-wrapper {
         border-bottom: 1px solid var(--border-color);
