@@ -3,10 +3,16 @@
 
     let status
     let inputValue
+    let incomingUrl
     let captcha
-    let captchaTheme
+    let enabled
 
     onMount(() => {
+
+        const search = location.search;
+        const params = new URLSearchParams(search);
+        incomingUrl = params.get('address');
+
         fetch('https://blocksum.org/faucet/balance')
             .then(res => res.json())
             .then(data => {
@@ -17,12 +23,14 @@
             console.log(res)
             captcha = res
         };
-
-        $: if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            captchaTheme = 'dark'
-        }
     })
 
+    $: {
+        if (incomingUrl) {
+            inputValue = incomingUrl
+        }
+        inputValue ? enabled = true : enabled = false
+    }
 
     const submitForm = () => {
 
@@ -49,18 +57,18 @@
                     status = ('Someone recently claimed, please wait a few seconds 🚨')
                     document.getElementById('status').style.color = '#ff2f40'
                 } else if (data.msg === "claimed") {
-                    status =(`You've already claimed 🚨`)
+                    status = (`You've already claimed 🚨`)
                     document.getElementById('status').style.color = '#ff2f40'
                 } else if (data.msg === "sent") {
-                    status =(`Sent ✅ ${data.tx}`)
+                    status = (`Sent ✅ ${data.tx}`)
                     document.getElementById('status').style.color = '#2fff6a'
                 } else if (data.msg === "error") {
-                    status =(data.errorMsg)
+                    status = (data.errorMsg)
                     document.getElementById('status').style.color = '#ff2f40'
                 }
 
             })
-        .catch(e => console.log(e))
+            .catch(e => console.log(e))
     }
 
 </script>
@@ -69,11 +77,69 @@
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </svelte:head>
 
-<input id="claim" type="text" bind:value={inputValue}>
-<div class="g-recaptcha" data-sitekey="6LeuuboeAAAAALFj2PEADpIc2jZwLYQOa3R3iiCR" data-callback="captchaCallback" data-theme={captchaTheme}></div>
-<button on:click|preventDefault={() => submitForm()}>Claim</button>
-<p id="status">{status}</p>
+<div class="card">
+    <p>Address:</p>
+    <input id="claim" type="text" bind:value={inputValue}>
+    <div class="g-recaptcha" data-sitekey="6LeuuboeAAAAALFj2PEADpIc2jZwLYQOa3R3iiCR" data-callback="captchaCallback"
+         data-theme="dark"></div>
+    <button disabled={!enabled} class:border_rgb={enabled} on:click|preventDefault={() => submitForm()}>Claim</button>
+    <p id="status">{status}</p>
+</div>
 
 <style lang="scss">
 
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 40px;
+    background-color: var(--card-background);
+    border: 1px solid var(--card-border);
+    border-radius: 0.4rem;
+
+    @media only screen and (max-width: 300px) {
+
+    }
+
+    p {
+      max-width: 300px;
+      font-size: 0.75rem;
+      word-break: break-all;
+    }
+  }
+
+  input {
+    box-sizing: border-box;
+    background-color: var(--backgound-color);
+    border: 1px solid var(--border-color);
+    border-radius: 0.4rem;
+    color: var(--title-color);
+    padding: 0 10px;
+    height: 40px;
+    width: 280px;
+    margin-bottom: 40px;
+
+    &:focus {
+      outline: 1px solid var(--title-color);
+      border: 1px solid var(--title-color);
+    }
+  }
+
+  button {
+    background-color: var(--card-background);
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    border-radius: 0.4rem;
+    padding: 10px 20px;
+    height: 36px;
+    width: 150px;
+    cursor: pointer;
+    transition: 250ms ease-in-out;
+    margin-top: 40px;
+
+    &:hover {
+      background-color: var(--card-border);
+    }
+  }
 </style>

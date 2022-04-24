@@ -8,22 +8,10 @@
 
 
 <div class="card">
-    <div class="card-header">
-        <h4>Generate Config</h4>
-    </div>
     <div class="content-wrapper"><div class="input-wrapper">
             <p>Address:</p>
             <input placeholder="sekr.." type="text" bind:value={address}>
         </div>
-        <dib class="input-wrapper">
-            <p>Select pool: </p>
-            <select name="ppool" id="pool">
-                <option value="swepool.org" selected>Swepool</option>
-                <option value="swepool.org">Swepool</option>
-                <option value="swepool.org">Swepool</option>
-            </select>
-
-        </dib>
     </div>
     <button on:click={() => generateConfig(address)}>Generate</button>
 </div>
@@ -41,25 +29,17 @@
       display: flex;
       flex-direction: column;
 
-
-      .card-header {
-        border-bottom: 1px solid var(--card-border);
-        display: flex;
-        align-items: center;
-        padding-bottom: 10px;
-        margin-bottom: 20px;
-        height: 40px;
-      }
-
       .content-wrapper {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: flex-start;
+        align-items: center;
         gap: 15px;
 
         p {
           margin: 0;
+          font-size: 0.75rem;
+          text-align: center;
         }
 
         .input-wrapper {

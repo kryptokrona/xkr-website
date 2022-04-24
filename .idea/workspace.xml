@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd63994d-c0a8-4925-b092-d7282cc60cf4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/routes/faucet/index.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/navbar/Navbar.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/navbar/Navbar.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/navbar/Sidebar.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/navbar/Sidebar.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/Faucet.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Faucet.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/Footer.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Footer.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/MiningConfig.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/MiningConfig.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/hugin/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/hugin/index.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/wallet/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/wallet/index.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +38,7 @@
         <option value="index.js" />
         <option value="index" />
         <option value="MiningConfig" />
+        <option value="faucet/index" />
       </list>
     </option>
   </component>
@@ -93,7 +97,9 @@
       <workItem from="1650483461721" duration="22097000" />
       <workItem from="1650557863853" duration="18296000" />
       <workItem from="1650721773812" duration="5214000" />
-      <workItem from="1650742469014" duration="15980000" />
+      <workItem from="1650742469014" duration="17239000" />
+      <workItem from="1650794556767" duration="4742000" />
+      <workItem from="1650816691765" duration="1370000" />
     </task>
     <servers />
   </component>
@@ -121,8 +127,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/lib/components/MiningConfig.svelte</url>
-          <line>112</line>
+          <line>92</line>
           <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/routes/hugin/index.svelte</url>
+          <line>1</line>
+          <option name="timeStamp" value="33" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

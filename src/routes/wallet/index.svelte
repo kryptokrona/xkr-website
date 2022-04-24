@@ -1,6 +1,7 @@
 <script>
 
     import {onMount} from "svelte";
+    import playbtn from "/static/googleplay.png"
 
     let latest_mac;
     let latest_win;
@@ -74,7 +75,7 @@
         <div class="selection-wrapper">
             <div class="card">
                 <div>
-                    <h1>Store on desktop</h1>
+                    <h2>Store on desktop</h2>
                     <p>Using our wallet you can store, send and receive Kryptokrona.
                         We currently have desktop wallets for Windows, Linux and Mac!</p>
                     <div>
@@ -256,9 +257,10 @@
         <div class="selection-wrapper">
             <div class="card">
                 <div>
-                    <h1>Store on mobile</h1>
+                    <h2>Store on mobile</h2>
                     <p>Using our wallet you can store, send and receive Kryptokrona.
                         We currently have desktop wallets for Windows, Linux and Mac!</p>
+                    <a href="https://play.google.com/store/apps/details?id=com.xkr&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img style="height: 36px" src={playbtn} alt=""></a>
                 </div>
             </div>
         </div>
@@ -266,7 +268,7 @@
         <div class="selection-wrapper">
             <div class="card">
                 <div>
-                    <h1>Store on terminal</h1>
+                    <h2>Store on terminal</h2>
                     <p>Using our wallet you can store, send and receive Kryptokrona.
                         We currently have desktop wallets for Windows, Linux and Mac!</p>
                     <a href="https://github.com/kryptokrona/kryptokrona/releases">Download from github</a>
