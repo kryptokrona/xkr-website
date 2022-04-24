@@ -320,6 +320,39 @@
                         We currently have desktop wallets for Windows, Linux and Mac!</p>
                     <a href="https://play.google.com/store/apps/details?id=com.xkr&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img style="height: 36px" src={playbtn} alt=""></a>
                 </div>
+                <svg viewBox="0 0 338 301" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Group-17" transform="translate(1.000000, 0.000000)">
+                            <g id="Group-16">
+                                <path d="M329.766829,0.25 C331.354647,0.25 332.792147,0.893590672 333.832693,1.93413601 C334.873238,2.97468134 335.516829,4.41218134 335.516829,6 L335.516829,6 L335.516829,299.75 L0.25,299.75 L0.25,6 C0.25,4.41218134 0.893590672,2.97468134 1.93413601,1.93413601 C2.97468134,0.893590672 4.41218134,0.25 6,0.25 L6,0.25 Z" id="Rectangle" stroke="#2E2E2E" stroke-width="0.5" fill="#1D1D1D"></path>
+                                <path d="M132.674532,13.2763975 L132.674532,34.2391304 L111.689105,34.2391304 L111.689105,13.2763975 L132.674532,13.2763975 Z M120.083276,25.8540373 L115.88619,25.8540373 L115.88619,30.0465839 L120.083276,30.0465839 L120.083276,25.8540373 Z M128.477446,25.8540373 L124.280361,25.8540373 L124.280361,30.0465839 L128.477446,30.0465839 L128.477446,25.8540373 Z" id="Combined-Shape" fill="#5FF281"></path>
+                                <text id="AnonMan" font-family="Montserrat-Medium, Montserrat" font-size="16.7883414" font-weight="400" fill="#FFFFFF">
+                                    <tspan x="144.333102" y="29.2655834">AnonMan</tspan>
+                                </text>
+                                <rect id="Rectangle" fill="#373737" x="15.8556558" y="67.0807453" width="152.26093" height="49.6118012" rx="4.89659958"></rect>
+                                <rect id="Rectangle-Copy-9" fill="#373737" x="15.8556558" y="201.708075" width="152.26093" height="49.6118012" rx="4.89659958"></rect>
+                                <rect id="Rectangle-Copy-8" fill="#5F86F2" x="167.883414" y="132.065217" width="148.297016" height="49.6118012" rx="4.89659958"></rect>
+                                <line x1="0.116585704" y1="47.1661491" x2="335.883414" y2="47.1661491" id="Line-4" stroke-opacity="0.1" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square"></line>
+                                <path d="M172.780014,271.065217 L311.28383,271.065217 C313.988148,271.065217 316.18043,273.2575 316.18043,275.961817 L316.18043,300.065217 L316.18043,300.065217 L167.883414,300.065217 L167.883414,275.961817 C167.883414,273.2575 170.075697,271.065217 172.780014,271.065217 Z" id="Rectangle-Copy-10" fill="#5F86F2"></path>
+                                <text id="I’m-good!-hru?" font-family="Montserrat-Medium, Montserrat" font-size="11" font-weight="400" fill="#FFFFFF">
+                                    <tspan x="178" y="289">I’m good! hru?</tspan>
+                                </text>
+                                <g id="Group-15" transform="translate(22.734212, 23.408385) rotate(-90.000000) translate(-22.734212, -23.408385) translate(15.855656, 16.537267)" stroke="#6A6A6A" stroke-width="1.86537127">
+                                    <path d="M0,7.10403727 L6.87855656,1.06417367e-13 L13.7571131,6.87111801 M6.87855656,1.05529188e-13 L6.87855656,13.742236" id="Combined-Shape"></path>
+                                </g>
+                            </g>
+                            <text id="Hey-bud!" font-family="Montserrat-Medium, Montserrat" font-size="11" font-weight="400" fill="#FFFFFF">
+                                <tspan x="178" y="150">Hey bud!</tspan>
+                            </text>
+                            <text id="How-are-you?" font-family="Montserrat-Medium, Montserrat" font-size="11" font-weight="400" fill="#FFFFFF">
+                                <tspan x="27" y="220">How are you?</tspan>
+                            </text>
+                            <text id="Hey-Man!" font-family="Montserrat-Medium, Montserrat" font-size="11" font-weight="400" fill="#FFFFFF">
+                                <tspan x="27" y="85">Hey Man!</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </svg>
             </div>
     {/if}
 
