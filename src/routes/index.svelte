@@ -5,6 +5,7 @@
     import {quadInOut} from "svelte/easing";
     import FeaturedPosts from "../lib/components/FeaturedPosts.svelte";
 
+
     //Hero texts
     const title = 'A decentralized private communication and payment system.'
     const pitch = 'A Nordic Cryptocurrency to secure and simplify our future economic system. Sending and receiving money should not be expensive or slow. We work with open source code that allows you to be involved and improve the communication and money of the future.'
