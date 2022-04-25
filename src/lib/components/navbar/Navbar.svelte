@@ -34,11 +34,11 @@
                 </g>
             </svg>
             <div class="navigation">
-                <a href="/wallet">Wallet</a>
-                <a href="/hugin">Hugin</a>
-                <a href="/mining">Mining</a>
-                <a href="/blog">Blog</a>
-                <a href="/about">About</a>
+                <a sveltekit:prefetch href="/wallet">Wallet</a>
+                <a sveltekit:prefetch href="/hugin">Hugin</a>
+                <a sveltekit:prefetch href="/mining">Mining</a>
+                <a sveltekit:prefetch href="/blog">Blog</a>
+                <a sveltekit:prefetch href="/about">About</a>
             </div>
         </div>
         <div class="socials-wrapper">

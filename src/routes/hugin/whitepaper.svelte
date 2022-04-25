@@ -2,11 +2,18 @@
     import Fig from '/static/fig1.png'
 </script>
 
+<svelte:head>
+    <title>Kryptokrona | Whitepaper</title>
+    <meta name="description" content="Hugin Messenger is a decentralized private messenger and social network with native
+        cryptocurrency payments. With it you can engage in secure communications and make
+        untraceable transactions, all without any trusted parties."/>
+</svelte:head>
+
 <div class="wrapper">
     <h1>Hugin Messenger Whitepaper</h1>
     <h2>Introduction</h2>
     <p>Hugin Messenger is a decentralized private messenger and social network with native
-        cryptocurrency payments. WIth it you can engage in secure communications and make
+        cryptocurrency payments. With it you can engage in secure communications and make
         untraceable transactions, all without any trusted parties.</p>
 
     <p>There are many private messaging services on the market today, but how private they really

@@ -7,11 +7,11 @@
     <div class="nav-mobile-wrapper">
         <div></div>
         <div class="navigation">
-            <a class="mobile-link" in:fade="{{delay: 250, duration: 500}}" out:fade="{{delay: 550}}" href="/wallet">Wallet</a>
-            <a class="mobile-link" in:fade="{{delay: 350, duration: 500}}" out:fade="{{delay: 450}}" href="/hugin">Hugin</a>
-            <a class="mobile-link" in:fade="{{delay: 450, duration: 500}}" out:fade="{{delay: 350}}" href="/mining">Mining</a>
-            <a class="mobile-link" in:fade="{{delay: 550, duration: 500}}" out:fade="{{delay: 250}}" href="/blog">Blog</a>
-            <a class="mobile-link" in:fade="{{delay: 650, duration: 500}}" out:fade="{{delay: 150}}" href="/about">About</a>
+            <a sveltekit:prefetch class="mobile-link" in:fade="{{delay: 250, duration: 500}}" out:fade="{{delay: 550}}" href="/wallet">Wallet</a>
+            <a sveltekit:prefetch class="mobile-link" in:fade="{{delay: 350, duration: 500}}" out:fade="{{delay: 450}}" href="/hugin">Hugin</a>
+            <a sveltekit:prefetch class="mobile-link" in:fade="{{delay: 450, duration: 500}}" out:fade="{{delay: 350}}" href="/mining">Mining</a>
+            <a sveltekit:prefetch class="mobile-link" in:fade="{{delay: 550, duration: 500}}" out:fade="{{delay: 250}}" href="/blog">Blog</a>
+            <a sveltekit:prefetch class="mobile-link" in:fade="{{delay: 650, duration: 500}}" out:fade="{{delay: 150}}" href="/about">About</a>
         </div>
         <div class="socials">
             <svg  height="18px" viewBox="0 0 176 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
