@@ -46,10 +46,6 @@
     @media only screen and (max-width: 600px) {
       padding: 0 20px;
     }
-
-    @media only screen and (max-width: 700px) {
-      margin-top: 150px;
-    }
   }
 
 </style>

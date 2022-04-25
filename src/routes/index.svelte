@@ -3,7 +3,7 @@
     import StatusBar from "../lib/components/StatusBar.svelte";
     import {draw} from 'svelte/transition'
     import {quadInOut} from "svelte/easing";
-    import FeaturedPosts from "../lib/components/FeaturedPosts.svelte";
+
 
 
     //Hero texts

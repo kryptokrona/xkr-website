@@ -1,5 +1,6 @@
 <script>
     import Fig from '/static/fig1.png'
+    import Image from 'svelte-image'
 </script>
 
 <svelte:head>
@@ -109,7 +110,11 @@
         amount of XKR along with an encrypted message to the recipient's XKR address. (See fig.
         1).</p>
 
-    <img src={Fig}/>
+        <Image
+                src="/static/fig1.png"
+                alt="How hugin works"
+                placeholder="blur"
+        />
 
     <p>In the figure above, Alice sends an encrypted message to Bob, which is propagated through
         the XKR node network, and when it reaches the node Bob is currently connected to, he will
@@ -295,9 +300,5 @@
       margin-top: 150px;
        display: flex;
         flex-direction: column;
-
-      img {
-        width: 100%;
-      }
     }
 </style>
