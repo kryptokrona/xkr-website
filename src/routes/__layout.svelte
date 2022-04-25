@@ -1,6 +1,5 @@
 <script>
     import {onMount} from "svelte";
-    import {fade} from "svelte/transition";
     import {state} from "/src/lib/stores/state.js";
     import LoadingScreen from "/src/lib/components/LoadingScreen.svelte";
     import Navbar from "/src/lib/components/navbar/Navbar.svelte";
@@ -27,7 +26,7 @@
 {/if}
 
 <Navbar/>
-<main in:fade>
+<main>
     {#if ready}
         <slot/>
     {/if}
