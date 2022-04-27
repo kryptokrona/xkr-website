@@ -15,13 +15,13 @@
                 <a href="/" class="footer-link"><p>Whitepaper</p></a>
                 <a href="/blog" class="footer-link"><p>Blog</p></a>
                 <a href="/https://docs.kryptokrona.org" class="footer-link"><p>Guides</p></a>
-                <a href="https://github.com" class="footer-link"><p>Github</p></a>
+                <a href="https://github.com/kryptokrona" class="footer-link"><p>Github</p></a>
             </div>
             <div class="footer-nav">
                 <h3>Hugin</h3>
-                <a href="/" class="footer-link"><p>Whiteppaper</p></a>
+                <a href="/" class="footer-link"><p>Whitepaper</p></a>
                 <a href="/faucet" class="footer-link"><p>Faucet</p></a>
-                <a href="https://github.com" class="footer-link"><p>Github</p></a>
+                <a href="https://github.com/kryptokrona/hugin-messenger" class="footer-link"><p>Github</p></a>
             </div>
         </div>
         <div class="other">
