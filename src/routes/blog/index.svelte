@@ -14,8 +14,9 @@
 </script>
 
 <script>
-    import JoinDiscord from "../../lib/components/JoinDiscord.svelte";
-    import StatusBar from "../../lib/components/StatusBar.svelte";
+    import JoinDiscord from "$lib/components/JoinDiscord.svelte";
+    import StatusBar from "$lib/components/StatusBar.svelte";
+    import SignupNewsletter from "$lib/components/SignupNewsletter.svelte";
 
     export let posts
 </script>
@@ -41,6 +42,7 @@
     </div>
 </div>
 <JoinDiscord/>
+<SignupNewsletter/>
 <StatusBar/>
 
 <style lang="scss">

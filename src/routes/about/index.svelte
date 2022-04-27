@@ -1,10 +1,9 @@
 <script>
-    import {draw, fade} from "svelte/transition";
-    import StatusBar from "../../lib/components/StatusBar.svelte";
+    import StatusBar from "$lib/components/StatusBar.svelte";
     import {onMount} from "svelte";
-    import {numberWithCommas} from "../../lib/utils";
-    import JoinDiscord from "../../lib/components/JoinDiscord.svelte";
-    import {quadInOut} from "svelte/easing";
+    import {numberWithCommas} from "$lib/utils";
+    import JoinDiscord from "$lib/components/JoinDiscord.svelte";
+    import SignupNewsletter from "$lib/components/SignupNewsletter.svelte";
 
     let currentSupply
     const about = [
@@ -78,8 +77,9 @@
         </div>
     {/each}
 </div>
-<JoinDiscord/>
 <StatusBar/>
+<JoinDiscord/>
+<SignupNewsletter/>
 
 <style lang="scss">
 

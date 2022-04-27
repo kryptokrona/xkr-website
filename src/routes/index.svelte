@@ -1,8 +1,9 @@
 <script>
-    import JoinDiscord from "../lib/components/JoinDiscord.svelte";
-    import StatusBar from "../lib/components/StatusBar.svelte";
+    import JoinDiscord from "$lib/components/JoinDiscord.svelte";
+    import StatusBar from "$lib/components/StatusBar.svelte";
     import {draw} from 'svelte/transition'
     import {quadInOut} from "svelte/easing";
+    import SignupNewsletter from "$lib/components/SignupNewsletter.svelte";
 
 
 
@@ -74,6 +75,7 @@
 </div>
 
 <JoinDiscord/>
+<SignupNewsletter/>
 
 <style lang="scss">
 
