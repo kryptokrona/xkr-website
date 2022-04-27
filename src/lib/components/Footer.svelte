@@ -19,7 +19,7 @@
             </div>
             <div class="footer-nav">
                 <h3>Hugin</h3>
-                <a href="/" class="footer-link"><p>Whiteppaper</p></a>
+                <a href="/" class="footer-link"><p>Whitepaper</p></a>
                 <a href="/faucet" class="footer-link"><p>Faucet</p></a>
                 <a href="https://github.com/kryptokrona/hugin-messenger" class="footer-link"><p>Github</p></a>
             </div>
