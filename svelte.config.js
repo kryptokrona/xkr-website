@@ -1,6 +1,5 @@
 import adapter from '@sveltejs/adapter-netlify';
 import sveltePreprocess from 'svelte-preprocess';
-import image from 'svelte-image'
 import {mdsvex} from "mdsvex";
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -24,7 +23,6 @@ const config = {
 
     preprocess: [
         sveltePreprocess({
-            ...image(),
             scss: {
                 prependData: `@import 'src/lib/theme/global.scss';`
             }
