@@ -1,8 +1,3 @@
-<script>
-    import Fig from '/static/fig1.png'
-    import Image from 'svelte-image'
-</script>
-
 <svelte:head>
     <title>Kryptokrona | Whitepaper</title>
     <meta name="description" content="Hugin Messenger is a decentralized private messenger and social network with native
@@ -110,11 +105,7 @@
         amount of XKR along with an encrypted message to the recipient's XKR address. (See fig.
         1).</p>
 
-        <Image
-                src="/static/fig1.png"
-                alt="How hugin works"
-                placeholder="blur"
-        />
+    <img src="/static/fig1.png" alt="How hugin works">
 
     <p>In the figure above, Alice sends an encrypted message to Bob, which is propagated through
         the XKR node network, and when it reaches the node Bob is currently connected to, he will
