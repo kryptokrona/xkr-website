@@ -1,6 +1,5 @@
 <script>
-
-import Faucet from "/src/lib/components/Faucet.svelte";
+    import Faucet from "/src/lib/components/Faucet.svelte";
 </script>
 
 <div class="wrapper">

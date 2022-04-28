@@ -1,20 +1,33 @@
 <script>
+    import supabase from "../db.js";
 
     let email
+    let submitted = false
 
-    const handleSubmit = () => {
-
+    async function handleSubmit() {
+        console.log('clicked')
+        submitted = true
+        const {data, error} = await supabase
+            .from('xkr-signups')
+            .insert({
+                email
+            })
+        if (error) throw new Error(error.message);
     }
 
 </script>
 
 <div class="wrapper">
     <div class="card">
+        {#if !submitted}
         <h2>Sign up for our newsletter</h2>
         <form name="Portfolio Contact" method="POST" on:submit|preventDefault={() => handleSubmit()}>
-            <input placeholder="satoshi@nakamoto.org" type="text" bind:value={email}>
-            <button class:border_rgb={email} disabled="true" type="submit" value="Submit">Sign up</button>
+            <input placeholder="satoshi@nakamoto.org" required type="email" bind:value={email}>
+            <button class:border_rgb={email} disabled={!email} type="submit" value="Submit">Sign up</button>
         </form>
+            {:else if submitted}
+            <h2>Stay tuned for our next newsletter</h2>
+        {/if}
     </div>
 </div>
 

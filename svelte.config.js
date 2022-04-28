@@ -13,7 +13,10 @@ const config = {
                 fs: {
                     allow: ['..']
                 }
-            }
+            },
+            define: {
+                'process.env': process.env,
+            },
         }
 	},
 
@@ -22,6 +25,9 @@ const config = {
     preprocess: [
         sveltePreprocess({
             ...image(),
+            scss: {
+                prependData: `@import 'src/lib/theme/global.scss';`
+            }
         }),
         mdsvex({
             extensions: ['.md'],
