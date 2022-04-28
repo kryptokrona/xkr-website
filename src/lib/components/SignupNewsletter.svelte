@@ -1,8 +1,11 @@
 <script>
     import supabase from "../db.js";
+    import {onMount} from "svelte";
+    import {quadInOut} from "svelte/easing";
+    import {draw, fade} from "svelte/transition";
 
     let email
-    let submitted = false
+    let submitted
 
     //Validate that input is a correct email
     const validateEmail = (email) => {
@@ -31,13 +34,22 @@
 <div class="wrapper">
     <div class="card">
         {#if !submitted}
-        <h2>Sign up for our newsletter</h2>
+        <h2>Sign up for our newsletter.</h2>
         <form name="Portfolio Contact" method="POST" on:submit|preventDefault={() => handleSubmit(email)}>
             <input placeholder="satoshi@nakamoto.org" required type="email" bind:value={email}>
             <button class:border_rgb={email} disabled={!email} type="submit" value="Submit">Sign up</button>
         </form>
             {:else if submitted}
-            <h2>Stay tuned for our next newsletter</h2>
+            <svg height="50" viewBox="0 0 39 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Artboard" transform="translate(-22.000000, -90.000000)">
+                        <g id="Group" transform="translate(22.000000, 90.000000)">
+                            <circle in:draw="{{duration:500, easing: quadInOut}}" id="Oval" stroke="#FFFFFF" cx="18" cy="18" r="17.5"></circle>
+                            <polyline in:draw="{{delay: 400, duration:500, easing: quadInOut}}" id="Path-21" stroke="#5FF281" stroke-width="4" points="5.95621433 15.5887425 16.5354686 26.0217669 36.9562143 2.30607246"></polyline>
+                        </g>
+                    </g>
+                </g>
+            </svg>
         {/if}
     </div>
 </div>
@@ -56,6 +68,7 @@
       border: 1px solid var(--card-border);
       border-radius: 0.4rem;
       padding: 40px;
+      height: 100px;
       @media only screen and (max-width: 700px){
         padding: 30px 20px 30px 20px;
       }
