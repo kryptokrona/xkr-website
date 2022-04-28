@@ -4,15 +4,26 @@
     let email
     let submitted = false
 
-    async function handleSubmit() {
-        console.log('clicked')
-        submitted = true
-        const {data, error} = await supabase
-            .from('xkr-signups')
-            .insert({
-                email
-            })
-        if (error) throw new Error(error.message);
+    //Validate that input is a correct email
+    const validateEmail = (email) => {
+        return String(email)
+            .toLowerCase()
+            .match(
+                /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+            );
+    };
+
+    //Submit email to DB
+    async function handleSubmit(input) {
+        if (validateEmail(input)) {
+            submitted = true
+            const {data, error} = await supabase
+                .from('xkr-signups')
+                .insert({
+                    input
+                })
+            if (error) throw new Error(error.message);
+        } else alert('Incorrect Email')
     }
 
 </script>
@@ -21,7 +32,7 @@
     <div class="card">
         {#if !submitted}
         <h2>Sign up for our newsletter</h2>
-        <form name="Portfolio Contact" method="POST" on:submit|preventDefault={() => handleSubmit()}>
+        <form name="Portfolio Contact" method="POST" on:submit|preventDefault={() => handleSubmit(email)}>
             <input placeholder="satoshi@nakamoto.org" required type="email" bind:value={email}>
             <button class:border_rgb={email} disabled={!email} type="submit" value="Submit">Sign up</button>
         </form>

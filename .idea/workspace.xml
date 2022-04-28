@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd63994d-c0a8-4925-b092-d7282cc60cf4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lib/db.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/jsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/components/SignupNewsletter.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/SignupNewsletter.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/theme/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/theme/global.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/faucet/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/faucet/index.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svelte.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/svelte.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +100,7 @@
       <workItem from="1650742469014" duration="17239000" />
       <workItem from="1650794556767" duration="4742000" />
       <workItem from="1650816691765" duration="17887000" />
-      <workItem from="1651090791306" duration="12577000" />
+      <workItem from="1651090791306" duration="13431000" />
     </task>
     <servers />
   </component>
