@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd63994d-c0a8-4925-b092-d7282cc60cf4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/components/SignupNewsletter.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/SignupNewsletter.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +99,7 @@
       <workItem from="1650742469014" duration="17239000" />
       <workItem from="1650794556767" duration="4742000" />
       <workItem from="1650816691765" duration="17887000" />
-      <workItem from="1651090791306" duration="13431000" />
+      <workItem from="1651090791306" duration="13546000" />
     </task>
     <servers />
   </component>

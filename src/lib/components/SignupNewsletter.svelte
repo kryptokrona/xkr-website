@@ -20,7 +20,7 @@
             const {data, error} = await supabase
                 .from('xkr-signups')
                 .insert({
-                    input
+                    email: input,
                 })
             if (error) throw new Error(error.message);
         } else alert('Incorrect Email')
