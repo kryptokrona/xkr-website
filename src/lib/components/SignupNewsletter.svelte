@@ -1,11 +1,11 @@
 <script>
     import supabase from "../db.js";
-    import {onMount} from "svelte";
     import {quadInOut} from "svelte/easing";
-    import {draw, fade} from "svelte/transition";
+    import {draw} from "svelte/transition";
 
     let email
     let submitted
+    let validEmail
 
     //Validate that input is a correct email
     const validateEmail = (email) => {
@@ -29,6 +29,10 @@
         } else alert('Incorrect Email')
     }
 
+    $: {
+            validEmail = validateEmail(email)
+    }
+
 </script>
 
 <div class="wrapper">
@@ -37,7 +41,7 @@
         <h2>Sign up for our newsletter.</h2>
         <form name="Portfolio Contact" method="POST" on:submit|preventDefault={() => handleSubmit(email)}>
             <input placeholder="satoshi@nakamoto.org" required type="email" bind:value={email}>
-            <button class:border_rgb={email} disabled={!email} type="submit" value="Submit">Sign up</button>
+            <button class:enabled={validEmail} disabled={!email} type="submit" value="Submit">Sign up</button>
         </form>
             {:else if submitted}
             <svg height="50" viewBox="0 0 39 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -70,12 +74,14 @@
       padding: 40px;
       height: 100px;
       @media only screen and (max-width: 700px){
+        height: 140px;
         padding: 30px 20px 30px 20px;
       }
 
       h2 {
+        font-size: 1.25rem;
         margin-top: 0;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
         text-align: center;
 
         @media only screen and (max-width: 700px){
@@ -106,7 +112,7 @@
       width: 280px;
 
       @media only screen and (max-width: 700px){
-        margin-bottom: 20px;
+        margin-bottom: 10px;
       }
 
       &:focus {
@@ -120,14 +126,24 @@
       border: 1px solid var(--border-color);
       color: var(--text-color);
       border-radius: 0.4rem;
-      padding: 10px 20px;
+      padding: 10px 10px;
       height: 36px;
-      width: 150px;
+      width: 100px;
       cursor: pointer;
       transition: 250ms ease-in-out;
 
       &:hover {
         background-color: var(--card-border);
+      }
+    }
+
+    .enabled {
+      background-color: #34b26b;
+      border-color: #3fd782;
+      color: white;
+
+      &:hover{
+        background-color: #41ff93;
       }
     }
 </style>
