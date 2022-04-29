@@ -15,4 +15,4 @@ Total Supply of XKR: 1 000 000 000,00000 XKR
 
 Decimals: 5, that is, 1,00000
 
-As a user you only need to update your wallet software, which is automatic, with exception for the terminal wallet which you can download here https://github.com/kryptokrona/kryptokrona/releases
+As a user you only need to update your wallet software, which is automatic, with exception for the terminal wallet which you can download [here](https://github.com/kryptokrona/kryptokrona/releases)
