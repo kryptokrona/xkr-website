@@ -4,6 +4,7 @@
     import {draw} from 'svelte/transition'
     import {quadInOut} from "svelte/easing";
     import SignupNewsletter from "$lib/components/SignupNewsletter.svelte";
+    import Contribute from "$lib/components/Contribute.svelte";
 
 
 
@@ -86,9 +87,6 @@
       margin-top: 150px;
     }
 
-    @media only screen and (max-width: 400px) {
-      margin-top: 100px;
-    }
     h1 {
       font-size: 2.25rem;
 
@@ -124,6 +122,10 @@
       height: 160px;
       transition: 250ms ease-in-out all;
 
+      &:hover {
+        border-color: rgba(255, 255, 255, 0.2);
+      }
+
       @media only screen and (max-width: 1100px) {
         max-width: 40%;
         height: 170px;
@@ -141,6 +143,7 @@
 
     h2 {
       margin: 0;
+      font-size: 1.25em;
     }
   }
 

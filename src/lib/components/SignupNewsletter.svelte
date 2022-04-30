@@ -44,12 +44,12 @@
             <button class:enabled={validEmail} disabled={!email} type="submit" value="Submit">Sign up</button>
         </form>
             {:else if submitted}
-            <svg height="50" viewBox="0 0 39 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg height="50px" viewBox="0 0 39 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g id="Artboard" transform="translate(-22.000000, -90.000000)">
-                        <g id="Group" transform="translate(22.000000, 90.000000)">
-                            <circle in:draw="{{duration:500, easing: quadInOut}}" id="Oval" stroke="#FFFFFF" cx="18" cy="18" r="17.5"></circle>
-                            <polyline in:draw="{{delay: 400, duration:500, easing: quadInOut}}" id="Path-21" stroke="#5FF281" stroke-width="4" points="5.95621433 15.5887425 16.5354686 26.0217669 36.9562143 2.30607246"></polyline>
+                    <g id="Artboard" transform="translate(-94.000000, -112.000000)" stroke="#5FF281">
+                        <g id="Group" transform="translate(94.500000, 112.500000)">
+                            <circle in:draw="{{duration:500, easing: quadInOut}}" id="Oval-Copy" stroke-width="2" cx="19" cy="19" r="18"></circle>
+                            <path in:draw="{{delay: 300, duration:500, easing: quadInOut}}" d="M10.1883362,19.8671433 L15.9540454,25.4415033 C16.1525741,25.6334433 16.4691115,25.6281022 16.6610515,25.4295735 C16.666592,25.4238429 16.6719946,25.4179806 16.6772547,25.4119917 L28.1883362,12.3060725 L28.1883362,12.3060725" id="Path-21" stroke-width="3" stroke-linecap="round" transform="translate(19.188336, 19.056072) rotate(-360.000000) translate(-19.188336, -19.056072) "></path>
                         </g>
                     </g>
                 </g>
@@ -109,7 +109,8 @@
       color: var(--title-color);
       padding: 0 10px;
       height: 36px;
-      width: 280px;
+      width: 100%;
+      max-width: 280px;
 
       @media only screen and (max-width: 700px){
         margin-bottom: 10px;

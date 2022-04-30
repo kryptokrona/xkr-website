@@ -28,7 +28,7 @@
 
 <div class="wrapper">
     <div class="text-wrapper">
-        <h1>News</h1>
+        <h1>Articles</h1>
     </div>
     <div class="blog-wrapper">
         {#each posts as post}

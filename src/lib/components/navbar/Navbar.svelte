@@ -37,7 +37,7 @@
                 <a sveltekit:prefetch href="/wallet">Wallet</a>
                 <a sveltekit:prefetch href="/hugin">Hugin</a>
                 <a sveltekit:prefetch href="/mining">Mining</a>
-                <a sveltekit:prefetch href="/blog">Blog</a>
+                <a sveltekit:prefetch href="/blog">Articles</a>
                 <a sveltekit:prefetch href="/about">About</a>
             </div>
         </div>
