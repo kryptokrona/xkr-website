@@ -3,7 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="dd63994d-c0a8-4925-b092-d7282cc60cf4" name="Changes" comment="img">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/__layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/__layout.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/DownloadHugin.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/DownloadHugin.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/DownloadWallet.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/DownloadWallet.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/Faucet.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Faucet.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/MiningConfig.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/MiningConfig.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/SignupNewsletter.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/SignupNewsletter.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/buttons/BorderButton.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/buttons/FillButton.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/buttons/Button.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +45,7 @@
         <option value="DownloadHugin" />
         <option value="SignupNewsletter" />
         <option value="Popup" />
+        <option value="Button" />
       </list>
     </option>
   </component>
@@ -102,7 +109,7 @@
       <workItem from="1650794556767" duration="4742000" />
       <workItem from="1650816691765" duration="17887000" />
       <workItem from="1651090791306" duration="22741000" />
-      <workItem from="1651256229713" duration="16075000" />
+      <workItem from="1651256229713" duration="19236000" />
     </task>
     <task id="LOCAL-00001" summary="img">
       <created>1651366433380</created>
@@ -131,16 +138,5 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="img" />
     <option name="LAST_COMMIT_MESSAGE" value="img" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/lib/components/MiningConfig.svelte</url>
-          <line>92</line>
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

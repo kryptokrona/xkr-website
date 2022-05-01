@@ -1,6 +1,7 @@
 <script>
     import {onMount} from "svelte";
     import playbtn from "/static/googleplay.png"
+    import Button from "./buttons/Button.svelte";
 
     let latest_mac;
     let latest_win;
@@ -59,9 +60,9 @@
 <div class="wrapper">
     <h1>Choose a wallet</h1>
     <div class="btn-wrapper">
-        <button class:border_rgb={desktop} on:click={() => handleClick('desktop')}>Desktop</button>
-        <button class:border_rgb={mobile} on:click={() => handleClick('mobile')}>Mobile</button>
-        <button class:border_rgb={terminal} on:click={() => handleClick('terminal')}>Terminal</button>
+        <Button text="Desktop" enabled={desktop} on:click={() => handleClick('desktop')}/>
+        <Button text="Mobile" enabled={mobile} on:click={() => handleClick('mobile')}/>
+        <Button text="Terminal" enabled={terminal} on:click={() => handleClick('terminal')}/>
     </div>
 
     {#if desktop}
@@ -112,19 +113,8 @@
     gap: 10px;
     margin: 40px 0;
 
-    button {
-      background-color: var(--card-background);
-      border: 1px solid var(--card-border);
-      color: var(--text-color);
-      border-radius: 0.4rem;
-      padding: 10px 20px;
-      height: 36px;
-      cursor: pointer;
-      transition: 250ms ease-in-out;
-
-      &:hover {
-        background-color: var(--card-border);
-      }
+    @media only screen and (max-width: 360px) {
+      flex-direction: column;
     }
   }
 

@@ -1,5 +1,6 @@
 <script>
     import {onMount} from "svelte";
+    import Button from "./buttons/Button.svelte";
 
     let status
     let inputValue
@@ -82,7 +83,7 @@
     <input id="claim" type="text" bind:value={inputValue}>
     <div class="g-recaptcha" data-sitekey="6LeuuboeAAAAALFj2PEADpIc2jZwLYQOa3R3iiCR" data-callback="captchaCallback"
          data-theme="dark"></div>
-    <button disabled={!enabled} class:border_rgb={enabled} on:click|preventDefault={() => submitForm()}>Claim</button>
+    <Button text="Claim" disabled={!enabled} enabled={enabled && captcha} on:click={() => submitForm()}/>
     <p id="status">{status}</p>
 </div>
 
@@ -123,23 +124,6 @@
     &:focus {
       outline: 1px solid var(--title-color);
       border: 1px solid var(--title-color);
-    }
-  }
-
-  button {
-    background-color: var(--card-background);
-    border: 1px solid var(--text-color);
-    color: var(--text-color);
-    border-radius: 0.4rem;
-    padding: 10px 20px;
-    height: 36px;
-    width: 150px;
-    cursor: pointer;
-    transition: 250ms ease-in-out;
-    margin-top: 40px;
-
-    &:hover {
-      background-color: var(--card-border);
     }
   }
 </style>

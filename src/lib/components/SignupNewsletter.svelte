@@ -2,6 +2,7 @@
     import supabase from "../db.js";
     import {quadInOut} from "svelte/easing";
     import {draw} from "svelte/transition";
+    import Button from "./buttons/Button.svelte";
 
     let email
     let submitted
@@ -41,7 +42,7 @@
         <h2>Sign up for our newsletter.</h2>
         <form name="Portfolio Contact" method="POST" on:submit|preventDefault={() => handleSubmit(email)}>
             <input placeholder="satoshi@nakamoto.org" required type="email" bind:value={email}>
-            <button class:enabled={validEmail} disabled={!email} type="submit" value="Submit">Sign up</button>
+            <Button text="Sign up" enabled={validEmail} disabled={!validEmail}/>
         </form>
             {:else if submitted}
             <svg height="50px" viewBox="0 0 39 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -119,32 +120,6 @@
       &:focus {
         outline: 1px solid var(--title-color);
         border: 1px solid var(--title-color);
-      }
-    }
-
-    button {
-      background-color: var(--card-background);
-      border: 1px solid var(--border-color);
-      color: var(--text-color);
-      border-radius: 0.4rem;
-      padding: 10px 10px;
-      height: 36px;
-      width: 100px;
-      cursor: pointer;
-      transition: 250ms ease-in-out;
-
-      &:hover {
-        background-color: var(--card-border);
-      }
-    }
-
-    .enabled {
-      background-color: #34b26b;
-      border-color: #3fd782;
-      color: white;
-
-      &:hover{
-        background-color: #41ff93;
       }
     }
 </style>
