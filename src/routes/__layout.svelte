@@ -19,7 +19,7 @@
 
         //Checks if it's a new visitor, and renders popup.
         visited = localStorage.getItem('visited')
-        if(visited) {
+        if(visited === null) {
             localStorage.setItem('visited', 'true')
             setInterval(() => {
                 showPopup = true
