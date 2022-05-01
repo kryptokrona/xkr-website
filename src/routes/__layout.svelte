@@ -8,20 +8,20 @@
 
     //Global scss
     import '$lib/theme/global.scss'
-    import {browser} from "$app/env";
 
     let ready
     let visited
     let showPopup = false
 
-    onMount(() => {
+    onMount( () => {
         ready = true
 
         //Checks if it's a new visitor, and renders popup.
         visited = localStorage.getItem('visited')
-        if(visited === null) {
+
+        if(!visited) {
             localStorage.setItem('visited', 'true')
-            setInterval(() => {
+            setTimeout(() => {
                 showPopup = true
             },7000)
         }
