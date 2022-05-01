@@ -13,11 +13,11 @@
 
 <style lang="scss">
     div {
-      margin-top: 200px;
+      margin: 200px auto 150px auto;
       width: 100%;
 
-      -ms-word-break: break-all;
-      word-break: break-all;
+      -ms-word-break: break-word;
+      word-break: break-word;
 
       -webkit-hyphens: auto;
       -moz-hyphens: auto;
