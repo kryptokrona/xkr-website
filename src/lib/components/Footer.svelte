@@ -30,7 +30,6 @@
               <a href="https://docs.kryptokrona.se/" class="footer-link"><p>Docs</p></a>
               <a href="https://www.exbitron.com/trading/xkrusdt" class="footer-link"><p>Exchange</p></a>
           </div>
-          <div class ="footer-nav">
         </div>
         <div class="other">
             <p>Developed by Swepool</p>
