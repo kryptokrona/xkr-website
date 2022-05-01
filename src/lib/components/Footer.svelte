@@ -23,6 +23,14 @@
                 <a href="/faucet" class="footer-link"><p>Faucet</p></a>
                 <a href="https://github.com/kryptokrona/hugin-messenger" class="footer-link"><p>Github</p></a>
             </div>
+            <div class="footer-nav">
+              <h3>Extra</h3>
+              <a href="https://github.com/kryptokrona/kryptokrona-stickers" class="footer-link"><p>Stickers</p></a>
+              <a href="https://kryptokrona.se/store/" class="footer-link"><p>Store</p></a>
+              <a href="https://docs.kryptokrona.se/" class="footer-link"><p>Docs</p></a>
+              <a href="https://www.exbitron.com/trading/xkrusdt" class="footer-link"><p>Exchange</p></a>
+          </div>
+          <div class ="footer-nav">
         </div>
         <div class="other">
             <p>Developed by Swepool</p>
