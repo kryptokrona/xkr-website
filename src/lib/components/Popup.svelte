@@ -1,5 +1,6 @@
 <script>
     import {fly, fade} from "svelte/transition";
+    import Button from "./buttons/Button.svelte";
 
 </script>
 
@@ -9,7 +10,7 @@
     <div in:fly="{{delay: 200, y: 50}}" out:fly="{{y: 50}}" class="card border_rgb">
         <h2>Join us on Discord!</h2>
         <p>Join us on our Discord server; here, you can find friends with similar interests, talk with contributors and find ways to contribute yourself.</p>
-        <a href="https://discord.gg/nRK5k7wYy8"><button>Join us!</button></a>
+        <a href="https://discord.gg/nRK5k7wYy8"><Button text="Join us!" info={true}/></a>
     </div>
     <div></div>
 </div>
@@ -56,22 +57,6 @@
           text-align: center;
           color: #202020;
           text-shadow:  0 0 4px rgba(255, 255, 255, 0.5);
-        }
-
-        button {
-          color: white;
-          background: #5F86F2;
-          border: 1px solid #83A4FF;
-          border-radius: 0.4rem;
-          width: 150px;
-          padding: 10px;
-          transition: 250ms ease-in-out;
-          cursor: pointer;
-          box-shadow: 0 0 10px rgba(32, 32, 32, 0.1);
-
-          &:hover{
-            background-color: #8faeff;
-          }
         }
       }
     }

@@ -3,11 +3,13 @@
     export let enabled
     export let disabled
     export let rgb
+    export let info
 </script>
 
 <button disabled={disabled}
         on:click|preventDefault
         class:enabled
+        class:info
         class:border_rgb={rgb}
 >{text}</button>
 
@@ -17,7 +19,7 @@
     border: 1px solid var(--border-color);
     color: var(--text-color);
     border-radius: 0.4rem;
-    padding: 8px 10px;
+    padding: 9px 10px;
     width: 100px;
     cursor: pointer;
     transition: 250ms ease-in-out;
@@ -37,5 +39,14 @@
     }
   }
 
+  .info {
+    background: #5F86F2;
+    border: 1px solid #83A4FF;
+    color: white;
 
+
+    &:hover{
+      background-color: #83A4FF;
+    }
+  }
 </style>
