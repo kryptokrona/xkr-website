@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd63994d-c0a8-4925-b092-d7282cc60cf4" name="Changes" comment="img">
-      <change afterPath="$PROJECT_DIR$/src/lib/components/Popup.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/__layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/__layout.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/discordbg.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/discordbg.png" afterDir="false" />
-    </list>
+    <list default="true" id="dd63994d-c0a8-4925-b092-d7282cc60cf4" name="Changes" comment="img" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -104,7 +99,7 @@
       <workItem from="1650794556767" duration="4742000" />
       <workItem from="1650816691765" duration="17887000" />
       <workItem from="1651090791306" duration="22741000" />
-      <workItem from="1651256229713" duration="15120000" />
+      <workItem from="1651256229713" duration="15486000" />
     </task>
     <task id="LOCAL-00001" summary="img">
       <created>1651366433380</created>
