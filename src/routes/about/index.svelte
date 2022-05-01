@@ -88,10 +88,6 @@
     display: flex;
     flex-direction: column;
 
-    h2 {
-      margin-top: 20px;
-    }
-
     p {
       margin-top: 10px;
     }
@@ -132,12 +128,9 @@
       }
     }
 
-    p {
-      margin-top: 5px;
-    }
-
     h2 {
       margin: 0;
+      font-size: 1.25em;
     }
   }
 
