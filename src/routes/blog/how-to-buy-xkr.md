@@ -81,13 +81,13 @@ This means all of your DOGE will not get spent/added in the order.
 
 Press so the green "Buy" button to place your buy order. 
 
-You will so get a message if you relluy want to place this buy order. 
+You will then get a message if you really want to place this buy order. 
 
 ![image](https://user-images.githubusercontent.com/83395536/166161412-c94a44e1-a35c-42d2-851b-50a6893bab86.png)
 
 We press the yellow "confirm" button, to say yes.
 
-And as that it is confirmed. 
+And as that, it is confirmed!
 
 ![image](https://user-images.githubusercontent.com/83395536/166161440-06c76d8c-4494-420c-80c7-c9ea766b9ee3.png)
 
