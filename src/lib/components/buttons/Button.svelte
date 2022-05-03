@@ -1,9 +1,9 @@
 <script>
-    export let text
-    export let enabled
+    export let text = 'Text'
+    export let enabled = false
     export let disabled
-    export let rgb
-    export let info
+    export let rgb = false
+    export let info = false
 </script>
 
 <button disabled={disabled}
