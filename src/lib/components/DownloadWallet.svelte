@@ -58,7 +58,6 @@
 </script>
 
 <div class="wrapper">
-    <h1>Choose a wallet</h1>
     <div class="btn-wrapper">
         <Button text="Desktop" enabled={desktop} on:click={() => handleClick('desktop')}/>
         <Button text="Mobile" enabled={mobile} on:click={() => handleClick('mobile')}/>
@@ -112,6 +111,7 @@
     display: flex;
     gap: 10px;
     margin: 40px 0;
+
 
     @media only screen and (max-width: 360px) {
       flex-direction: column;

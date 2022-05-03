@@ -1,9 +1,9 @@
 <script>
     import {onMount} from "svelte";
-    import {state} from "/src/lib/stores/state.js";
-    import LoadingScreen from "/src/lib/components/LoadingScreen.svelte";
-    import Navbar from "/src/lib/components/navbar/Navbar.svelte";
-    import Footer from "/src/lib/components/Footer.svelte";
+    import {store} from "$lib/stores/store.js";
+    import LoadingScreen from "$lib/components/LoadingScreen.svelte";
+    import Navbar from "$lib/components/navbar/Navbar.svelte";
+    import Footer from "$lib/components/Footer.svelte";
     import Popup from "$lib/components/Popup.svelte";
 
     //Global scss
@@ -31,7 +31,7 @@
     $: {
         if (ready) {
             setInterval(() => {
-                state.set({loading: false})
+                store.set({loading: false})
             }, 1000)
         }
     }
@@ -39,7 +39,7 @@
 </script>
 
 <!--Loading screen with animated logo-->
-{#if $state.loading}
+{#if $store.loading}
     <LoadingScreen/>
 {/if}
 
@@ -60,7 +60,7 @@
 <style lang="scss">
 /* We hande the website width and padding at top level */
   main {
-    margin: 0 auto;
+    margin: 160px auto 40px auto;
     max-width: var(--website-width);
     padding: 0 40px;
     box-sizing: border-box;

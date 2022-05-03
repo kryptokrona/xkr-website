@@ -61,7 +61,7 @@
         private transactions, messages and arbitrary data storage, completely decentralized.</p>
     <p>On 2 April 2019, the platform was launched in part as a response to the Riksbank’s digital e-krona for the
         people’s
-        right to create money and to safeguard the private economy without either commercial or state control.</p>
+        right to create money and to safeguard the private economy without either commercial or store control.</p>
 </div>
 <div class="features">
     <div>
@@ -84,17 +84,14 @@
 <style lang="scss">
 
   .text-wrapper {
-    margin-top: 150px;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
 
     p {
       margin-top: 10px;
     }
 
-    @media only screen and (max-width: 700px) {
-      margin-top: 100px;
-    }
   }
 
   .features {

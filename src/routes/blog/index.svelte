@@ -47,7 +47,6 @@
 
 <style lang="scss">
     .wrapper {
-      margin-top: 200px;
       margin-bottom: 10rem;
 
       .text-wrapper {

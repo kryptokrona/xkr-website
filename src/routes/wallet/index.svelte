@@ -9,16 +9,15 @@ import DownloadWallet from "$lib/components/DownloadWallet.svelte";
 </svelte:head>
 
 <div class="wrapper">
+    <h1>Choose a wallet</h1>
     <DownloadWallet/>
 </div>
 
 <style lang="scss">
   .wrapper {
-    margin-top: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     box-sizing: border-box;
     gap: 20px;
   }

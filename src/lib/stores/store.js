@@ -1,16 +1,16 @@
 import {writable} from "svelte/store";
 
-export const state = writable({
+export const store = writable({
     loading: true
 })
 
-export const node = writable()
+export const network = writable()
 
 const getNodes = () => {
     fetch('https://swepool.org/api/stats')
         .then(res => res.json())
         .then(data => {
-            node.set({
+            network.set({
                 reward: (data.lastblock.reward / 100000).toFixed(2)
             })
         })

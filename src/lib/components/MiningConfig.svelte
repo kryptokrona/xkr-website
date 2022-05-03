@@ -44,7 +44,7 @@
       color: var(--title-color);
       padding: 0 10px;
       margin-bottom: 20px;
-      height: 40px;
+      height: 36px;
       width: 100%;
 
       &:focus {

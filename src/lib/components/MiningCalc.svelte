@@ -1,5 +1,5 @@
 <script>
-    import {node} from "../stores/state.js";
+    import {network} from "../stores/store.js";
     import Button from "./buttons/Button.svelte";
 
     let input;
@@ -8,7 +8,7 @@
     let monthly = 1000
 
     const calc = () => {
-        daily = $node.reward
+        daily = $network.reward
     }
 
 </script>
@@ -54,15 +54,15 @@
       max-width: 100%;
     }
 
-    table {
-      text-align: center;
-    }
+      th {
+        text-align: left;
+      }
 
     h3 {
       margin: 0;
     }
 
-    div{
+    div {
       display: flex;
       align-items: center;
       width: 100%;
@@ -76,8 +76,8 @@
       border-radius: 0.4rem;
       color: var(--title-color);
       padding: 0 10px;
+      height: 36px;
       width: 100%;
-      height: 40px;
 
       &:focus {
         outline: none;

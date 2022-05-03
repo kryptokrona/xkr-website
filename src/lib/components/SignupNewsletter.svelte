@@ -118,7 +118,7 @@
       }
 
       &:focus {
-        outline: 1px solid var(--title-color);
+        outline: none;
         border: 1px solid var(--title-color);
       }
     }

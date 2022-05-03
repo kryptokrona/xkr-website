@@ -35,8 +35,8 @@ import MiningCalc from "$lib/components/MiningCalc.svelte";
 <style lang="scss">
 
     .wrapper {
-      margin-top: 200px;
       margin-bottom: 40px;
+      box-sizing: border-box;
     }
 
     .text-wrapper {

@@ -81,7 +81,7 @@
 <style lang="scss">
 
   .hero {
-    margin-top: 200px;
+    box-sizing: border-box;
 
     @media only screen and (max-width: 900px) {
       margin-top: 150px;

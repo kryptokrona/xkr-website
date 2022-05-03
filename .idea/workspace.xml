@@ -4,11 +4,18 @@
     <list default="true" id="dd63994d-c0a8-4925-b092-d7282cc60cf4" name="Changes" comment="img">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/components/Alert.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Alert.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/DownloadWallet.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/DownloadWallet.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/MiningCalc.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/MiningCalc.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/components/MiningConfig.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/MiningConfig.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/stores/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/stores/state.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/SignupNewsletter.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/SignupNewsletter.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/navbar/Sidebar.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/navbar/Sidebar.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/stores/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/stores/store.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/__layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/__layout.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/blog/_post.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/blog/_post.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/about/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/about/index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/blog/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/blog/index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/mining/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/mining/index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/wallet/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/wallet/index.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +52,7 @@
         <option value="SignupNewsletter" />
         <option value="Popup" />
         <option value="Button" />
+        <option value="store" />
       </list>
     </option>
   </component>
@@ -130,7 +138,7 @@
       <workItem from="1651583472143" duration="978000" />
       <workItem from="1651584461974" duration="71000" />
       <workItem from="1651584543537" duration="4411000" />
-      <workItem from="1651590610590" duration="5177000" />
+      <workItem from="1651590610590" duration="6938000" />
     </task>
     <task id="LOCAL-00001" summary="img">
       <created>1651366433380</created>
