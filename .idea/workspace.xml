@@ -3,13 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="dd63994d-c0a8-4925-b092-d7282cc60cf4" name="Changes" comment="img">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/DownloadHugin.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/DownloadHugin.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/DownloadWallet.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/DownloadWallet.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/Faucet.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Faucet.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/Alert.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Alert.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/components/MiningConfig.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/MiningConfig.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/SignupNewsletter.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/SignupNewsletter.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/buttons/BorderButton.svelte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/buttons/FillButton.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/buttons/Button.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/stores/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/stores/state.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/__layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/__layout.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/blog/_post.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/blog/_post.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/mining/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/mining/index.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,12 +51,29 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="03d7c7f6-ed00-4706-967c-033837c80862" />
+        <option name="url" value="https://github.com/kryptokrona/xkr-website.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="27wdxXIbfNBMYCSxn429b1RLa09" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
@@ -72,7 +88,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -110,6 +126,11 @@
       <workItem from="1650816691765" duration="17887000" />
       <workItem from="1651090791306" duration="22741000" />
       <workItem from="1651256229713" duration="19236000" />
+      <workItem from="1651582931202" duration="528000" />
+      <workItem from="1651583472143" duration="978000" />
+      <workItem from="1651584461974" duration="71000" />
+      <workItem from="1651584543537" duration="4411000" />
+      <workItem from="1651590610590" duration="5177000" />
     </task>
     <task id="LOCAL-00001" summary="img">
       <created>1651366433380</created>

@@ -6,13 +6,12 @@
 </script>
 
 <div class="card">
-    <div class="content-wrapper">
-        <div class="input-wrapper">
-            <p>Address:</p>
-            <input placeholder="sekr.." type="text" bind:value={address}>
-        </div>
+    <div>
+        <h3>Generate config</h3>
+        <p>Enter address to generate a ready-to-go config for xmrig.</p>
+        <input placeholder="Enter address" type="text" bind:value={address}>
     </div>
-    <Button text="Generate" disabled={!address} enabled={address} on:click={() => generateConfig(address)}/>
+        <Button text="Generate" disabled={!address} enabled={address} on:click={() => generateConfig(address)}/>
 </div>
 
 <style lang="scss">
@@ -21,45 +20,35 @@
     box-sizing: border-box;
     background-color: var(--card-background);
     border: 1px solid var(--card-border);
-    padding: 10px 20px 20px 20px;
+    padding: 20px;
     border-radius: 0.4rem;
-    max-width: 360px;
+    width: 100%;
+    max-width: 660px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 
-    .content-wrapper {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      gap: 15px;
+    @media only screen and (max-width: 1000px) {
+      max-width: 100%;
+    }
 
-      p {
-        margin: 0;
-        font-size: 0.75rem;
-        text-align: center;
-      }
-
-      .input-wrapper {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        gap: 10px;
-      }
+    h3 {
+      margin: 0;
     }
 
     input {
       box-sizing: border-box;
       background-color: var(--backgound-color);
-      border: 1px solid var(--border-color);
+      border: none;
       border-radius: 0.4rem;
       color: var(--title-color);
       padding: 0 10px;
+      margin-bottom: 20px;
       height: 40px;
       width: 100%;
 
       &:focus {
-        outline: 1px solid var(--title-color);
+        outline: none;
         border: 1px solid var(--title-color);
       }
     }
