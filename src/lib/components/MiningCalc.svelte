@@ -6,6 +6,7 @@
     let daily = 100
     let weekly = 500
     let monthly = 1000
+    let ready = false
 
     const calc = () => {
         daily = $network.reward
@@ -14,6 +15,8 @@
 </script>
 
 <div class="card">
+    <h3>Mining Calculator <br/>Coming soon</h3>
+    {#if (ready)}
     <h3>Mining Calculator</h3>
     <p>Enter your hashrate to calculate your potential earnings</p>
     <div>
@@ -23,9 +26,9 @@
     <table>
         <thead>
         <tr>
-            <th><h3>Daily</h3></th>
-            <th><h3>Weekly</h3></th>
-            <th><h3>Monthly</h3></th>
+            <th><h4>Daily</h4></th>
+            <th><h4>Weekly</h4></th>
+            <th><h4>Monthly</h4></th>
         </tr>
         </thead>
         <tbody>
@@ -36,6 +39,7 @@
         </tr>
         </tbody>
     </table>
+        {/if}
 </div>
 
 <style lang="scss">
@@ -48,17 +52,40 @@
     border: 1px solid var(--card-border);
     border-radius: 0.4rem;
     width: 100%;
-    max-width: 660px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
     @media only screen and (max-width: 1000px) {
       max-width: 100%;
     }
 
-      th {
-        text-align: left;
-      }
+    th {
+      text-align: center;
+      width: 33%;
+    }
 
-    h3 {
+    th:first-child {
+      text-align: left;
+    }
+
+    th:last-child {
+      text-align: right;
+    }
+
+    td {
+      text-align: center;
+    }
+
+    td:first-child {
+      text-align: left;
+    }
+
+    td:last-child {
+      text-align: right;
+    }
+
+    h4, h3 {
       margin: 0;
     }
 
@@ -69,6 +96,7 @@
       gap: 10px;
       margin-bottom: 20px;
     }
+
     input {
       box-sizing: border-box;
       background-color: var(--backgound-color);
