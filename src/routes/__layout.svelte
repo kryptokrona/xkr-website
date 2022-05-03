@@ -23,7 +23,7 @@
             localStorage.setItem('visited', 'true')
             setTimeout(() => {
                 showPopup = true
-            },7000)
+            }, 4000)
         }
     });
 
