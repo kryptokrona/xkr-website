@@ -54,8 +54,8 @@
 
 <h2>Download Hugin Messenger</h2>
 <div class="btn-wrapper">
-    <Button text="Desktop" enabled={desktop} on:click={() => handleClick('desktop')}/>
-    <Button text="Mobile" enabled={mobile} on:click={() => handleClick('mobile')}/>
+    <Button text="Desktop" info={desktop} on:click={() => handleClick('desktop')}/>
+    <Button text="Mobile" info={mobile} on:click={() => handleClick('mobile')}/>
 </div>
 {#if desktop}
 

@@ -59,16 +59,16 @@
 
 <div class="wrapper">
     <div class="btn-wrapper">
-        <Button text="Desktop" enabled={desktop} on:click={() => handleClick('desktop')}/>
-        <Button text="Mobile" enabled={mobile} on:click={() => handleClick('mobile')}/>
-        <Button text="Terminal" enabled={terminal} on:click={() => handleClick('terminal')}/>
+        <Button text="Desktop" info={desktop} on:click={() => handleClick('desktop')}/>
+        <Button text="Mobile" info={mobile} on:click={() => handleClick('mobile')}/>
+        <Button text="Terminal" info={terminal} on:click={() => handleClick('terminal')}/>
     </div>
 
     {#if desktop}
         <div class="selection-wrapper">
             <div class="card">
                 <div>
-                    <h2>Store on desktop</h2>
+                    <h3>Store on desktop</h3>
                     <p>Using our wallet you can store, send and receive Kryptokrona.
                         We currently have desktop wallets for Windows, Linux and Mac!</p>
                     <div>
@@ -84,7 +84,7 @@
         <div class="selection-wrapper">
             <div class="card">
                 <div>
-                    <h2>Store on mobile</h2>
+                    <h3>Store on mobile</h3>
                     <p>Using our wallet you can store, send and receive Kryptokrona.
                         We currently have desktop wallets for Windows, Linux and Mac!</p>
                     <a href="https://play.google.com/store/apps/details?id=com.xkr&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img style="height: 36px" src={playbtn} alt=""></a>
@@ -96,7 +96,7 @@
         <div class="selection-wrapper">
             <div class="card">
                 <div>
-                    <h2>Store on terminal</h2>
+                    <h3>Store on terminal</h3>
                     <p>Using our wallet you can store, send and receive Kryptokrona.
                         We currently have desktop wallets for Windows, Linux and Mac!</p>
                     <a href="https://github.com/kryptokrona/kryptokrona/releases">Download from github</a>
@@ -125,7 +125,7 @@
     justify-content: space-between;
     gap: 10px;
     border-radius: 0.4rem;
-    padding: 40px 40px 0 40px;
+    padding: 20px;
     width: 100%;
     max-width: var(--website-width);
     overflow: hidden;
@@ -148,7 +148,7 @@
       }
     }
 
-    h1 {
+    h3 {
       margin: 0;
     }
 
