@@ -23,7 +23,6 @@
     padding: 20px;
     border-radius: 0.4rem;
     width: 100%;
-    max-width: 660px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
