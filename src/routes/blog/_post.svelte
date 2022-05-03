@@ -14,6 +14,7 @@
 <style lang="scss">
     div {
       margin: 200px auto 150px auto;
+      box-sizing: border-box;
       width: 100%;
 
       -ms-word-break: break-word;
