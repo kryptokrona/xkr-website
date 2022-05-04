@@ -1,5 +1,6 @@
 import adapter from '@sveltejs/adapter-netlify';
 import sveltePreprocess from 'svelte-preprocess';
+import mdsvexConfig from "./mdsvex.config.js";
 import {mdsvex} from "mdsvex";
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -22,19 +23,14 @@ const config = {
             },
         }
 	},
-    extensions: ['.svelte', '.md'],
+    extensions: [".svelte", ...mdsvexConfig.extensions],
     preprocess: [
+        mdsvex(mdsvexConfig),
         sveltePreprocess({
             scss: {
                 prependData: `@import 'src/lib/theme/global.scss';`
             }
         }),
-        mdsvex({
-            extensions: ['.md'],
-            layout: {
-                blog: 'src/routes/blog/_post.svelte'
-            }
-        })
     ],
 
     onwarn: (warning, handler) => {
