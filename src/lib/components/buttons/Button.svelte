@@ -1,13 +1,13 @@
 <script>
     export let text = 'Text'
     export let enabled = false
-    export let disabled
     export let rgb = false
     export let info = false
+    export let disabled;
 </script>
 
 <button disabled={disabled}
-        on:click|preventDefault
+        on:click
         class:enabled
         class:info
         class:border_rgb={rgb}

@@ -42,7 +42,7 @@
         <h2>Sign up for our newsletter.</h2>
         <form name="Portfolio Contact" method="POST" on:submit|preventDefault={() => handleSubmit(email)}>
             <input placeholder="satoshi@nakamoto.org" required type="email" bind:value={email}>
-            <Button text="Sign up" enabled={validEmail} disabled={!validEmail}/>
+            <Button text="Sign up" disabled={!validEmail} enabled={validEmail}/>
         </form>
             {:else if submitted}
             <svg height="50px" viewBox="0 0 39 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
