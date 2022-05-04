@@ -1,0 +1,19 @@
+backend:
+  name: git-gateway
+  branch: main
+collections:
+  - name: routes
+    label: routes
+    folder: src/routes/blog
+    create: true
+    fields:
+      - name: title
+      - name: nav_label
+      - name: body
+        widget: markdown
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+# site_url: https://kryptokrona.org
+# display_url: https://kryptokrona.org
+# logo_url: https://your-site.com/images/logo.svg

@@ -9,7 +9,10 @@ const config = {
             fallback: 'index.html',
         }),
         prerender: {
+            crawl: true,
             enabled: true,
+            onError: 'continue',
+            entries: ['*'],
         },
         vite: {
             server: {
