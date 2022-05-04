@@ -4,6 +4,7 @@
     import {numberWithCommas} from "$lib/utils";
     import JoinDiscord from "$lib/components/JoinDiscord.svelte";
     import SignupNewsletter from "$lib/components/SignupNewsletter.svelte";
+    import {network} from "../../lib/stores/store";
 
     let currentSupply
     const about = [
@@ -28,21 +29,6 @@
             text: "Our network reduces the amount of new coins minted with every block, making for a drama-free emission."
         }
     ]
-
-    onMount(() => {
-        fetch("https://blocksum.org/api/v1/supply")
-            .then(res => {
-                if (!res.ok) {
-                    throw Error("Couldn't fetch CoinPaprika")
-                }
-                return res.json()
-            })
-            .then(data => {
-                currentSupply = numberWithCommas(data.supply.current)
-            })
-            .catch(err => console.log(err))
-    })
-
 </script>
 
 <svelte:head>
@@ -68,7 +54,7 @@
        <h2>Max Supply XKR</h2>
         <p>1,000,000,000</p>
         <h2>Current Supply</h2>
-        <p>{currentSupply} XKR</p>
+        <p>{$network.supply} XKR</p>
     </div>
     {#each about as card}
         <div>

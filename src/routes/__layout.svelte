@@ -1,6 +1,6 @@
 <script>
     import {onMount} from "svelte";
-    import {store} from "$lib/stores/store.js";
+    import {state} from "$lib/stores/store.js";
     import LoadingScreen from "$lib/components/LoadingScreen.svelte";
     import Navbar from "$lib/components/navbar/Navbar.svelte";
     import Footer from "$lib/components/Footer.svelte";
@@ -31,7 +31,7 @@
     $: {
         if (ready) {
             setInterval(() => {
-                store.set({loading: false})
+                state.set({loading: false})
             }, 1000)
         }
     }
@@ -39,7 +39,7 @@
 </script>
 
 <!--Loading screen with animated logo-->
-{#if $store.loading}
+{#if $state.loading}
     <LoadingScreen/>
 {/if}
 

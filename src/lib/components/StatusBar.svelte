@@ -1,78 +1,29 @@
 <script>
+    import {network} from "../stores/store.js";
 
-    import {numberWithCommas} from "../utils.js";
-    import {onMount} from "svelte";
-
-    let percentage
-    let supply
-    let hashrate
-    let blockHeight
-    let nodes
-    const maxSupply = 1000000000
-
-onMount(() => {
-
-    fetch('https://blocksum.org/api/v1/supply')
-        .then(res => {
-            if (!res.ok) {
-                throw Error("Progress bar could not fetch data")
-            }
-            return res.json()
-        })
-        .then(data => {
-            percentage = ((data.supply.current / maxSupply) * 100).toFixed(2)
-            supply = numberWithCommas(data.supply.current)
-        })
-        .catch(err => console.log(err))
-
-    fetch("https://blocksum.org/api/getinfo")
-        .then(res => {
-            if (!res.ok) {
-                throw Error('could fetch blocksum')
-            } else return res.json()
-        })
-        .then(data => {
-            hashrate = (data.hashrate / 1000000).toFixed(2)
-            blockHeight = data.height
-            nodes = data.grey_peerlist_size
-        }).catch(err => {
-        console.log(err)
-
-        fetch('https://swenode.org/api/getinfo')
-            .then(res => res.json())
-            .then(data => {
-                hashrate = (data.hashrate / 1000000).toFixed(2)
-                blockHeight = data.height
-                nodes = data.grey_peerlist_size
-            })
-        .catch(err => {
-            console.log(err)
-        })
-    })
-})
 
 </script>
 
 <div class="wrapper">
     <div class="text-wrapper">
-        <p><span style="opacity: 100%; color: white">💰</span> {supply}</p>
-        <p>{percentage}%</p>
+        <p><span style="opacity: 100%; color: white">💰</span> {$network.supply}</p>
+        <p>{$network.percentage}%</p>
     </div>
     <div class="goal">
-        <div style="width: {percentage}%" class="progress"></div>
+        <div style="width: {$network.percentage}%" class="progress"></div>
     </div>
     <div class="status">
         <div class="status-card">
             <h3 class="status-title">Height</h3>
-            <p class="status-text">{blockHeight}</p>
+            <p class="status-text">{$network.blockHeight}</p>
         </div>
         <div class="status-card">
             <h3 class="status-title">Hashrate</h3>
-            <p class="status-text">{hashrate} MH/s</p>
+            <p class="status-text">{$network.hashrate} MH/s</p>
         </div>
         <div class="status-card">
             <h3 class="status-title">Nodes</h3>
-            <p class="status-text">{nodes}</p>
+            <p class="status-text">{$network.nodes}</p>
         </div>
     </div>
 </div>
