@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: kryptokrona/xkr-website
   branch: main
 collections:
   - name: routes
