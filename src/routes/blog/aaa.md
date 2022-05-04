@@ -5,3 +5,5 @@ thumbnail: /uploads/artboard-copy-8.png
 summary: aaa
 ---
 aaaaadsadsa
+
+![](/uploads/artboard-copy-8.png)
