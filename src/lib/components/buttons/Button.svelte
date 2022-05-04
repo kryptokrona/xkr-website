@@ -3,10 +3,10 @@
     export let enabled = false
     export let rgb = false
     export let info = false
-    export let disabled;
+
 </script>
 
-<button disabled={disabled}
+<button
         on:click
         class:enabled
         class:info
