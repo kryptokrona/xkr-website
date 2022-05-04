@@ -39,9 +39,6 @@
 </script>
 
 <!--Loading screen with animated logo-->
-{#if $state.loading}
-    <LoadingScreen/>
-{/if}
 
 <!--Popup, currently saying join discord to newVisitors-->
 {#if showPopup}
