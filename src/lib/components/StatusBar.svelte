@@ -19,7 +19,7 @@
         </div>
         <div class="status-card">
             <h3 class="status-title">Hashrate</h3>
-            <p class="status-text">{$network.hashrate} MH/s</p>
+            <p class="status-text">{($network.hashrate / 1000000).toFixed(2)} MH/s</p>
         </div>
         <div class="status-card">
             <h3 class="status-title">Nodes</h3>
