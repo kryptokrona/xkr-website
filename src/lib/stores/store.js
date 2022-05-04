@@ -60,7 +60,7 @@ const getData = () => {
             network.update(current => {
                 return {
                     ...current,
-                    hashrate: (data.hashrate / 1000000).toFixed(2),
+                    hashrate: data.hashrate,
                     blockHeight: data.height,
                     nodes: data.grey_peerlist_size
                 }
