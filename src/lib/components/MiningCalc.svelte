@@ -2,14 +2,36 @@
     import {network} from "../stores/store.js";
     import Button from "./buttons/Button.svelte";
 
-    let input;
-    let type
-    let daily = '-'
-    let weekly = '-'
-    let monthly = '-'
+    let input
+    let hashrate = 0
+    let type = 'h'
+    let userReward = 0
 
 
     const calc = () => {
+
+        //Always convert input into hashes per second
+        switch (type) {
+            case 'h':
+                hashrate = input
+                break
+            case 'kh':
+                hashrate = input * 1000
+                break
+            case 'mh':
+                hashrate = input * 1000000
+                break
+        }
+
+        //Users share determined by their input
+        let share = hashrate / $network.hashrate
+
+        //Total network reward per day (960 blocks * last reward)
+        let dailyReward = $network.reward * 960
+
+        //Calculate user reward per day
+        userReward = share * dailyReward
+
     }
 
 </script>
@@ -18,8 +40,13 @@
     <h3>Mining Calculator</h3>
     <p>Enter your hashrate to calculate your potential earnings</p>
     <div>
-        <input placeholder="Enter hashrate" on:keyup={calc} type="text" required bind:value={input}/>
-        <Button text="Calculate" enabled={input} disabled={!input}/>
+        <input placeholder="Enter hashrate" type="text" required bind:value={input}/>
+        <select name="type" id="type" bind:value={type}>
+            <option value="h" selected>H/s</option>
+            <option value="kh">KH/s</option>
+            <option value="mh">MH/s</option>
+        </select>
+        <Button text="Calculate" on:click={calc} enabled={input} disabled={!input}/>
     </div>
     <table>
         <thead>
@@ -31,9 +58,9 @@
         </thead>
         <tbody>
         <tr>
-            <td><p>{daily}</p></td>
-            <td><p>{weekly}</p></td>
-            <td><p>{monthly}</p></td>
+            <td><p>{(userReward).toFixed(2)}</p></td>
+            <td><p>{(userReward * 7).toFixed(2)}</p></td>
+            <td><p>{(userReward * 30).toFixed(2)}</p></td>
         </tr>
         </tbody>
     </table>
