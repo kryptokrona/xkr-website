@@ -1,3 +1,9 @@
+---
+title: How to buy XKR
+date: "2022-05-04"
+category: blog
+summary: "In this guide I will show you how to buy XKR on the exchange"
+---
 # How to buy XKR
 
 In this guide I will show you how to buy XKR on the exchange [Exbitron](exbitron.com).
