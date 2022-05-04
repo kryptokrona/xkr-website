@@ -4,7 +4,7 @@
     export let category
 </script>
 
-<div>
+<div class="wrapper">
     <p>Category: {category}</p>
     <p>Published: {date}</p>
     <h1>{title}</h1>
@@ -12,10 +12,10 @@
 </div>
 
 <style lang="scss">
-    div {
+    .wrapper {
       margin: 200px auto 150px auto;
       box-sizing: border-box;
-      width: 100%;
+      max-width: var(--website-width);
 
       -ms-word-break: break-word;
       word-break: break-word;
@@ -24,5 +24,4 @@
       -moz-hyphens: auto;
       hyphens: auto;
     }
-
 </style>

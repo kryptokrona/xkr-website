@@ -3,8 +3,6 @@
         const posts = await fetch('/api/posts.json')
         const allPosts = await posts.json()
 
-        console.log(allPosts)
-
         return {
             props: {
                 posts: allPosts
