@@ -1,0 +1,21 @@
+# netlify.toml
+# Production context:
+[context.production]
+
+  [[context.production.plugins]]
+    package = "netlify-build-plugin-pushover"
+
+      [context.production.plugins.inputs]
+        successMessage="Success msg from Production 🥳"
+        errorMessage="Error msg from Production 🚨"
+
+
+# Deploy Preview context:
+[context.deploy-preview]
+
+  [[context.deploy-preview.plugins]]
+    package = "netlify-build-plugin-pushover"
+
+      [context.deploy-preview.plugins.inputs]
+        successMessage="Success msg from deploy preview 🥳"
+        errorMessage="Error msg from deploy preview 🚨"
