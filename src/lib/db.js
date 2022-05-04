@@ -8,6 +8,7 @@ if (process.env.NODE_ENV === 'production') {
     supabase = createClient(supabaseUrl, supabaseAnonKey)
 } else if (process.env.NODE_ENV === 'development') {
     console.log('Supabase disabled in development')
+    console.log(process.env)
 }
 
 export default supabase

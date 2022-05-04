@@ -17,9 +17,6 @@ const config = {
                     allow: ['..']
                 }
             },
-            define: {
-                'process.env': process.env,
-            },
         }
 	},
     extensions: ['.svelte', '.md'],
