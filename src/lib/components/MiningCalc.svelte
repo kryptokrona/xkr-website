@@ -3,20 +3,18 @@
     import Button from "./buttons/Button.svelte";
 
     let input;
-    let daily = 100
-    let weekly = 500
-    let monthly = 1000
-    let ready = false
+    let type
+    let daily = '-'
+    let weekly = '-'
+    let monthly = '-'
+
 
     const calc = () => {
-        daily = $network.reward
     }
 
 </script>
 
 <div class="card">
-    <h3>Mining Calculator <br/>Coming soon</h3>
-    {#if (ready)}
     <h3>Mining Calculator</h3>
     <p>Enter your hashrate to calculate your potential earnings</p>
     <div>
@@ -39,7 +37,6 @@
         </tr>
         </tbody>
     </table>
-        {/if}
 </div>
 
 <style lang="scss">
@@ -52,9 +49,6 @@
     border: 1px solid var(--card-border);
     border-radius: 0.4rem;
     width: 100%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 
     @media only screen and (max-width: 1000px) {
       max-width: 100%;
