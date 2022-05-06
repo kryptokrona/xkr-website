@@ -41,6 +41,7 @@
     <p>Enter your hashrate to calculate your potential earnings</p>
     <div>
         <input placeholder="Enter hashrate" type="text" required bind:value={input}/>
+
         <select name="type" id="type" bind:value={type}>
             <option value="h" selected>H/s</option>
             <option value="kh">KH/s</option>

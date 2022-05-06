@@ -2,7 +2,13 @@
     export let title
     export let date
     export let category
+    export let summary
 </script>
+
+<svelte:head>
+    <title>Kryptokrona | Blog</title>
+    <meta name="description" content={summary}/>
+</svelte:head>
 
 <div class="wrapper">
     <p>Category: {category}</p>

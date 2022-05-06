@@ -1,5 +1,5 @@
 import {writable} from "svelte/store";
-import {numberWithCommas} from "../utils.js";
+import {numberWithCommas} from "../utils/utils.js";
 
 export const state = writable({
     loading: true

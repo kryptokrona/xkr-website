@@ -51,7 +51,7 @@
   .tools {
     display: flex;
     gap: 40px;
-    margin: 40px 0;
+    margin: 80px 0;
 
     @media only screen and (max-width: 1000px) {
       flex-direction: column;

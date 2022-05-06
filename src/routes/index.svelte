@@ -4,7 +4,7 @@
     import {draw} from 'svelte/transition'
     import {quadInOut} from "svelte/easing";
     import SignupNewsletter from "$lib/components/SignupNewsletter.svelte";
-    import Contribute from "$lib/components/Contribute.svelte";
+    import FeaturedPosts from "$lib/components/FeaturedPosts.svelte";
 
 
 
@@ -16,7 +16,7 @@
     const features = [
         {
             title: "Nordic Crypto",
-            text: "A growing cryptocurrency from the Nordics, you'll find people from Sweden, Norway, Denmark, Finland, but also an international audience."
+            text: "A growing cryptocurrency from the Nordics, with the vision ensure Nordic excellence in development of secure systems and economic tools."
         },
         {
             title: "Decentralized",
@@ -32,7 +32,7 @@
         },
         {
             title: "No middleman",
-            text: "The Kryptokrona isn’t dependent on our central banks or servers, thus less fragile than todays financial systems."
+            text: "The Kryptokrona isn’t dependent on any central bank or server, thus less fragile than today's financial systems."
         },
         {
             title: "Private ",
@@ -74,7 +74,7 @@
         </div>
     {/each}
 </div>
-
+<FeaturedPosts/>
 <JoinDiscord/>
 <SignupNewsletter/>
 

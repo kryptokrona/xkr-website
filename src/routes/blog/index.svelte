@@ -39,9 +39,7 @@
         {/each}
     </div>
 </div>
-<JoinDiscord/>
 <SignupNewsletter/>
-<StatusBar/>
 
 <style lang="scss">
     .wrapper {
@@ -53,7 +51,7 @@
 
       .blog-wrapper {
         a {
-          color: var(--title-color);
+          color: var(--success-color);
           text-decoration: none;
         }
 

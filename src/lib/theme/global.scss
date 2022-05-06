@@ -1,4 +1,4 @@
- :root {
+:root {
     --logo-color: #ffffff;
     --backgound-color: #202020;
     --title-color: rgba(255, 255, 255, 0.8);
@@ -23,7 +23,9 @@
     --alert-color: #f2cb5f;
   }
 
-@font-face {
+
+
+ @font-face {
   font-family: 'Roboto Mono';
   src: url('/static/fonts/RobotoMono-Regular.woff') format('woff'),
   url('/static/fonts/RobotoMono-Regular.woff2') format('woff2');

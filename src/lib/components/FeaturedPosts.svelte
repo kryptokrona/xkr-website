@@ -27,14 +27,14 @@
 <style lang="scss">
 
   .wrapper {
-
+    margin-bottom: 60px;
     .text-wrapper {
       border-bottom: 1px solid var(--border-color);
     }
 
     .blog-wrapper {
       a {
-        color: var(--title-color);
+        color: var(--success-color);
         text-decoration: none;
       }
 

@@ -3,19 +3,23 @@
   <component name="ChangeListManager">
     <list default="true" id="dd63994d-c0a8-4925-b092-d7282cc60cf4" name="Changes" comment="img">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/components/Alert.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Alert.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/DownloadWallet.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/DownloadWallet.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/FeaturedPosts.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/FeaturedPosts.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/LoadingScreen.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/LoadingScreen.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/components/MiningCalc.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/MiningCalc.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/components/MiningConfig.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/MiningConfig.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/SignupNewsletter.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/SignupNewsletter.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/StatusBar.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/StatusBar.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/navbar/Navbar.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/navbar/Navbar.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/components/navbar/Sidebar.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/navbar/Sidebar.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/stores/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/stores/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/__layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/__layout.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/stores/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/stores/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/theme/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/theme/global.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/utils.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/about/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/about/index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/blog/_post.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/blog/_post.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/blog/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/blog/index.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/mining/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/mining/index.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/wallet/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/wallet/index.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +44,6 @@
         <option value="Contribute" />
         <option value="blog/index" />
         <option value="_post.svelte" />
-        <option value="JavaScript File" />
         <option value="FeaturedPosts" />
         <option value="index.js" />
         <option value="index" />
@@ -53,6 +56,9 @@
         <option value="Popup" />
         <option value="Button" />
         <option value="store" />
+        <option value="Question" />
+        <option value="tools/index" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -90,7 +96,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/lib/components/buttons" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -102,13 +108,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/lib/components/buttons" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/lib" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/static" />
-      <recent name="$PROJECT_DIR$/src/routes/blog" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/lib/utils" />
       <recent name="$PROJECT_DIR$/src/lib" />
       <recent name="$PROJECT_DIR$/static" />
       <recent name="$PROJECT_DIR$/src/lib/components/navbar" />
@@ -138,7 +145,13 @@
       <workItem from="1651583472143" duration="978000" />
       <workItem from="1651584461974" duration="71000" />
       <workItem from="1651584543537" duration="4411000" />
-      <workItem from="1651590610590" duration="6938000" />
+      <workItem from="1651590610590" duration="11302000" />
+      <workItem from="1651649567664" duration="9545000" />
+      <workItem from="1651678042854" duration="3310000" />
+      <workItem from="1651681914803" duration="12691000" />
+      <workItem from="1651777841237" duration="854000" />
+      <workItem from="1651825377321" duration="6829000" />
+      <workItem from="1651866915643" duration="2257000" />
     </task>
     <task id="LOCAL-00001" summary="img">
       <created>1651366433380</created>

@@ -23,7 +23,7 @@
         </div>
         <div class="status-card">
             <h3 class="status-title">Nodes</h3>
-            <p class="status-text">{$network.nodes}</p>
+            <p class="status-text last">{$network.nodes}</p>
         </div>
     </div>
 </div>
@@ -67,5 +67,13 @@
       margin-top: 20px;
       display: flex;
       justify-content: space-between;
+
+      p {
+        color: var(--success-color);
+      }
+    }
+
+    .last {
+      text-align: right;
     }
 </style>

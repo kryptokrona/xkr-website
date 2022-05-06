@@ -1,5 +1,5 @@
 <script>
-    import {generateConfig} from "/src/lib/utils.js";
+    import {generateConfig} from "$lib/utils/utils.js";
     import Button from "./buttons/Button.svelte";
 
     let address

@@ -1,7 +1,7 @@
 <script>
 
     //enable alert
-    let setAlert = true
+    let setAlert
 
     //Add alert text here
     // eslint-disable-next-line no-unused-vars
