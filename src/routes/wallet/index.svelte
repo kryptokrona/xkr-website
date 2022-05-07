@@ -1,5 +1,4 @@
 <script>
-
 import DownloadWallet from "$lib/components/DownloadWallet.svelte";
 </script>
 
@@ -9,7 +8,7 @@ import DownloadWallet from "$lib/components/DownloadWallet.svelte";
 </svelte:head>
 
 <div class="wrapper">
-    <h1>Choose a wallet</h1>
+    <h1>Wallet</h1>
     <DownloadWallet/>
 </div>
 

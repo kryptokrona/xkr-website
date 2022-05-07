@@ -39,7 +39,7 @@
 <div class="wrapper">
     <div class="card">
         {#if !submitted}
-        <h2>Sign up for our newsletter.</h2>
+        <h2>Get on the mailing list</h2>
         <form name="Portfolio Contact" method="POST" on:submit|preventDefault={() => handleSubmit(email)}>
             <input placeholder="satoshi@nakamoto.org" required type="email" bind:value={email}>
             <Button disabled={!validEmail} text="Sign up" enabled={validEmail}/>
