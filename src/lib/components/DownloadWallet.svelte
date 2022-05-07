@@ -59,19 +59,20 @@
 
 <div class="wrapper">
     <div class="btn-wrapper">
-        <Button text="Desktop" info={desktop} on:click={() => handleClick('desktop')}/>
-        <Button text="Mobile" info={mobile} on:click={() => handleClick('mobile')}/>
-        <Button text="Terminal" info={terminal} on:click={() => handleClick('terminal')}/>
+        <Button text="Desktop" enabled={desktop} on:click={() => handleClick('desktop')}/>
+        <Button text="Mobile" enabled={mobile} on:click={() => handleClick('mobile')}/>
+        <Button text="Terminal" enabled={terminal} on:click={() => handleClick('terminal')}/>
     </div>
 
     {#if desktop}
+
         <div class="selection-wrapper">
             <div class="card">
                 <div>
-                    <h3>Store on desktop</h3>
+                    <h3>Desktop Wallet</h3>
                     <p>Using our wallet you can store, send and receive Kryptokrona.
                         We currently have desktop wallets for Windows, Linux and Mac!</p>
-                    <div>
+                    <div class="links">
                         <a href={latest_win}>Windows</a>
                         <a href={latest_mac}>Mac</a>
                         <a href={latest_lin}>Linux</a>
@@ -80,11 +81,13 @@
                 </div>
             </div>
         </div>
+
     {:else if mobile}
+
         <div class="selection-wrapper">
             <div class="card">
                 <div>
-                    <h3>Store on mobile</h3>
+                    <h3>Mobile Wallet</h3>
                     <p>Using our wallet you can store, send and receive Kryptokrona.
                         We currently have desktop wallets for Windows, Linux and Mac!</p>
                     <a href="https://play.google.com/store/apps/details?id=com.xkr&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img style="height: 36px" src={playbtn} alt=""></a>
@@ -92,14 +95,16 @@
 
             </div>
         </div>
+
     {:else if terminal}
+
         <div class="selection-wrapper">
             <div class="card">
                 <div>
-                    <h3>Store on terminal</h3>
+                    <h3>Terminal Wallet</h3>
                     <p>Using our wallet you can store, send and receive Kryptokrona.
                         We currently have desktop wallets for Windows, Linux and Mac!</p>
-                    <a href="https://github.com/kryptokrona/kryptokrona/releases">Download from github</a>
+                    <a href="https://github.com/kryptokrona/kryptokrona/releases">Github</a>
                 </div>
             </div>
         </div>
@@ -159,6 +164,11 @@
         width: 100%;
         max-width: 100%;
       }
+    }
+
+    .links {
+      display: flex;
+      gap: 10px;
     }
   }
 </style>
