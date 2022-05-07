@@ -1,9 +1,7 @@
 <script>
     import StatusBar from "$lib/components/StatusBar.svelte";
-    import {network} from "../../lib/stores/store";
-    import Question from "../../lib/components/Question.svelte";
+    import {network} from "$lib/stores/store";
 
-    let currentSupply
     const about = [
         {
             title: "GPU Mining Algorithm",
