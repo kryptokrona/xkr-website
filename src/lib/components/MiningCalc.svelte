@@ -2,6 +2,7 @@
     import {network} from "../stores/store.js";
     import Button from "./buttons/Button.svelte";
 
+    //Default values
     let input
     let hashrate = 0
     let type = 'h'
@@ -40,7 +41,7 @@
     <h3>Mining Calculator</h3>
     <p>Enter your hashrate to calculate your potential earnings</p>
     <div>
-        <input placeholder="Enter hashrate" type="text" required bind:value={input}/>
+        <input placeholder="Enter hashrate" type="number" required bind:value={input}/>
 
         <select name="type" id="type" bind:value={type}>
             <option value="h" selected>H/s</option>
@@ -133,6 +134,22 @@
         outline: none;
         border: 1px solid var(--title-color);
       }
+    }
+  }
+
+  select {
+    box-sizing: border-box;
+    background-color: var(--backgound-color);
+    border: none;
+    border-radius: 0.4rem;
+    color: var(--title-color);
+    padding: 0 10px;
+    height: 36px;
+    width: 100px;
+
+    &:focus {
+      outline: none;
+      border: 1px solid var(--title-color);
     }
   }
 </style>
