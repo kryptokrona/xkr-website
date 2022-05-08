@@ -24,6 +24,7 @@
     width: 100px;
     cursor: pointer;
     transition: 250ms ease-in-out;
+    text-align: center;
     text-decoration: none;
 
     &:hover {
