@@ -5,8 +5,9 @@
     import {quadInOut} from "svelte/easing";
     import SignupNewsletter from "$lib/components/SignupNewsletter.svelte";
     import FeaturedPosts from "$lib/components/FeaturedPosts.svelte";
-    import Button from "../lib/components/buttons/Button.svelte";
     import LinkButton from "../lib/components/buttons/LinkButton.svelte";
+    import computer from '/static/computer.png'
+    import star from '/static/star.svg'
 
 
 
@@ -83,11 +84,11 @@
         <h3>The easiest way to acquire Kryptokrona is to run a mining application on your computer.</h3>
         <div>
             <div class="list-item">
-                <img src="/static/star.svg" alt="star" height="16px" style="margin-top: 5px">
+                <img src={star} alt="star" height="16px" style="margin-top: 5px">
                 <p>Through what’s known as mining the network looks for Kryptokrona. This mechanism secures the network.</p>
             </div>
             <div class="list-item">
-                <img src="/static/star.svg" alt="star" height="16px" style="margin-top: 5px">
+                <img src={star} alt="star" height="16px" style="margin-top: 5px">
                 <p>You are automatically rewarded by the network for your computer’s work</p>
             </div>
             <br/>
@@ -96,7 +97,7 @@
         </div>
     </div>
     <div class="image">
-        <img src="/static/computer.png" alt="kryptokrona mining">
+        <img src={computer} alt="kryptokrona mining">
     </div>
 </div>
 
