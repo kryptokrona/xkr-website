@@ -3,7 +3,6 @@ title: How to buy XKR
 date: "2022-05-04"
 summary: "In this guide I will show you how to buy XKR on the exchange"
 ---
-# How to buy XKR
 
 In this guide I will show you how to buy XKR on the exchange [Exbitron](exbitron.com).
 
@@ -14,14 +13,14 @@ First we are going registrer an account on Exbitron, so we can send, trade and r
 Open up the webpage and click the red "Register" button at the top right. You could also paste in https://www.exbitron.com/signup in your browser.
 Fill in your email and choose a password. Confirm this password and check off the Terms Of Service box. Then do the chapta and click the yellow "Register Button".
 
-![sign-up](https://user-images.githubusercontent.com/83395536/166160687-85e302bb-f146-4d73-9c5a-9d377bfebb8b.png)
+<img src="https://user-images.githubusercontent.com/83395536/166160687-85e302bb-f146-4d73-9c5a-9d377bfebb8b.png" width="300"/>
 
 You will then get a verification email, so move over to your inbox. Double check that the email comes from info@exbitron.com, and click the blue "Confirm" button.
 Log so in with your email and password. 
 
 You will now see your wallet. 
 
-![wallet-overview](https://user-images.githubusercontent.com/83395536/166160700-bf5b31b7-0b0d-478d-a1fa-55815a8790e9.png)
+<img src="https://user-images.githubusercontent.com/83395536/166160700-bf5b31b7-0b0d-478d-a1fa-55815a8790e9.png" width="900"/>
 
 
 For this guide I will show you how to buy XKR with DOGE. To do that we need to generate a DOGE wallet. 
@@ -30,7 +29,7 @@ Click the "Search" box and type in DOGE. Click on the DOGE box. On the right you
 
 When done, you should see something like this.
 
-![doge-wallet-overview](https://user-images.githubusercontent.com/83395536/166160712-5c8b3462-9a04-42ae-87d8-5035db61a4cd.png)
+<img src="https://user-images.githubusercontent.com/83395536/166160712-5c8b3462-9a04-42ae-87d8-5035db61a4cd.png" width="600"/>
 
 Do the same to XKR
 
@@ -60,7 +59,8 @@ Click on the Exbitron logo at the top left to get in the homepage.
 
 The quickest way to find the trading pair, is to just search for XKR in the search bar over all of the pairs listed on the front page. 
 
-![img](https://user-images.githubusercontent.com/83395536/166161025-544d4200-a94d-4003-b190-d9e56920e5b2.png)
+<img src="https://user-images.githubusercontent.com/83395536/166161025-544d4200-a94d-4003-b190-d9e56920e5b2.png" width="1000"/>
+
 
 Here you get an overview over all of the trading pairs that you can buy/sell XKR with. As said, we will use DOGE for this tutorial, but it's the same process on the others, just not the same trading pair. 
 
@@ -70,7 +70,7 @@ Click on the XKR/DOGE pair
 
 We want to check out the order book for XKR/DOGE. In my example only one person wants to sell us XKR for DOGE. 
 
-![img](https://user-images.githubusercontent.com/83395536/166161187-ef474f24-1779-4b8e-8c0c-b1d1dcf70fb6.png)
+<img src="https://user-images.githubusercontent.com/83395536/166161187-ef474f24-1779-4b8e-8c0c-b1d1dcf70fb6.png" width="300"/>
 
 To get XKR straight away, click on the order to get the price of what the seller is asking for. This will fill in the price for XKR per DOGE. 
 
@@ -104,7 +104,7 @@ Click on the menu at the top right, and so on balance.
 
 Search for XKR. 
 
-![img](https://user-images.githubusercontent.com/83395536/166161627-c9f93a60-cbc9-4624-957c-1b9f0526f699.png)
+<img src="https://user-images.githubusercontent.com/83395536/166161627-c9f93a60-cbc9-4624-957c-1b9f0526f699.png" alt="drawing" style="height:500px;"/>
 
 Here I've got my XKR into my wallet. But we want to keep them somewhere safe. 
 
@@ -121,9 +121,9 @@ Click on the "recive" button on your wallet to get your wallet address and copy 
 
 ![img](https://user-images.githubusercontent.com/83395536/166161931-e0732184-a748-46aa-9844-34c56eff4268.png)
 
-Move back to your overview to your XKR on Exbitron, and click the "Withdaw" button. 
+Move back to your overview to your XKR on Exbitron, and click the "Withdraw" button. 
 
-![img](https://user-images.githubusercontent.com/83395536/166161997-8ab74225-1ff0-4b2e-b21c-5ac97a8a6b5d.png)
+<img src="https://user-images.githubusercontent.com/83395536/166161997-8ab74225-1ff0-4b2e-b21c-5ac97a8a6b5d.png" alt="drawing" style="height:500px;"/>
 
 Click the "Add Address" button and paste in your address. I would also advice to fill in a name and description to the wallet, so in future trades you don't need to fill in the address each time.
 
@@ -152,8 +152,7 @@ The transaction could take some seconds to show up in your wallet. In my case it
 ![img](https://user-images.githubusercontent.com/83395536/166162430-6ee536dc-679b-4e2a-b1f9-dd3a230f311a.png)
 
 And as that, you bought your first XKR with DOGE.
+<br>
+<br>
 
 Made by: Daniel Boye
-
-
-
