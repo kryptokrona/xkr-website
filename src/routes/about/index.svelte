@@ -74,32 +74,37 @@
   }
 
   .features {
-    margin-top: 60px;
-    margin-bottom: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
+    margin: 40px auto;
+    display: grid;
+    grid-gap: 1rem;
     transition: 250ms ease-in-out all;
+    grid-template-columns: repeat(3, 1fr);
+
+    @media only screen and (max-width: 1000px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media only screen and (max-width: 680px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
 
     div {
-      padding: 20px;
+      padding: 1.25rem;
       border: 1px solid var(--card-border);
       background-color: var(--card-background);
-      border-radius: 8px;
-      max-width: 26%;
-      width: 100%;
+      border-radius: 0.4rem;
       height: 160px;
       transition: 250ms ease-in-out all;
 
+      &:hover {
+        border-color: rgba(255, 255, 255, 0.2);
+      }
+
       @media only screen and (max-width: 1100px) {
-        max-width: 40%;
         height: 170px;
       }
 
       @media only screen and (max-width: 700px) {
-        max-width: 100%;
         height: 160px;
       }
     }

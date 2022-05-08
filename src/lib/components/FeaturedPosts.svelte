@@ -17,7 +17,7 @@
                 <h2>{post.meta.title}</h2>
                 <p>{post.meta.summary}</p>
                 <p>{post.meta.date}</p>
-                <a href={post.path}>Read more</a>
+                <a href={post.path}>Read more →</a>
             </div>
         {/each}
 

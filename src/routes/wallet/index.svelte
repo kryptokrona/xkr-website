@@ -9,6 +9,7 @@ import DownloadWallet from "$lib/components/DownloadWallet.svelte";
 
 <div class="wrapper">
     <h1>Wallet</h1>
+
     <DownloadWallet/>
 </div>
 

@@ -24,6 +24,7 @@
     padding: 9px 10px;
     width: 100px;
     cursor: pointer;
+    font-weight: 600;
     transition: 250ms ease-in-out;
 
     &:hover {
@@ -32,14 +33,16 @@
   }
 
   .enabled {
-    background-color: rgba(63, 215, 130, 0.5);
+    background-color: rgba(63, 215, 130, 0.4);
     border-color: #3fd782;
-    color: white;
+    color: #3fd782;
+    font-weight: 600;
 
     &:hover {
-      background-color: rgba(63, 215, 130, 0.8);
+      background-color: rgba(63, 215, 130, 0.5);
     }
   }
+
 
   .info {
     background: #5F86F2;
