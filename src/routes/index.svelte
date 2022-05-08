@@ -7,6 +7,7 @@
     import FeaturedPosts from "$lib/components/FeaturedPosts.svelte";
     import LinkButton from "../lib/components/buttons/LinkButton.svelte";
     import computer from '/static/computer.png'
+    import computer2 from '/static/computer2.png'
     import star from '/static/star.svg'
 
 
@@ -78,7 +79,32 @@
     {/each}
 </div>
 
-<div class="mining">
+<div class="get-started">
+    <div class="text">
+        <h2>What is Kryptokrona?</h2>
+        <h3>Kryptokrona (XKR) Is a cryptocurrency which is private, quick, and optimized for nordic users.</h3>
+        <div>
+            <div class="list-item">
+                <img src={star} alt="star" height="16px" style="margin-top: 5px">
+                <p>To deliver a secure, private and fast alternative to fiat currency, such as the swedish crown.</p>
+            </div>
+            <div class="list-item">
+                <img src={star} alt="star" height="16px" style="margin-top: 5px">
+                <p>To ensure Nordic excellence in development of secure systems and economic tools.</p>
+            </div>
+            <br/>
+            <br/>
+            <LinkButton text="Read more" enabled={true} url="/about"/>
+        </div>
+    </div>
+    <div class="image2">
+        <img src={computer2} alt="kryptokrona mining">
+    </div>
+</div>
+
+<JoinDiscord/>
+
+<div class="get-started">
     <div class="text">
         <h2>Acquire Kryptokrona through mining</h2>
         <h3>The easiest way to acquire Kryptokrona is to run a mining application on your computer.</h3>
@@ -102,7 +128,6 @@
 </div>
 
 <FeaturedPosts/>
-<JoinDiscord/>
 <SignupNewsletter/>
 
 <style lang="scss">
@@ -172,7 +197,7 @@
     }
   }
 
-  .mining {
+  .get-started {
     margin: 80px 0;
     display: flex;
     align-items: center;
@@ -218,6 +243,20 @@
       }
     }
 
+    .image2 {
+      display: flex;
+      justify-content: right;
+      margin-right: 50px;
+      order: -1;
+
+      @media only screen and (max-width: 900px) {
+        flex-direction: column;
+        justify-content: center;
+        max-width: 80%;
+        margin: 0 auto;
+        order: -1;
+      }
+    }
   }
 
 </style>
