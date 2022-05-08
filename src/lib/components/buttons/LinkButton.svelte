@@ -32,12 +32,13 @@
   }
 
   .enabled {
-    background-color: rgba(63, 215, 130, 0.5);
-    border-color: #3fd782;
-    color: white;
+    background-color: #3FD782;
+    border-color: #63e79f;
+    color: #fff;
+    font-weight: 600;
 
     &:hover {
-      background-color: rgba(63, 215, 130, 0.8);
+      background-color: #63e79f;
     }
   }
 

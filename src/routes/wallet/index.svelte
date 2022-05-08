@@ -20,5 +20,9 @@ import DownloadWallet from "$lib/components/DownloadWallet.svelte";
     justify-content: center;
     box-sizing: border-box;
     gap: 20px;
+
+    h1 {
+      margin: 0;
+    }
   }
 </style>

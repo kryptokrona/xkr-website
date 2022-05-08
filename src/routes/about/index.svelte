@@ -71,6 +71,10 @@
       margin-top: 10px;
     }
 
+    h1 {
+      margin: 0;
+    }
+
   }
 
   .features {
@@ -95,10 +99,6 @@
       border-radius: 0.4rem;
       height: 160px;
       transition: 250ms ease-in-out all;
-
-      &:hover {
-        border-color: rgba(255, 255, 255, 0.2);
-      }
 
       @media only screen and (max-width: 1100px) {
         height: 170px;

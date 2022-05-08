@@ -5,6 +5,8 @@
     import {quadInOut} from "svelte/easing";
     import SignupNewsletter from "$lib/components/SignupNewsletter.svelte";
     import FeaturedPosts from "$lib/components/FeaturedPosts.svelte";
+    import Button from "../lib/components/buttons/Button.svelte";
+    import LinkButton from "../lib/components/buttons/LinkButton.svelte";
 
 
 
@@ -74,6 +76,30 @@
         </div>
     {/each}
 </div>
+
+<div class="mining">
+    <div class="text">
+        <h2>Acquire Kryptokrona through mining</h2>
+        <h3>The easiest way to acquire Kryptokrona is to run a mining application on your computer.</h3>
+        <div>
+            <div class="list-item">
+                <img src="/static/star.svg" alt="star" height="16px" style="margin-top: 5px">
+                <p>Through what’s known as mining the network looks for Kryptokrona. This mechanism secures the network.</p>
+            </div>
+            <div class="list-item">
+                <img src="/static/star.svg" alt="star" height="16px" style="margin-top: 5px">
+                <p>You are automatically rewarded by the network for your computer’s work</p>
+            </div>
+            <br/>
+            <br/>
+            <LinkButton text="Get started" enabled={true} url="/mining"/>
+        </div>
+    </div>
+    <div class="image">
+        <img src="/static/computer.png" alt="kryptokrona mining">
+    </div>
+</div>
+
 <FeaturedPosts/>
 <JoinDiscord/>
 <SignupNewsletter/>
@@ -126,10 +152,6 @@
       height: 160px;
       transition: 250ms ease-in-out all;
 
-      &:hover {
-        border-color: rgba(255, 255, 255, 0.2);
-      }
-
       @media only screen and (max-width: 1100px) {
         height: 170px;
       }
@@ -149,5 +171,52 @@
     }
   }
 
+  .mining {
+    margin: 80px 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    h2 {
+      margin-top: -80px;
+    }
+
+    @media only screen and (max-width: 900px) {
+      flex-direction: column;
+      h2 {
+        margin-top: 40px;
+      }
+    }
+
+    text {
+      order: 1;
+    }
+
+    .list-item {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-bottom: 20px;
+      gap: 10px;
+
+      p{
+        margin: 0;
+      }
+    }
+
+    .image {
+      display: flex;
+      justify-content: right;
+
+      @media only screen and (max-width: 900px) {
+        flex-direction: column;
+        justify-content: center;
+        max-width: 80%;
+        margin: 0 auto;
+        order: -1;
+      }
+    }
+
+  }
 
 </style>

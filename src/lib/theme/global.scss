@@ -1,31 +1,30 @@
 :root {
-    --logo-color: #ffffff;
-    --backgound-color: #1a1a1a;
-    --title-color: rgba(255, 255, 255, 0.8);
-    --text-color: rgba(255, 255, 255, 0.6);
+  --logo-color: #ffffff;
+  --backgound-color: #1a1a1a;
+  --title-color: rgba(255, 255, 255, 0.8);
+  --text-color: rgba(255, 255, 255, 0.6);
 
-    --hamburger: rgba(255, 255, 255, 0.5);
-    --nav-backgound-color: rgba(32, 32, 32, 0.9);
-    --nav-link-color: #ffffff;
-    --link-color: #ffffff;
+  --hamburger: rgba(255, 255, 255, 0.5);
+  --nav-backgound-color: rgba(32, 32, 32, 0.9);
+  --nav-link-color: #ffffff;
+  --link-color: #ffffff;
 
-    --border-color: rgba(255, 255, 255, 0.1);
-    --card-border: #282828;
-    --card-background: #222222;
+  --border-color: rgba(255, 255, 255, 0.1);
+  --card-border: #282828;
+  --card-background: #222222;
 
-    --desktop-padding: 0 40px;
-    --mobile-padding: 0 20px;
-    --website-width: 1400px;
+  --desktop-padding: 0 40px;
+  --mobile-padding: 0 20px;
+  --website-width: 1400px;
 
-    --success-color: #3fd782;
-    --warn-color: #f25f61;
-    --info-color: #5f86f2;
-    --alert-color: #f2cb5f;
-  }
+  --success-color: #3fd782;
+  --warn-color: #f25f61;
+  --info-color: #5f86f2;
+  --alert-color: #f2cb5f;
+}
 
 
-
- @font-face {
+@font-face {
   font-family: 'Roboto Mono';
   src: url('/static/fonts/RobotoMono-Regular.woff') format('woff'),
   url('/static/fonts/RobotoMono-Regular.woff2') format('woff2');
@@ -47,20 +46,22 @@ body {
   margin: 0;
   background-color: var(--backgound-color);
   font-family: Montserrat;
-  -webkit-tap-highlight-color:transparent;
-  -moz-tap-highlight-color:transparent;
-  -o-tap-highlight-color:transparent;
-  tap-highlight-color:transparent;
+  -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  -o-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Montserrat;
   color: var(--title-color);
+  font-weight: 600;
 }
 
 p {
   font-family: "Roboto Mono";
   color: var(--text-color);
+
   a {
     color: var(--link-color);
     -ms-word-break: break-all;
@@ -72,13 +73,13 @@ p {
   }
 }
 
- a {
-   color: var(--link-color);
- }
+a {
+  color: var(--link-color);
+}
 
- code {
-   color: var(--success-color);
- }
+code {
+  color: var(--success-color);
+}
 
 .blink_me {
   animation: blinker 2s linear infinite;
@@ -194,39 +195,39 @@ p {
   animation: rgbFill 15s ease infinite;
 }
 
- .border_rgb {
-   animation: border_rgb  2s linear infinite;
-   -webkit-animation: border_rgb 2s linear infinite;
-   -moz-animation: border_rgb 2s linear infinite;
-   transition: 250ms ease-in-out;
- }
+.border_rgb {
+  animation: border_rgb 2s linear infinite;
+  -webkit-animation: border_rgb 2s linear infinite;
+  -moz-animation: border_rgb 2s linear infinite;
+  transition: 250ms ease-in-out;
+}
 
- @keyframes border_rgb {
-   0% {
-     border: 1px solid var(--success-color);
-     box-shadow: 0 0 10px var(--success-color);
-   }
-   20% {
-     border: 1px solid var(--alert-color);
-     box-shadow: 0 0 10px var(--alert-color);
-   }
-   40% {
-     border: 1px solid var(--warn-color);
-     box-shadow: 0 0 10px var(--warn-color);
-   }
-   60% {
-     border: 1px solid #f25fd0;;
-     box-shadow: 0 0 10px #f25fd0;;
-   }
-   80% {
-     border: 1px solid var(--info-color);
-     box-shadow: 0 0 10px var(--info-color);
-   }
-   100% {
-     border: 1px solid #5ff2f0;
-     box-shadow: 0 0 10px #5ff2f0;
-   }
- }
+@keyframes border_rgb {
+  0% {
+    border: 1px solid var(--success-color);
+    box-shadow: 0 0 10px var(--success-color);
+  }
+  20% {
+    border: 1px solid var(--alert-color);
+    box-shadow: 0 0 10px var(--alert-color);
+  }
+  40% {
+    border: 1px solid var(--warn-color);
+    box-shadow: 0 0 10px var(--warn-color);
+  }
+  60% {
+    border: 1px solid #f25fd0;;
+    box-shadow: 0 0 10px #f25fd0;;
+  }
+  80% {
+    border: 1px solid var(--info-color);
+    box-shadow: 0 0 10px var(--info-color);
+  }
+  100% {
+    border: 1px solid #5ff2f0;
+    box-shadow: 0 0 10px #5ff2f0;
+  }
+}
 
 .fixed {
   position: fixed;
