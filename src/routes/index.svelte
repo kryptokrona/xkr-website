@@ -133,6 +133,7 @@
 <style lang="scss">
 
   .hero {
+    margin-top: 160px;
     box-sizing: border-box;
 
     @media only screen and (max-width: 900px) {

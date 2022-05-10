@@ -43,6 +43,7 @@
 
 <style lang="scss">
     .wrapper {
+      margin-top: 160px;
       margin-bottom: 10rem;
 
       .text-wrapper {

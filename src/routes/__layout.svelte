@@ -60,7 +60,7 @@
 <style lang="scss">
 /* We hande the website width and padding at top level */
   main {
-    margin: 160px auto 40px auto;
+    margin: 0 auto;
     max-width: var(--website-width);
     padding: 0 40px;
     box-sizing: border-box;

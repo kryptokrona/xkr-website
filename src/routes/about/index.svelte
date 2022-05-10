@@ -63,6 +63,7 @@
 <style lang="scss">
 
   .text-wrapper {
+    margin-top: 160px;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;

@@ -40,6 +40,7 @@
 <style lang="scss">
 
   .wrapper {
+    margin-top: 160px;
     margin-bottom: 40px;
     box-sizing: border-box;
   }

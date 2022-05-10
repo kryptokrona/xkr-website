@@ -15,6 +15,7 @@ import DownloadWallet from "$lib/components/DownloadWallet.svelte";
 
 <style lang="scss">
   .wrapper {
+    margin-top: 160px;
     display: flex;
     flex-direction: column;
     justify-content: center;
