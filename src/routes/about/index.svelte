@@ -46,8 +46,8 @@
 </div>
 <div class="features">
     <div>
-       <h2>Max Supply XKR</h2>
-        <p>1,000,000,000</p>
+       <h2>Max Supply</h2>
+        <p>1,000,000,000 XKR</p>
         <h2>Current Supply</h2>
         <p>{$network.supply} XKR</p>
     </div>

@@ -3,6 +3,11 @@ import {fade} from "svelte/transition";
 import LinkButton from "./buttons/LinkButton.svelte";
 import {cache} from "../stores/cache.js";
 import moment from "moment/moment.js";
+import {get_avatar} from "../utils/get-avatar.js";
+
+const avatar = (adr) => {
+    return get_avatar(adr)
+}
 </script>
 
 <div class="app">
@@ -31,7 +36,10 @@ import moment from "moment/moment.js";
                 {#each $cache as post}
                     <div in:fade class="post">
                         <div style="display: flex; justify-content: space-between">
-                            <h4>{post.nickname ? post.nickname : 'Anonymous'}</h4>
+                            <div style="display: flex; align-items: center; margin: -10px 0 0 -10px">
+                                <img class="avatar" src="data:image/png;base64,{avatar(post.key)}" alt="">
+                                <h4>{post.nickname ? post.nickname : 'Anonymous'}</h4>
+                            </div>
                             <h5>{moment(post.time * 1000).fromNow()}</h5>
                         </div>
 
