@@ -1,5 +1,6 @@
 <script>
     import {onMount} from "svelte";
+    import {fade} from "svelte/transition";
 
     let latestPosts = []
     onMount(async () => {
@@ -13,7 +14,7 @@
 <div class="wrapper">
     <div class="blog-wrapper">
         {#each latestPosts as post}
-            <div>
+            <div in:fade>
                 <h2>{post.meta.title}</h2>
                 <p>{post.meta.summary}</p>
                 <p>{post.meta.date}</p>

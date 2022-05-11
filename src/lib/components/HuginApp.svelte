@@ -1,34 +1,15 @@
 <script>
-
+import {fade} from "svelte/transition";
 import LinkButton from "./buttons/LinkButton.svelte";
+import {cache} from "../stores/cache.js";
 
-const data = [
-    {user: "AnonMan", msg: "This is awesome, the world needs Hugin, period."},
-    {user: "Satoshi", msg: "Yes, you can @WhoDis, glhf!"},
-    {user: "WhoDis", msg: "So I can speak freely here?"},
-    {user: "MrCoin", msg: "I tipped you 7 XKR, spread the love!"},
-    {user: "Anonymous", msg: "Testing the new functions, great update guys!"},
-    {user: "PlsSendHelp", msg: "Who tipped me?"},
-    {user: "AnonMan", msg: "This is awesome, the world needs Hugin, period."},
-    {user: "Satoshi", msg: "Yes, you can @WhoDis, glhf!"},
-    {user: "WhoDis", msg: "So I can speak freely here?"},
-    {user: "MrCoin", msg: "I tipped you 7 XKR, spread the love!"},
-    {user: "Anonymous", msg: "Testing the new functions, great update guys!"},
-    {user: "PlsSendHelp", msg: "Who tipped me?"},
-    {user: "AnonMan", msg: "This is awesome, the world needs Hugin, period."},
-    {user: "Satoshi", msg: "Yes, you can @WhoDis, glhf!"},
-    {user: "WhoDis", msg: "So I can speak freely here?"},
-    {user: "MrCoin", msg: "I tipped you 7 XKR, spread the love!"},
-    {user: "Anonymous", msg: "Testing the new functions, great update guys!"},
-    {user: "PlsSendHelp", msg: "Who tipped me?"},
-]
 </script>
 
 <div class="app">
     <div class="wrapper">
         <div class="col left">
             <div class="nav">
-                <h1>Hugin Boards</h1>
+                <h1>Hugin</h1>
                 <div class="nav-link">
                     <h3>Home</h3>
                 </div>
@@ -41,12 +22,14 @@ const data = [
             </div>
         </div>
         <div class="posts">
-            {#each data as post}
-                <div class="post">
-                    <h2>{post.user}</h2>
-                    <p>{post.msg}</p>
-                </div>
-            {/each}
+            {#if $cache}
+                {#each $cache.items as post}
+                    <div in:fade class="post">
+                        <h2>{post.key}</h2>
+                        <p>{post.message}</p>
+                    </div>
+                {/each}
+            {/if}
         </div>
         <div class="col right">
             <div class="action">
@@ -62,14 +45,12 @@ const data = [
 
   .app {
     width: 100%;
-    margin-top: 100px;
     overflow: hidden;
   }
 
     .wrapper {
       display: flex;
       height: 800px;
-      border-top:1px solid rgba(255, 255, 255, 0.1);
     }
 
     .posts {
@@ -81,6 +62,8 @@ const data = [
       overflow: scroll;
       -ms-overflow-style: none;
       scrollbar-width: none;
+      border-right: 1px solid rgba(255, 255, 255, 0.1);
+      border-left: 1px solid rgba(255, 255, 255, 0.1);
 
       &::-webkit-scrollbar {
         display: none;
@@ -102,22 +85,18 @@ const data = [
       box-sizing: border-box;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      max-width: 300px;
+      max-width: 250px;
       width: 100%;
       height: 100%;
-      padding: 2rem;
-
     }
 
-  .left {
-    border-right: 1px solid rgba(255, 255, 255, 0.1);
-  }
+    .right {
+      padding-left: 2rem;
 
-  .right {
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
-  }
-
+      @media only screen and (max-width: 1000px) {
+        display: none;
+      }
+    }
 
   .nav {
     display: flex;
@@ -128,7 +107,6 @@ const data = [
       box-sizing: border-box;
       display: flex;
       align-items: center;
-      width: 300px;
 
       h3 {
         margin: 0;
