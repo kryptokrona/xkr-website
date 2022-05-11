@@ -15,15 +15,12 @@ const avatar = (adr) => {
         <div class="col left">
             <div class="nav">
                 <h1>Hugin</h1>
+                <p>This is a live feed from our decentralized encrypted privacy messenger. </p>
+                <!--
                 <div class="nav-link">
                     <h3>Home</h3>
                 </div>
-                <div class="nav-link">
-                    <h3>Trending posts</h3>
-                </div>
-                <div class="nav-link">
-                    <h3>Trending hashtags</h3>
-                </div>
+                -->
             </div>
             <div class="action small">
                 <h2>Want to join the conversation?</h2>
@@ -31,8 +28,12 @@ const avatar = (adr) => {
                 <LinkButton text="Download" enabled={true}/>
             </div>
         </div>
+        <div class="action-mobile">
+            <h2>Want to join the conversation?</h2>
+            <p>Download Hugin Messenger and get 5 XKR to start chatting straight away!</p>
+            <LinkButton text="Download" url="https://hugin.chat" target="_blank" enabled={true}/>
+        </div>
         <div class="posts">
-
                 {#each $cache as post}
                     <div in:fade class="post">
                         <div style="display: flex; justify-content: space-between">
@@ -43,7 +44,7 @@ const avatar = (adr) => {
                             <h5>{moment(post.time * 1000).fromNow()}</h5>
                         </div>
 
-                        <p>{post.message}</p>
+                        <p>{@html post.message}</p>
                     </div>
                 {/each}
 
@@ -52,7 +53,7 @@ const avatar = (adr) => {
             <div class="action">
                 <h2>Want to join the conversation?</h2>
                 <p>Download Hugin Messenger and get 5 XKR to start chatting straight away!</p>
-                <LinkButton text="Download" enabled={true}/>
+                <LinkButton text="Download" url="https://hugin.chat" target="_blank" enabled={true}/>
             </div>
         </div>
     </div>
@@ -67,7 +68,20 @@ const avatar = (adr) => {
 
     .wrapper {
       display: flex;
-      height: 800px;
+
+      @media only screen and (max-width: 700px) {
+        flex-direction: column;
+      }
+
+      .action-mobile {
+        display: none;
+
+        @media only screen and (max-width: 700px) {
+          display: block;
+          margin-top: 40px;
+          margin-bottom: 60px;
+        }
+      }
     }
 
     .posts {
@@ -98,11 +112,16 @@ const avatar = (adr) => {
     }
 
     .post {
-      box-sizing: border-box;
       background-color: var(--card-background);
       border: 1px solid var(--card-border);
       padding: 1rem;
       border-radius: 0.4rem;
+      -ms-word-break: break-word;
+      word-break: break-word;
+
+      -webkit-hyphens: auto;
+      -moz-hyphens: auto;
+      hyphens: auto;
 
       h4 {
         margin: 0;
@@ -114,10 +133,6 @@ const avatar = (adr) => {
       h5 {
         margin: 0;
       }
-
-      p{
-        margin: 10px 0 0 0;
-      }
     }
 
     .col {
@@ -126,7 +141,6 @@ const avatar = (adr) => {
       flex-direction: column;
       max-width: 250px;
       width: 100%;
-      height: 100%;
     }
 
     .right {
@@ -140,6 +154,11 @@ const avatar = (adr) => {
     .left {
       justify-content: space-between;
       padding-bottom: 2rem;
+      padding-right: 2rem;
+
+      p {
+        margin: 0;
+      }
 
       @media only screen and (max-width: 700px) {
         display: none;
