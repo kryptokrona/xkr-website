@@ -133,6 +133,10 @@ const avatar = (adr) => {
       h5 {
         margin: 0;
       }
+
+      p {
+        margin: 10px 0 0 0;
+      }
     }
 
     .col {
