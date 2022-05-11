@@ -2,6 +2,7 @@
 import {fade} from "svelte/transition";
 import LinkButton from "./buttons/LinkButton.svelte";
 import {cache} from "../stores/cache.js";
+import moment from "moment/moment.js";
 </script>
 
 <div class="app">
@@ -29,7 +30,11 @@ import {cache} from "../stores/cache.js";
 
                 {#each $cache as post}
                     <div in:fade class="post">
-                        <h4>{post.key}</h4>
+                        <div style="display: flex; justify-content: space-between">
+                            <h4>{post.nickname ? post.nickname : 'Anonymous'}</h4>
+                            <h5>{moment(post.time * 1000).fromNow()}</h5>
+                        </div>
+
                         <p>{post.message}</p>
                     </div>
                 {/each}
@@ -94,9 +99,12 @@ import {cache} from "../stores/cache.js";
       h4 {
         margin: 0;
         white-space: nowrap;
-        max-width: 180px;
+        max-width: 100px;
         overflow: hidden;
         text-overflow: ellipsis
+      }
+      h5 {
+        margin: 0;
       }
 
       p{
