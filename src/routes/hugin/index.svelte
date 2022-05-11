@@ -16,5 +16,6 @@
 <style lang="scss">
 .wrapper {
   margin-top: 67px;
+  margin-bottom: -60px;
 }
 </style>
