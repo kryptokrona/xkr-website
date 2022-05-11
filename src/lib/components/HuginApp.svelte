@@ -68,6 +68,7 @@ const avatar = (adr) => {
 
     .wrapper {
       display: flex;
+      height: 800px;
 
       @media only screen and (max-width: 700px) {
         flex-direction: column;
@@ -78,8 +79,6 @@ const avatar = (adr) => {
 
         @media only screen and (max-width: 700px) {
           display: block;
-          margin-top: 40px;
-          margin-bottom: 60px;
         }
       }
     }
@@ -102,6 +101,7 @@ const avatar = (adr) => {
       }
 
       @media only screen and (max-width: 700px) {
+        margin-top: 40px;
         padding: 0;
         border-left: none;
       }
