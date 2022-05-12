@@ -60,6 +60,10 @@
         border-radius: 10em;
         width: 8%;
         transition: all 3s;
+
+        @media (prefers-color-scheme: light) {
+          background-color: var(--info-color);
+        }
       }
     }
 

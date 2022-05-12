@@ -1,26 +1,55 @@
-:root {
-  --logo-color: #ffffff;
-  --backgound-color: #1a1a1a;
-  --title-color: rgba(255, 255, 255, 0.8);
-  --text-color: rgba(255, 255, 255, 0.6);
+@media (prefers-color-scheme: dark) {
+  :root {
+    --logo-color: #ffffff;
+    --backgound-color: #121212;
+    --title-color: rgba(255, 255, 255, 0.8);
+    --text-color: rgba(255, 255, 255, 0.6);
 
-  --hamburger: rgba(255, 255, 255, 0.5);
-  --nav-backgound-color: rgba(32, 32, 32, 0.9);
-  --nav-link-color: #ffffff;
-  --link-color: #ffffff;
+    --hamburger: rgba(255, 255, 255, 0.5);
+    --nav-backgound-color: rgba(32, 32, 32, 0.9);
+    --nav-link-color: #ffffff;
+    --link-color: #ffffff;
 
-  --border-color: rgba(255, 255, 255, 0.1);
-  --card-border: #282828;
-  --card-background: #222222;
+    --border-color: rgba(255, 255, 255, 0.1);
+    --card-border: #252525;
+    --card-background: #171717;
 
-  --desktop-padding: 0 40px;
-  --mobile-padding: 0 20px;
-  --website-width: 1400px;
+    --desktop-padding: 0 40px;
+    --mobile-padding: 0 20px;
+    --website-width: 1400px;
 
-  --success-color: #3fd782;
-  --warn-color: #f25f61;
-  --info-color: #5f86f2;
-  --alert-color: #f2cb5f;
+    --success-color: #3fd782;
+    --warn-color: #f25f61;
+    --info-color: #5f86f2;
+    --alert-color: #f2cb5f;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --logo-color: #121212;
+    --backgound-color: #f9f8f9;
+    --title-color: rgba(0, 0, 0, 0.8);
+    --text-color: rgba(0, 0, 0, 0.6);
+
+    --hamburger: rgba(0, 0, 0, 0.5);
+    --nav-backgound-color: rgba(32, 32, 32, 0.9);
+    --nav-link-color: #000000;
+    --link-color: #000000;
+
+    --border-color: rgba(0, 0, 0, 0.1);
+    --card-border: #e5e7eb;
+    --card-background: #fff;
+
+    --desktop-padding: 0 40px;
+    --mobile-padding: 0 20px;
+    --website-width: 1400px;
+
+    --success-color: #3fd782;
+    --warn-color: #f25f61;
+    --info-color: #5f86f2;
+    --alert-color: #f2cb5f;
+  }
 }
 
 

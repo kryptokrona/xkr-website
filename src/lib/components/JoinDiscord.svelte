@@ -58,7 +58,7 @@
     transition: 250ms ease-in-out;
 
     &:hover {
-      background-color: #2d2d2d;
+      background-color: rgba(45, 45, 45, 0.15);
 
       .circle {
         margin-right: 20px;
