@@ -5,6 +5,7 @@
     import Navbar from "$lib/components/navbar/Navbar.svelte";
     import Footer from "$lib/components/Footer.svelte";
     import Popup from "$lib/components/Popup.svelte";
+    import HuginPopup from "$lib/components/HuginPopup.svelte";
 
     //Global scss
     import '$lib/theme/global.scss'
@@ -56,6 +57,7 @@
     {/if}
 </main>
 <Footer/>
+<HuginPopup/>
 
 <style lang="scss">
 /* We hande the website width and padding at top level */
