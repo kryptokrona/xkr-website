@@ -1,5 +1,6 @@
 <script>
     import {onMount} from "svelte";
+    import {page} from "$app/stores";
     import {state} from "$lib/stores/store.js";
     import LoadingScreen from "$lib/components/LoadingScreen.svelte";
     import Navbar from "$lib/components/navbar/Navbar.svelte";
@@ -57,7 +58,9 @@
     {/if}
 </main>
 <Footer/>
+{#if ($page.url.pathname !== '/hugin')}
 <HuginPopup/>
+    {/if}
 
 <style lang="scss">
 /* We hande the website width and padding at top level */
