@@ -19,7 +19,7 @@
     {#if !open}
         <div class="circle" on:click={handleClick}>
             <div class="dot blink_me"></div>
-            <img height="36px" src="/static/hugintray.png" alt="">
+            <h1>H</h1>
         </div>
     {/if}
     {#if open}
