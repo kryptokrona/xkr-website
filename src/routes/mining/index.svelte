@@ -10,7 +10,7 @@
     <h1>Mining</h1>
 
     <div class="text-wrapper">
-        <p>Kryptokrona is a cryptocurrency that relies on proof-of-work mining to achieve distributed consensus. It utilizes the Cryptonight Turtle algorithm. This algorithm is primarily mined on CPUs and is ASIC resistant. With Kryptokrona being ASIC resistant, the whole network gets decentralized. This means that the algorithm is purposefully designed to stop mining from being dominated by a set of specialized miners with the most expensive equipment. Therefore Kryptokrona should be easily minable through "regular" computers.</p>
+        <p>Kryptokrona is a cryptocurrency that relies on proof-of-work mining to achieve distributed consensus. It utilizes the Cryptonight Turtle algorithm. This algorithm is primarily mined on CPUs and is ASIC resistant. With Kryptokrona being ASIC resistant, the whole network gets decentralized. This means that the algorithm is purposefully designed to stop mining from being dominated by a set of specialized miners with the most expensive equipment. Therefore Kryptokrona should be easily mineable through "regular" computers.</p>
         <h2>Hardware</h2>
         <p>Kryptokrona can be mined on CPUs, GPUs & Android Phones. </p>
         <h2>Software</h2>
