@@ -14,7 +14,7 @@
         <h2>Hardware</h2>
         <p>Kryptokrona can be mined on CPUs, GPUs & Android Phones. </p>
         <h2>Software</h2>
-        <p>There are several options when it comes to mining software.The most common mining software for mining such algorithms is XMRig. Guide on how to mine XKR is coming up soon</p>
+        <p>There are several options when it comes to mining software.The most common mining software for mining such algorithms is XMRig. Guide on how to mine XKR is coming up soon.</p>
     </div>
 
     <LinkButton url="https://xmrig.com/download" target="_blank" enabled={true} text="Download XMRig"/>
