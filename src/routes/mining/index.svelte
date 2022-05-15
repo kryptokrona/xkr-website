@@ -29,6 +29,12 @@
     <div class=""></div>
     <JoinDiscord/>
     <StatusBar/>
+    
+    <div class="text-wrapper">
+      <h2>Don't want to mine?</h2>
+      <p>Buy XKR here. We are working on listing XKR at other places.</p>
+    </div>
+    <LinkButton url="https://kryptokrona.org/blog/how-to-buy-xkr" target="_blank" enabled={false} text="Guide on how to buy XKR"/> 
 </div>
 
 
