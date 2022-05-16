@@ -9,11 +9,11 @@
 <div class="wrapper">
     <h1>Benchmarks</h1>
 
-    <table>
+    <table class="tbl">
         <thead>
           <tr>
-            <th>Month</th>
-            <th>Savings</th>
+            <th>Device</th>
+            <th>Hashrate in h</th>
           </tr>
         </thead>
         <tbody>
@@ -41,9 +41,23 @@
       margin-top: 160px;
       margin-bottom: 40px;
       box-sizing: border-box;
-      color: white;
+      font-family: "Roboto Mono";
+      
+    
     }
-    table, th, td {
-      border: 1px solid white;
+    .tbl, tr, th, .tbl td {
+      border: 1px solid #2E2C2E;
+      padding: 5px;
+      color: #FFFFFF99;
+      margin-left: auto;
+      margin-right: auto;
+
+    } 
+    table.tbl {
+      width: 300px; border-collapse: collapse;
     }
+    .tbl th {
+      background: #464346;
+    }
+
 </style>
