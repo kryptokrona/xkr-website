@@ -5,7 +5,7 @@
       <thead>
         <tr>
           <th>CPU</th>
-          <th>Hashrate in h</th>
+          <th>Hashrate in h/s</th>
         </tr>
       </thead>
       <tbody>
