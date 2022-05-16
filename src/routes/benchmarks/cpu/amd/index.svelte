@@ -1,5 +1,5 @@
 <div class="wrapper">
-  <h1>Benchmarks</h1>
+  <h1>Benchmarks for AMD processors</h1>
   <br>
   <table class="tbl">
       <thead>
@@ -96,5 +96,5 @@
   .tbl th {
     background: #464346;
   }
-
+  
 </style>
