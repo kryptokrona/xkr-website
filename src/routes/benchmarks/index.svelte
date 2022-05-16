@@ -1,15 +1,15 @@
 <script>
-    import MiningConfig from "$lib/components/MiningConfig.svelte";
-    import JoinDiscord from "$lib/components/JoinDiscord.svelte";
-    import StatusBar from "$lib/components/StatusBar.svelte";
-    import MiningCalc from "$lib/components/MiningCalc.svelte";
     import LinkButton from "../../lib/components/buttons/LinkButton.svelte";
 </script>
 
 <div class="wrapper">
-    <h1>Benchmarks</h1>
+    <h1>Benchmarks for Kryptokrona</h1>
     <br>
-    
+    <LinkButton url="kryptokrona.org/benchmarks/cpu" target="_blank" enabled={false} text="Hashrates for AMD CPUs"/>
+    <LinkButton url="kryptokrona.org/benchmarks/cpu/intel" target="_blank" enabled={false} text="Hashrates for Intel CPUs"/>
+    <LinkButton url="kryptokrona.org/benchmarks/gpu" target="_blank" enabled={false} text="Hashrates for GPUs"/>
+</div>
+
 <style lang="scss">
 
     .wrapper {
