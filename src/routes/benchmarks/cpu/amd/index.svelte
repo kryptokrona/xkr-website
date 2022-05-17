@@ -86,7 +86,7 @@
   background: #464346;
   }
   tr:hover {
-  background: #464346;
+  background: #575557;
 
   }
 
