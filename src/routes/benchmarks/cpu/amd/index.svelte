@@ -5,72 +5,12 @@
       <thead>
         <tr>
           <th>CPU</th>
-          <th>Hashrate in h/s</th>
+          <th onclick="sortColumn('age')">Hashrate in h/s</th>
         </tr>
       </thead>
-      <tbody>
-        <tr>
-          <td>AMD A8-7410</td>
-          <td>1000</td>
-        </tr>
-        <tr>
-          <td>AMD Ryzen 3900X</td>
-          <td>25000</td>
-        </tr>
-      </tbody>
-      <tbody>
-        <tr>
-          <td>AMD Ryzen 5800X</td>
-          <td>17000</td>
-        </tr>
-        <tr>
-          <td>AMD Ryzen 5 2600</td>
-          <td>12000</td>
-        </tr>
-      </tbody>
-      <tbody>
-        <tr>
-          <td>AMD Ryzen 5 3600</td>
-          <td>10500</td>
-        </tr>
-        <tr>
-          <td>AMD Ryzen 5 5600x</td>
-          <td>13500</td>
-        </tr>
-      </tbody>
-      <tbody>
-        <tr>
-         <td>AMD Ryzen 9 3900x</td>
-          <td>22500</td>
-        </tr>
-        <tr>
-          <td>AMD Ryzen 9 3900xt</td>
-          <td>22500</td>
-        </tr>
-      </tbody>
-      <tbody>
-        <tr>
-          <td>AMD Ryzen 5 2600</td>
-          <td>9500</td>
-        </tr>
-        <tr>
-          <td>AMD Ryzen 9 5900x 24 threads</td>
-          <td>25000</td>
-        </tr>
-      </tbody>
-      <tbody>
-        <tr>
-          <td>AMD Ryzen 9 5900x 32 threads</td>
-          <td>31500</td>
-        </tr>
-        <tr>
-          <td>AMD FX 8350</td>
-          <td>4230</td>
-        </tr>
-      </tbody>
+      <tbody id="tableData"></tbody>
     </table>
 </div>
-
 <style lang="scss">
 
   .wrapper {
@@ -98,3 +38,54 @@
   }
   
 </style>
+<script>
+  let sortDirection = false;
+  let benchmarkData = [
+    { device: 'Test', hashrate: 50 },
+    { device: 'Test', hashrate: 25 },
+    { device: 'Test', hashrate: 31 },
+    { device: 'Test', hashrate: 2 },
+    { device: 'Test', hashrate: 82 },
+    { device: 'Test', hashrate: 31 },
+    { device: 'Test', hashrate: 31 },
+    { device: 'Test', hashrate: 31 },
+
+  ]
+
+  window.onload = () => {
+    loadTableData(benchmarkData);
+  }
+
+  function loadTableData(benchmarkData) {
+    const tableBody = document.getElementById('tableData');
+    let dataHtml = '';
+
+    for(let benchmark of benchmarkData) {
+      dataHtml += `<tr><td>${benchmark.device}</td><td>${benchmark.hashrate}</td></tr>`;
+    }
+
+    tableBody.innerHTML = dataHtml;
+  }
+
+  function sortColumn(columnName) {
+    const dataType = typeof benchmarkData[0][columnName];
+    sortDirection = !sortDirection;
+
+    switch(dataType) {
+      case 'number':
+        sortNumberColumn(sortDirection, columnName);
+        break;
+    }
+
+    loadTableData(benchmarkData);
+  }
+
+  function sortNumberColumn(sort, columName) {
+    benchmarkData = benckmarkData.sort((p1, p2) => {
+      return sort ? p1[columName] - p2[columnName] : p2[columnName] - p1[columName]
+    });
+  }
+
+</script>
+
+
