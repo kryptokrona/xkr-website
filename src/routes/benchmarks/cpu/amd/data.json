@@ -1,0 +1,56 @@
+[{
+    "device": "AMD A8-7410",
+    "hashrate": 1000,
+},
+{
+    "device": "AMD FX 8350",
+    "hashrate": 4230,
+
+},
+{
+    "device": "AMD Ryzen 3900X",
+    "hashrate": 25000,
+
+},
+{
+    "device": "AMD Ryzen 5800X",
+    "hashrate": 17000,
+
+},
+{
+    "device": "AMD Ryzen 5 2600",
+    "hashrate": 12000,
+
+},
+{
+    "device": "AMD Ryzen 5 3600",
+    "hashrate": 10500,
+
+},
+{
+    "device": "AMD Ryzen 5 5600x",
+    "hashrate": 10500,
+
+},
+{
+    "device": "AMD Ryzen 9 3900x",
+    "hashrate": 22500,
+
+},
+{
+    "device": "AMD Ryzen 9 3900xt",
+    "hashrate": 22500,
+},
+{
+    "device": "AMD Ryzen 5 2600",
+    "hashrate": 9500,
+},
+{
+    "device": "AMD Ryzen 9 5900x 24 threads",
+    "hashrate": 25000,
+},
+{
+    "device": "AMD Ryzen 9 5900x 32 threads",
+    "hashrate": 31500,
+},
+]
