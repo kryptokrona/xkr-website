@@ -5,9 +5,9 @@
 <div class="wrapper">
     <h1>Benchmarks for Kryptokrona</h1>
     <br>
-    <LinkButton url="/benchmarks/cpu/amd" target="_blank" enabled={false} text="Hashrates for AMD CPUs"/>
-    <LinkButton url="/benchmarks/cpu/intel" target="_blank" enabled={false} text="Hashrates for Intel CPUs"/>
-    <LinkButton url="/benchmarks/gpu" target="_blank" enabled={false} text="Hashrates for GPUs"/>
+    <LinkButton url="/benchmarks/cpu/amd" enabled={false} text="Hashrates for AMD CPUs"/>
+    <LinkButton url="/benchmarks/cpu/intel" enabled={false} text="Hashrates for Intel CPUs"/>
+    <LinkButton url="/benchmarks/gpu" enabled={false} text="Hashrates for GPUs"/>
 </div>
 
 <style lang="scss">
