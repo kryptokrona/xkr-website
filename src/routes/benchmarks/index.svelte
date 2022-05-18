@@ -18,7 +18,6 @@
     <br>
     <p>Made by Daniel Boye</p>
 </div>
-
 <style lang="scss">
     .wrapper {
       margin-top: 160px;
