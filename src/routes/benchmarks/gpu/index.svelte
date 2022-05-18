@@ -21,7 +21,7 @@
 
 <script>
 	let array = [
-		{device:"AMD RX 5700XT", hashrate:11000},
+	{device:"AMD RX 5700XT", hashrate:11000},
     {device:"NVIDIA Quadro K620", hashrate:600},
     {device:"NVIDIA GTX 970", hashrate:3200},
     {device:"NVIDIA GTX 1650", hashrate:2666},
@@ -89,4 +89,3 @@
 
     
 </style>
-

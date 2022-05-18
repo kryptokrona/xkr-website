@@ -21,7 +21,7 @@
 
 <script>
 	let array = [
-		{device:"AMD A8-7410", hashrate:1000},
+	{device:"AMD A8-7410", hashrate:1000},
     {device:"AMD FX 8350", hashrate:4230},
     {device:"AMD Ryzen 3900X", hashrate:25000},
     {device:"AMD Ryzen 5800X", hashrate:17000},
