@@ -1,25 +1,6 @@
-<div class="wrapper">
-	<h1>Benchmarks for Intel processors</h1>
-	<br>
-<table class="tbl">
-	<thead>
-		<tr>
-			<th on:click={sort("device")}>CPU</th>
-			<th on:click={sort("hashrate")}>Hashrate in h/s</th>
-		</tr>
-	</thead>
-	<tbody>
-		{#each array as row}
-			<tr>
-				<td on:click={sort("device")}>{row.device}</td>
-				<td on:click={sort("hashrate")}>{row.hashrate}</td>
-			</tr>
-		{/each}
-	</tbody>
-</table>
-</div>
-
 <script>
+  import MiningCalc from "$lib/components/MiningCalc.svelte";
+  
 	let array = [
 		{device:"Intel Xeon E3-1230 v2", hashrate:4172},
     {device:"Intel Xeon E5 2680 v3", hashrate:11500},
@@ -62,6 +43,33 @@
 	}
 </script>
 
+<div class="wrapper">
+	<h1>Benchmarks for Intel processors</h1>
+	<br>
+  <p>Click on the CPUs to sort them in alphabetic order, or click hashrates and sort from high to low.</p>
+	<p>Remember that everyone is not lucky in the silicon lottery and your hashrates will vary from other ones in this list.</p>
+	<br>
+<table class="tbl">
+	<thead>
+		<tr>
+			<th on:click={sort("device")}>CPU</th>
+			<th on:click={sort("hashrate")}>Hashrate in h/s</th>
+		</tr>
+	</thead>
+	<tbody>
+		{#each array as row}
+			<tr>
+				<td on:click={sort("device")}>{row.device}</td>
+				<td on:click={sort("hashrate")}>{row.hashrate}</td>
+			</tr>
+		{/each}
+	</tbody>
+</table>
+</div>
+<MiningCalc/>
+<br>
+<p>Made by Daniel Boye</p>
+
 <style lang="scss">
   .wrapper {
   margin-top: 160px;
@@ -91,7 +99,6 @@
   tr:hover {
   background: #575557;
 
-  }
+  }   
 
-    
 </style>
