@@ -1,27 +1,8 @@
-<div class="wrapper">
-	<h1>Benchmarks all types of graphics cards</h1>
-	<br>
-<table class="tbl">
-	<thead>
-		<tr>
-			<th on:click={sort("device")}>GPU</th>
-			<th on:click={sort("hashrate")}>Hashrate in h/s</th>
-		</tr>
-	</thead>
-	<tbody>
-		{#each array as row}
-			<tr>
-				<td on:click={sort("device")}>{row.device}</td>
-				<td on:click={sort("hashrate")}>{row.hashrate}</td>
-			</tr>
-		{/each}
-	</tbody>
-</table>
-</div>
-
 <script>
+	import MiningCalc from "$lib/components/MiningCalc.svelte";
+
 	let array = [
-		{device:"AMD RX 5700XT", hashrate:11000},
+	{device:"AMD RX 5700XT", hashrate:11000},
     {device:"NVIDIA Quadro K620", hashrate:600},
     {device:"NVIDIA GTX 970", hashrate:3200},
     {device:"NVIDIA GTX 1650", hashrate:2666},
@@ -56,6 +37,33 @@
 	}
 </script>
 
+<div class="wrapper">
+	<h1>Benchmarks all types of graphics cards</h1>
+	<br>
+	<p>Click on the GPUs to sort them in alphabetic order, or click hashrates and sort from high to low.</p>
+	<p>Remember that everyone is not lucky in the silicon lottery and your hashrates will vary from other ones in this list.</p>
+	<br>
+<table class="tbl">
+	<thead>
+		<tr>
+			<th on:click={sort("device")}>GPU</th>
+			<th on:click={sort("hashrate")}>Hashrate in h/s</th>
+		</tr>
+	</thead>
+	<tbody>
+		{#each array as row}
+			<tr>
+				<td on:click={sort("device")}>{row.device}</td>
+				<td on:click={sort("hashrate")}>{row.hashrate}</td>
+			</tr>
+		{/each}
+	</tbody>
+</table>
+</div>
+<MiningCalc/>
+<br>
+<p>Made by Daniel Boye</p>
+
 <style lang="scss">
   .wrapper {
   margin-top: 160px;
@@ -89,4 +97,3 @@
 
     
 </style>
-
