@@ -14,7 +14,7 @@
                 <a href="https://explorer.kryptokrona.se" class="footer-link"><p>Explorer</p></a>
                 <a href="https://github.com/kryptokrona/xkr-website/blob/main/static/Whitepaper/Proposal_for_a_New_Nordic_Digital_Currency.pdf" class="footer-link"><p>Whitepaper</p></a>
                 <a href="/blog" class="footer-link"><p>Blog</p></a>
-                <a href="/https://docs.kryptokrona.org" class="footer-link"><p>Guides</p></a>
+                <a href="https://docs.kryptokrona.org" class="footer-link"><p>Docs & Guides</p></a>
                 <a href="https://github.com/kryptokrona" class="footer-link"><p>Github</p></a>
             </div>
             <div class="footer-nav">
