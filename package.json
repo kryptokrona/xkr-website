@@ -8,15 +8,18 @@
     "preview": "svelte-kit preview",
     "prepare": "svelte-kit sync",
     "lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
-    "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
+    "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. .",
+    "typesafe-i18n": "typesafe-i18n"
   },
   "devDependencies": {
     "@sveltejs/adapter-netlify": "^1.0.0-next.56",
     "@sveltejs/kit": "next",
+    "all": "^0.0.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-svelte3": "^3.2.1",
     "mdsvex": "^0.10.5",
+    "npm-run": "^5.0.1",
     "prettier": "^2.5.1",
     "prettier-plugin-svelte": "^2.5.0",
     "svelte": "^3.44.0"
@@ -29,6 +32,7 @@
     "moment": "^2.29.3",
     "sass": "^1.50.0",
     "svelte-loading-spinners": "^0.1.7",
-    "svelte-preprocess": "^4.10.6"
+    "svelte-preprocess": "^4.10.6",
+    "typesafe-i18n": "^5.5.2"
   }
 }
