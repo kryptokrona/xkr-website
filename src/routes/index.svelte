@@ -9,7 +9,8 @@
     import computer from '/static/computer.png'
     import computer2 from '/static/computer2.png'
     import star from '/static/star.svg'
-
+    import LL from '/src/i18n/i18n-svelte'
+    import { setLocale } from '/src/i18n/i18n-svelte'
 
 
     //Hero texts
@@ -43,6 +44,7 @@
             text: "The basics of Kryptokrona allow users to stay anonymous by default, to send value and data without being revealed or traced."
         }
     ]
+    console.log($LL.test)
 </script>
 
 <svelte:head>
@@ -70,6 +72,21 @@
     <StatusBar/>
 </div>
 
+
+<div id="language-picker">
+
+  Choose language:
+
+  <button on:click={() => setLocale('en')}>
+     english
+  </button>
+
+  <button on:click={() => setLocale('de')}>
+     deutsch
+  </button>
+</div>
+
+
 <div class="features">
     {#each features as card}
         <div>
@@ -81,7 +98,7 @@
 
 <div class="get-started">
     <div class="text">
-        <h2>What is Kryptokrona?</h2>
+        <h2>LL.HI </h2>
         <h3>Kryptokrona (XKR) Is a cryptocurrency which is private, quick, and optimized for nordic users.</h3>
         <div>
             <div class="list-item">

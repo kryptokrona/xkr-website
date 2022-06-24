@@ -7,7 +7,8 @@
     import Footer from "$lib/components/Footer.svelte";
     import Popup from "$lib/components/Popup.svelte";
     import HuginPopup from "$lib/components/HuginPopup.svelte";
-
+    import { setLocale } from '/src/i18n/i18n-svelte'
+    setLocale()
     //Global scss
     import '$lib/theme/global.scss'
 
