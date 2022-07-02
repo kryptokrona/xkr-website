@@ -17,7 +17,7 @@ const config = {
                 "font-src": ['self'],
                 "form-action": ['self'],
                 "frame-ancestors": ['none'],
-                "frame-src": ['self'],
+                "frame-src": ['self', 'https://www.google.com/'],
                 "manifest-src": ['self'],
                 "media-src": ['self'],
                 "object-src": ['none'],
