@@ -10,7 +10,7 @@ const config = {
             fallback: 'index.html',
         }),
         csp: {
-            mode: 'nonce',
+            mode: 'auto',
             directives: {
                 "script-src": ['self'],
                 "base-uri": ['self'],
