@@ -9,6 +9,21 @@ const config = {
 		adapter: adapter({
             fallback: 'index.html',
         }),
+        csp: {
+            mode: 'nonce',
+            directives: {
+                "script-src": ['self'],
+                "base-uri": ['self'],
+                "font-src": ['self'],
+                "form-action": ['self'],
+                "frame-ancestors": ['none'],
+                "frame-src": ['self'],
+                "manifest-src": ['self'],
+                "media-src": ['self'],
+                "object-src": ['none'],
+                "upgrade-insecure-requests": true
+            }
+        },
         prerender: {
             crawl: true,
             enabled: true,
