@@ -1,110 +1,104 @@
 <footer>
-    <div class="wrapper">
-        <div class="footer-nav-wrapper">
-            <div class="footer-nav">
-                <h3>Site</h3>
-                <a href="/" class="footer-link"><p>Home</p></a>
-                <a href="/wallet" class="footer-link"><p>Wallet</p></a>
-                <a href="/hugin" class="footer-link"><p>Hugin</p></a>
-                <a href="/mining" class="footer-link"><p>Mining</p></a>
-                <a href="/about" class="footer-link"><p>About</p></a>
+        <div class="wrapper container">
+            <div class="footer-navigation">
+                <div>
+                    <h3>Site</h3>
+                    <a href="/">Home</a>
+                    <a href="/wallet">Wallet</a>
+                    <a href="/hugin">Hugin</a>
+                    <a href="/mining">Mining</a>
+                    <a href="https://kryptokrona.se/store/">Store</a>
+                    <a href="/about">About</a>
+                </div>
+                <div>
+                    <h3>XKR</h3>
+                    <a href="https://explorer.kryptokrona.se">Explorer</a>
+                    <a href="https://github.com/kryptokrona/xkr-website/blob/main/static/Whitepaper/Proposal_for_a_New_Nordic_Digital_Currency.pdf">Whitepaper</a>
+                    <a href="/blog">Blog</a>
+                    <a href="https://github.com/kryptokrona/kryptokrona-stickers">Stickers</a>
+                    <a href="https://docs.kryptokrona.se">Docs</a>
+                    <a href="https://github.com/kryptokrona">Github</a>
+                </div>
+                <div>
+                    <h3>Hugin</h3>
+                    <a href="https://github.com/kryptokrona/xkr-website/blob/main/static/Whitepaper/Hugin_Whitepaper.pdf">Whitepaper</a>
+                    <a href="/faucet">Faucet</a>
+                    <a href="https://github.com/kryptokrona/hugin-messenger">Github</a>
+                </div>
             </div>
-            <div class="footer-nav">
-                <h3>XKR</h3>
-                <a href="https://explorer.kryptokrona.se" class="footer-link"><p>Explorer</p></a>
-                <a href="https://github.com/kryptokrona/xkr-website/blob/main/static/Whitepaper/Proposal_for_a_New_Nordic_Digital_Currency.pdf" class="footer-link"><p>Whitepaper</p></a>
-                <a href="/blog" class="footer-link"><p>Blog</p></a>
-                <a href="https://docs.kryptokrona.org" class="footer-link"><p>Docs & Guides</p></a>
-                <a href="https://github.com/kryptokrona" class="footer-link"><p>Github</p></a>
-            </div>
-            <div class="footer-nav">
-                <h3>Hugin</h3>
-                <a href="https://github.com/kryptokrona/xkr-website/blob/main/static/Whitepaper/Hugin_Whitepaper.pdf" class="footer-link"><p>Whitepaper</p></a>
-                <a href="/faucet" class="footer-link"><p>Faucet</p></a>
-                <a href="https://github.com/kryptokrona/hugin-messenger" class="footer-link"><p>Github</p></a>
-            </div>
-            <div class="footer-nav">
-              <h3>Extra</h3>
-              <a href="https://github.com/kryptokrona/kryptokrona-stickers" class="footer-link"><p>Stickers</p></a>
-              <a href="https://kryptokrona.se/store/" class="footer-link"><p>Store</p></a>
-              <a href="https://docs.kryptokrona.se/" class="footer-link"><p>Docs</p></a>
-              <a href="https://www.exbitron.com/trading/xkrusdt" class="footer-link"><p>Exchange</p></a>
-          </div>
         </div>
-        <div class="other">
-            <p>Developed by Swepool</p>
-        </div>
-    </div>
 </footer>
 
 <style lang="scss">
 
   footer {
-    width: 100%;
-    border-top: 1px solid var(--border-color);
+    padding: 80px 0;
     background-color: var(--backgound-color);
-    margin-top: 60px;
   }
 
   .wrapper {
     display: flex;
     justify-content: space-between;
-    box-sizing: border-box;
-    max-width: var(--website-width);
-    border-bottom: 1px solid var(--border-color);
-    margin: 0 auto;
-    padding: 140px 40px;
 
-    @media only screen and (max-width: 600px) {
-      padding: 40px 20px;
+
+    @media screen and (max-width: 768px){
+      &:last-child {
+        order: 1;
+        div {
+          margin-bottom: 2rem;
+        }
+      }
     }
 
+    @media screen and (max-width: 768px){
+      flex-direction: column;
+    }
   }
 
-  .footer-nav-wrapper {
-    display: flex;
-    gap: 20px;
+  .footer-navigation {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
 
-    @media only screen and (max-width: 720px) {
-      flex-direction: column;
-      flex-wrap: wrap;
+    @media screen and (max-width: 768px){
+      order: 2;
+      gap: 2rem;
     }
 
-    div{
+    div {
+      max-width: 100px;
       display: flex;
       flex-direction: column;
       gap: 10px;
-      width: 120px;
+      grid-column: span 4/span 4;
+
+      @media screen and (max-width: 768px){
+        grid-column: span 4/span 4;
+      }
+
+      @media screen and (max-width: 400px){
+        grid-column: span 6/span 6;
+      }
+
+      @media screen and (max-width: 320px){
+        grid-column: span 12/span 12;
+      }
 
       a {
+        max-width: 200px;
+        color: rgba(255, 255, 255, 0.5);
         text-decoration: none;
+        transition: 200ms ease-in-out;
 
-        p {
-          margin: 0;
-          transition: 250ms ease-in-out;
-          &:hover {
-            color: var(--title-color);
-          }
+        &:hover {
+          color: rgba(255, 255, 255, 1);
         }
       }
 
       h3 {
         margin: 0;
+        color: white;
       }
     }
   }
-
-  .other {
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-
-    p {
-      margin: 0;
-      text-align: end;
-    }
-
-  }
-
 </style>
