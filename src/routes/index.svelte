@@ -186,14 +186,6 @@
       background-color: var(--card-background);
       border-radius: 0.4rem;
       transition: 250ms ease-in-out all;
-
-      @media only screen and (max-width: 1100px) {
-        height: 170px;
-      }
-
-      @media only screen and (max-width: 700px) {
-        height: 160px;
-      }
     }
 
     p {
