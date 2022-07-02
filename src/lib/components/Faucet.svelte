@@ -126,4 +126,8 @@
       border: 1px solid var(--title-color);
     }
   }
+
+  .g-recaptcha {
+    margin-bottom: 40px;
+  }
 </style>
