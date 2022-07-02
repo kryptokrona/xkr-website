@@ -6,6 +6,20 @@
     import LinkButton from "../../lib/components/buttons/LinkButton.svelte";
 </script>
 
+<svelte:head>
+    <title>Kryptokrona - Get started with crypto mining</title>
+    <meta property="og:site_name" content="Kryptokrona" />
+    <meta name="description"
+          content="Start mining crypto today, here you'll find everything needed for mining kryptokrona">
+    <meta property="og:title" content="Kryptokrona - Get started with crypto mining"/>
+    <meta property="og:description" content="Start mining crypto today, here you'll find everything needed for mining kryptokrona"/>
+    <meta property="og:image" content="https://kryptokrona.org/ogmining.png">
+    <meta property="og:url" content="https://kryptokrona.org/mining" />
+    <meta property="og:locale" content="en" />
+    <link rel="alternate" href="https://kryptokrona.org/mining" hreflang="en"/>
+    <link rel="alternate" href="https://kryptokrona.org/mining" hreflang="x-default"/>
+</svelte:head>
+
 <div class="wrapper">
     <h1>Mining</h1>
 
