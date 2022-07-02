@@ -12,7 +12,7 @@ const config = {
         csp: {
             mode: 'auto',
             directives: {
-                "script-src": ['self'],
+                "script-src": ['self', 'https://www.google.com/recaptcha/api.js'],
                 "base-uri": ['self'],
                 "font-src": ['self'],
                 "form-action": ['self'],
