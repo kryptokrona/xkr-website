@@ -72,10 +72,8 @@
       background-color: var(--card-background);
       border: 1px solid var(--card-border);
       border-radius: 0.4rem;
-      padding: 40px;
-      height: 100px;
+      padding: 40px 40px;
       @media only screen and (max-width: 700px){
-        height: 140px;
         padding: 30px 20px 30px 20px;
       }
 

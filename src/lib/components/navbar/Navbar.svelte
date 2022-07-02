@@ -13,7 +13,7 @@
 
 <nav>
     <Alert/>
-    <div class="wrapper">
+    <div class="wrapper container">
         <div class="nav-wrapper">
             <a href="/">
                 <svg width="79px" height="20px" viewBox="0 0 176 54" version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -72,11 +72,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-sizing: border-box;
     width: 100%;
-    max-width: var(--website-width);
-    margin: 0 auto;
-    padding: 0 40px;
 
     @media only screen and (max-width: 600px) {
       padding: 0 20px;

@@ -52,7 +52,7 @@
 
 <!--Layout with navbar and footer, slot is all the content being rendered in <main>, dont add a main tag elsewhere. -->
 <Navbar/>
-<main>
+<main class="container">
     <slot/>
 </main>
 <Footer/>
@@ -60,19 +60,3 @@
     <HuginPopup/>
 {/if}
 
-<style lang="scss">
-  /* We hande the website width and padding at top level */
-  main {
-    margin: 0 auto;
-    max-width: var(--website-width);
-    padding: 0 40px;
-    box-sizing: border-box;
-    width: 100%;
-    transition: 250ms ease-in-out all;
-
-    @media only screen and (max-width: 600px) {
-      padding: 0 20px;
-    }
-  }
-
-</style>

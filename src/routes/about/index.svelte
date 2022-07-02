@@ -98,7 +98,6 @@
       border: 1px solid var(--card-border);
       background-color: var(--card-background);
       border-radius: 0.4rem;
-      height: 160px;
       transition: 250ms ease-in-out all;
 
       @media only screen and (max-width: 1100px) {

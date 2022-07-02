@@ -1,8 +1,8 @@
 <script>
     import JoinDiscord from "$lib/components/JoinDiscord.svelte";
     import StatusBar from "$lib/components/StatusBar.svelte";
-    import {draw} from 'svelte/transition'
-    import {quadInOut} from "svelte/easing";
+    import { draw } from 'svelte/transition'
+    import { quadInOut } from "svelte/easing";
     import SignupNewsletter from "$lib/components/SignupNewsletter.svelte";
     import FeaturedPosts from "$lib/components/FeaturedPosts.svelte";
     import LinkButton from "../lib/components/buttons/LinkButton.svelte";
@@ -176,7 +176,6 @@
       border: 1px solid var(--card-border);
       background-color: var(--card-background);
       border-radius: 0.4rem;
-      height: 160px;
       transition: 250ms ease-in-out all;
 
       @media only screen and (max-width: 1100px) {

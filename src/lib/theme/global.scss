@@ -14,9 +14,10 @@
     --card-border: #252525;
     --card-background: #171717;
 
-    --desktop-padding: 0 40px;
-    --mobile-padding: 0 20px;
-    --website-width: 1400px;
+    --website-max-width: 1400px;
+    --website-padding-desktop: 0 40px;
+    --website-padding-tablet: 0 30px;
+    --website-padding-mobile: 0 20px;
 
     --success-color: #3fd782;
     --warn-color: #f25f61;
@@ -41,9 +42,10 @@
     --card-border: #ced1d2;
     --card-background: #fff;
 
-    --desktop-padding: 0 40px;
-    --mobile-padding: 0 20px;
-    --website-width: 1400px;
+    --website-max-width: 1400px;
+    --website-padding-desktop: 0 40px;
+    --website-padding-tablet: 0 30px;
+    --website-padding-mobile: 0 20px;
 
     --success-color: #3fd782;
     --warn-color: #f25f61;
@@ -71,14 +73,40 @@
   font-display: auto;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 body {
   margin: 0;
   background-color: var(--backgound-color);
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   -webkit-tap-highlight-color: transparent;
   -moz-tap-highlight-color: transparent;
   -o-tap-highlight-color: transparent;
   tap-highlight-color: transparent;
+}
+
+.container {
+  margin: 0 auto;
+  padding: var(--website-padding-desktop);
+  max-width: var(--website-max-width);
+  width: 100%;
+
+  @media screen and (max-width: 1000px) {
+    padding: var(--website-padding-tablet);
+  }
+
+
+  @media screen and (max-width: 500px) {
+    padding: var(--website-padding-mobile);
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
