@@ -12,16 +12,23 @@
 </script>
 
 <script>
-    import JoinDiscord from "$lib/components/JoinDiscord.svelte";
-    import StatusBar from "$lib/components/StatusBar.svelte";
     import SignupNewsletter from "$lib/components/SignupNewsletter.svelte";
 
     export let posts
 </script>
 
 <svelte:head>
-    <title>Kryptokrona | Blog</title>
-    <meta name="description" content=""/>
+    <title>Kryptokrona - Blog</title>
+    <meta property="og:site_name" content="Kryptokrona" />
+    <meta name="description"
+          content="A Kryptokrona blog, here you can get som in depth read about the project">
+    <meta property="og:title" content="Kryptokrona - Blog"/>
+    <meta property="og:description" content="A Kryptokrona blog, here you can get som in depth read about the project"/>
+    <meta property="og:image" content="https://kryptokrona.org/ogblog.png">
+    <meta property="og:url" content="https://kryptokrona.org/blog" />
+    <meta property="og:locale" content="en" />
+    <link rel="alternate" href="https://kryptokrona.org/blog" hreflang="en"/>
+    <link rel="alternate" href="https://kryptokrona.org/blog" hreflang="x-default"/>
 </svelte:head>
 
 <div class="wrapper">
