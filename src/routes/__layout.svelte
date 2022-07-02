@@ -15,13 +15,13 @@
     let visited
     let showPopup = false
 
-    onMount( () => {
+    onMount(() => {
         ready = true
 
         //Checks if it's a new visitor, and renders popup.
         visited = localStorage.getItem('visited')
 
-        if(!visited) {
+        if (!visited) {
             localStorage.setItem('visited', 'true')
             setTimeout(() => {
                 showPopup = true
@@ -53,17 +53,15 @@
 <!--Layout with navbar and footer, slot is all the content being rendered in <main>, dont add a main tag elsewhere. -->
 <Navbar/>
 <main>
-    {#if ready}
-        <slot/>
-    {/if}
+    <slot/>
 </main>
 <Footer/>
 {#if ($page.url.pathname !== '/hugin')}
-<HuginPopup/>
-    {/if}
+    <HuginPopup/>
+{/if}
 
 <style lang="scss">
-/* We hande the website width and padding at top level */
+  /* We hande the website width and padding at top level */
   main {
     margin: 0 auto;
     max-width: var(--website-width);
