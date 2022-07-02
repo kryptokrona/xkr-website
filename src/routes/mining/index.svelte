@@ -62,12 +62,6 @@
     
 </div>
 
-
-<svelte:head>
-    <title>Kryptokrona | Mining</title>
-    <meta name="description" content=""/>
-</svelte:head>
-
 <style lang="scss">
 
   .wrapper {
