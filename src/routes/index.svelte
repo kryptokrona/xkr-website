@@ -1,15 +1,14 @@
 <script>
     import JoinDiscord from "$lib/components/JoinDiscord.svelte";
     import StatusBar from "$lib/components/StatusBar.svelte";
-    import { draw } from 'svelte/transition'
-    import { quadInOut } from "svelte/easing";
+    import {draw} from 'svelte/transition'
+    import {quadInOut} from "svelte/easing";
     import SignupNewsletter from "$lib/components/SignupNewsletter.svelte";
     import FeaturedPosts from "$lib/components/FeaturedPosts.svelte";
     import LinkButton from "../lib/components/buttons/LinkButton.svelte";
     import computer from '/static/computer.png'
     import computer2 from '/static/computer2.png'
     import star from '/static/star.svg'
-
 
 
     //Hero texts
@@ -46,15 +45,23 @@
 </script>
 
 <svelte:head>
-    <title>Kryptokrona | Home</title>
-    <meta name="description" content={pitch}/>
+    <title>Kryptokrona</title>
+    <meta property="og:site_name" content="Kryptokrona" />
+    <meta name="description"
+          content="A Nordic Cryptocurrency to secure and simplify our future economic system. Sending and receiving money should not be expensive or slow. We work with open source code that allows you to be involved and improve the communication and money of the future.">
+    <meta property="og:title" content="Kryptokrona"/>
+    <meta property="og:description" content="A Nordic Cryptocurrency to secure and simplify our future economic system. Sending and receiving money should not be expensive or slow. We work with open source code that allows you to be involved and improve the communication and money of the future."/>
+    <meta property="og:image" content="https://kryptokrona.org/ogimage.png">
+    <meta property="og:url" content="https://kryptokrona.org" />
+    <link rel="alternate" href="https://kryptokrona.org " hreflang="en"/>
+    <meta property="og:locale" content="en" />
 </svelte:head>
 
 <div class="hero">
     <svg width="100%" viewBox="0 0 155 52" version="1.1" xmlns="http://www.w3.org/2000/svg"
          xmlns:xlink="http://www.w3.org/1999/xlink">
-        <g  id="Page-1" stroke="none" stroke-width="0.5" fill="none" fill-rule="evenodd">
-            <g  id="XKR" transform="translate(1.648000, 0.600000)" fill-rule="nonzero" stroke="var(--title-color)">
+        <g id="Page-1" stroke="none" stroke-width="0.5" fill="none" fill-rule="evenodd">
+            <g id="XKR" transform="translate(1.648000, 0.600000)" fill-rule="nonzero" stroke="var(--title-color)">
                 <polygon in:draw="{{duration: 3500, easing: quadInOut}}" id="Path"
                          points="37.872 50.4 24.192 31.248 10.656 50.4 0 50.4 18.72 24.696 1.008 0 11.592 0 24.48 17.928 37.224 0 47.376 0 29.736 24.336 48.672 50.4"></polygon>
                 <polygon in:draw="{{duration: 2500, easing: quadInOut}}" id="Path"
@@ -111,7 +118,8 @@
         <div>
             <div class="list-item">
                 <img src={star} alt="star" height="16px" style="margin-top: 5px">
-                <p>Through what’s known as mining the network looks for Kryptokrona. This mechanism secures the network.</p>
+                <p>Through what’s known as mining the network looks for Kryptokrona. This mechanism secures the
+                    network.</p>
             </div>
             <div class="list-item">
                 <img src={star} alt="star" height="16px" style="margin-top: 5px">
@@ -151,6 +159,7 @@
         font-size: 1.5rem;
       }
     }
+
     p {
       margin-top: 20px;
     }
@@ -225,7 +234,7 @@
       margin-bottom: 20px;
       gap: 10px;
 
-      p{
+      p {
         margin: 0;
       }
     }
