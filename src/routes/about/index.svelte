@@ -27,8 +27,17 @@
 </script>
 
 <svelte:head>
-    <title>Kryptokrona | About</title>
-    <meta name="description" content=""/>
+    <title>Kryptokrona - About us</title>
+    <meta property="og:site_name" content="About Kryptokrona" />
+    <meta name="description"
+          content="Here you can read more about the project">
+    <meta property="og:title" content="Kryptokrona - About us"/>
+    <meta property="og:description" content="Here you can read more about the project"/>
+    <meta property="og:image" content="https://kryptokrona.org/ogabout.png">
+    <meta property="og:url" content="https://kryptokrona.org/about" />
+    <meta property="og:locale" content="en" />
+    <link rel="alternate" href="https://kryptokrona.org/about" hreflang="en"/>
+    <link rel="alternate" href="https://kryptokrona.org/about" hreflang="x-default"/>
 </svelte:head>
 
 <div class="text-wrapper">
