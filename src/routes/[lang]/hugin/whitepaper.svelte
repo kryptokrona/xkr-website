@@ -105,7 +105,7 @@
         amount of XKR along with an encrypted message to the recipient's XKR address. (See fig.
         1).</p>
 
-    <img src="/static/fig1.png" alt="How hugin works">
+    <img src="/fig1.png" alt="How hugin works">
 
     <p>In the figure above, Alice sends an encrypted message to Bob, which is propagated through
         the XKR node network, and when it reaches the node Bob is currently connected to, he will

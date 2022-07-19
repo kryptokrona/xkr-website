@@ -3,7 +3,7 @@
     import JoinDiscord from "$lib/components/JoinDiscord.svelte";
     import StatusBar from "$lib/components/StatusBar.svelte";
     import MiningCalc from "$lib/components/MiningCalc.svelte";
-    import LinkButton from "../../lib/components/buttons/LinkButton.svelte";
+    import LinkButton from "../../../lib/components/buttons/LinkButton.svelte";
 </script>
 
 <svelte:head>

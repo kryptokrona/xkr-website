@@ -2,26 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd63994d-c0a8-4925-b092-d7282cc60cf4" name="Changes" comment="img">
-      <change afterPath="$PROJECT_DIR$/vite.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/i18n/no/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/components/blog/BlogCard.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/components/blog/LatestPosts.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/components/blog/PageHeader.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/directus.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/get-asset-url.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/[lang]/__layout.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/[lang]/blog/[post].js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/[lang]/blog/[post].svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/[lang]/blog/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/[lang]/blog/index.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/[lang]/index.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mdsvex.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/FeaturedPosts.svelte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/SignupNewsletter.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/SignupNewsletter.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/db.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/__layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/__layout.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/api/posts.json.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/blog/_post.svelte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/blog/devaluation.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/blog/how-to-buy-xkr.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/blog/hugin-avatars.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/blog/hugin-new-steps.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/blog/index.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/about/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/[lang]/about/index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/benchmarks/cpu/amd/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/[lang]/benchmarks/cpu/amd/data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/benchmarks/cpu/amd/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/[lang]/benchmarks/cpu/amd/index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/benchmarks/cpu/intel/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/[lang]/benchmarks/cpu/intel/index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/benchmarks/gpu/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/[lang]/benchmarks/gpu/index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/benchmarks/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/[lang]/benchmarks/index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/faucet/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/[lang]/faucet/index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/hugin/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/[lang]/hugin/index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/hugin/whitepaper.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/[lang]/hugin/whitepaper.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/tools/index.svelte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/svelte.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/svelte.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/mining/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/[lang]/mining/index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/sponsor/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/[lang]/sponsor/index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/stickers/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/[lang]/stickers/index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/wallet/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/[lang]/wallet/index.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,27 +110,29 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/luknyb/Developer/GitHub/xkr-website",
+    "last_opened_file_path": "/Users/luknyb/Developer/GitHub/xkr-website/src/i18n",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "/Users/lukas/Documents/GitHub/xkr-website/node_modules/prettier",
+    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src/lib/components/buttons" />
-      <recent name="$PROJECT_DIR$/src/lib" />
+      <recent name="$PROJECT_DIR$/src/i18n" />
       <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/static" />
+      <recent name="$PROJECT_DIR$/src/i18n/da" />
+      <recent name="$PROJECT_DIR$/src/lib/components" />
+      <recent name="$PROJECT_DIR$/src/lib/components/blog" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/i18n" />
+      <recent name="$PROJECT_DIR$/src/routes/[lang]" />
       <recent name="$PROJECT_DIR$/src/lib/utils" />
       <recent name="$PROJECT_DIR$/src/lib" />
       <recent name="$PROJECT_DIR$/static" />
-      <recent name="$PROJECT_DIR$/src/lib/components/navbar" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -153,7 +167,7 @@
       <workItem from="1651825377321" duration="6829000" />
       <workItem from="1651866915643" duration="2257000" />
       <workItem from="1656759815714" duration="809000" />
-      <workItem from="1658221526948" duration="954000" />
+      <workItem from="1658221526948" duration="3283000" />
     </task>
     <task id="LOCAL-00001" summary="img">
       <created>1651366433380</created>
@@ -167,6 +181,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/i18n/i18n-util.sync.js" />
+        <option value="$PROJECT_DIR$/src/i18n/i18n-util.js" />
+        <option value="$PROJECT_DIR$/src/i18n/formatters.js" />
+        <option value="$PROJECT_DIR$/src/i18n/i18n-types.d.ts" />
+        <option value="$PROJECT_DIR$/src/i18n/i18n-util.async.js" />
+        <option value="$PROJECT_DIR$/src/i18n/en/index.js" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

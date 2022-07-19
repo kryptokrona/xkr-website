@@ -1,5 +1,5 @@
 <script>
-    import HuginApp from "../../lib/components/HuginApp.svelte";
+    import HuginApp from "../../../lib/components/HuginApp.svelte";
 
 </script>
 

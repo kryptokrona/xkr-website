@@ -4,7 +4,7 @@
 </svelte:head>
 
 <script>
-    import LinkButton from "../../lib/components/buttons/LinkButton.svelte";
+    import LinkButton from "../../../lib/components/buttons/LinkButton.svelte";
     import JoinDiscord from "$lib/components/JoinDiscord.svelte";
 </script>
 
