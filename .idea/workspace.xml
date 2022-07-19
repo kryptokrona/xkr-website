@@ -2,9 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd63994d-c0a8-4925-b092-d7282cc60cf4" name="Changes" comment="img">
+      <change afterPath="$PROJECT_DIR$/vite.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mdsvex.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/FeaturedPosts.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/SignupNewsletter.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/SignupNewsletter.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/db.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/__layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/__layout.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/api/posts.json.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/blog/_post.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/blog/devaluation.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/blog/how-to-buy-xkr.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/blog/hugin-avatars.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/blog/hugin-new-steps.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/blog/index.svelte" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/tools/index.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/svelte.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/svelte.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +98,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/lukas/Documents/GitHub/xkr-website",
+    "last_opened_file_path": "/Users/luknyb/Developer/GitHub/xkr-website",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -91,8 +108,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/lib/components/buttons" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/lib/components/buttons" />
       <recent name="$PROJECT_DIR$/src/lib" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/static" />
@@ -136,6 +153,7 @@
       <workItem from="1651825377321" duration="6829000" />
       <workItem from="1651866915643" duration="2257000" />
       <workItem from="1656759815714" duration="809000" />
+      <workItem from="1658221526948" duration="954000" />
     </task>
     <task id="LOCAL-00001" summary="img">
       <created>1651366433380</created>

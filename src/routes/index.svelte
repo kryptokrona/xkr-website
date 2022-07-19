@@ -4,7 +4,6 @@
     import {draw} from 'svelte/transition'
     import {quadInOut} from "svelte/easing";
     import SignupNewsletter from "$lib/components/SignupNewsletter.svelte";
-    import FeaturedPosts from "$lib/components/FeaturedPosts.svelte";
     import LinkButton from "../lib/components/buttons/LinkButton.svelte";
     import computer from '/static/computer.png'
     import computer2 from '/static/computer2.png'
@@ -134,9 +133,6 @@
         <img src={computer} alt="kryptokrona mining">
     </div>
 </div>
-
-<FeaturedPosts/>
-<SignupNewsletter/>
 
 <style lang="scss">
 

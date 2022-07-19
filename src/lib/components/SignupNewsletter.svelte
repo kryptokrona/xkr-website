@@ -1,5 +1,4 @@
 <script>
-    import supabase from "../db.js";
     import {quadInOut} from "svelte/easing";
     import {draw} from "svelte/transition";
     import Button from "./buttons/Button.svelte";
@@ -21,12 +20,7 @@
     async function handleSubmit(input) {
         if (validateEmail(input)) {
             submitted = true
-            const {data, error} = await supabase
-                .from('xkr-signups')
-                .insert({
-                    email: input,
-                })
-            if (error) throw new Error(error.message);
+//DO SOMETHING
         } else alert('Incorrect Email')
     }
 
