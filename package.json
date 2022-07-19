@@ -2,9 +2,9 @@
   "name": "xkr-website",
   "version": "0.0.1",
   "scripts": {
-    "dev": "svelte-kit dev",
-    "build": "svelte-kit build",
-    "package": "svelte-kit package",
+    "dev": "vite dev",
+    "build": "vite build",
+    "package": "vite package",
     "preview": "svelte-kit preview",
     "prepare": "svelte-kit sync",
     "lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
@@ -19,16 +19,15 @@
     "mdsvex": "^0.10.5",
     "prettier": "^2.5.1",
     "prettier-plugin-svelte": "^2.5.0",
-    "svelte": "^3.44.0"
+    "sass": "^1.53.0",
+    "svelte": "^3.44.0",
+    "svelte-preprocess": "^4.10.7",
+    "vite": "^3.0.2"
   },
   "type": "module",
   "dependencies": {
-    "@supabase/supabase-js": "^1.35.2",
     "identicon.js": "^2.3.3",
     "int-to-rgb": "^1.0.0",
-    "moment": "^2.29.3",
-    "sass": "^1.50.0",
-    "svelte-loading-spinners": "^0.1.7",
-    "svelte-preprocess": "^4.10.6"
+    "moment": "^2.29.3"
   }
 }

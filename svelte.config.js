@@ -1,7 +1,5 @@
 import adapter from '@sveltejs/adapter-netlify';
 import sveltePreprocess from 'svelte-preprocess';
-import mdsvexConfig from "./mdsvex.config.js";
-import {mdsvex} from "mdsvex";
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -24,23 +22,8 @@ const config = {
                 "upgrade-insecure-requests": true
             }
         },
-        prerender: {
-            crawl: true,
-            enabled: true,
-            onError: 'continue',
-            entries: ['*'],
-        },
-        vite: {
-            server: {
-                fs: {
-                    allow: ['..']
-                }
-            },
-        }
 	},
-    extensions: [".svelte", ...mdsvexConfig.extensions],
     preprocess: [
-        mdsvex(mdsvexConfig),
         sveltePreprocess({
             scss: {
                 prependData: `@import 'src/lib/theme/global.scss';`
