@@ -1,5 +1,5 @@
 <script>
-  import MiningCalc from "$lib/components/MiningCalc.svelte";
+  import MiningCalc from "$lib/components/mining/MiningCalc.svelte";
   
 	let array = [
 		{device:"Intel Xeon E3-1230 v2", hashrate:4172},
