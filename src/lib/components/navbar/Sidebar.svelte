@@ -10,7 +10,9 @@
             <a sveltekit:prefetch class="mobile-link" in:fade="{{delay: 250, duration: 500}}" out:fade="{{delay: 550}}" href="/wallet">Wallet</a>
             <a sveltekit:prefetch class="mobile-link" in:fade="{{delay: 350, duration: 500}}" out:fade="{{delay: 450}}" href="https://hugin.chat" target="_blank">Hugin</a>
             <a sveltekit:prefetch class="mobile-link" in:fade="{{delay: 450, duration: 500}}" out:fade="{{delay: 350}}" href="/mining">Mining</a>
+            <!--
             <a sveltekit:prefetch class="mobile-link" in:fade="{{delay: 550, duration: 500}}" out:fade="{{delay: 250}}" href="/blog">Blog</a>
+            -->
             <a sveltekit:prefetch class="mobile-link" in:fade="{{delay: 650, duration: 500}}" out:fade="{{delay: 150}}" href="/about">About</a>
         </div>
         <div class="socials">
