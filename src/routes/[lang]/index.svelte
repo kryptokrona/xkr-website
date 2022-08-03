@@ -6,11 +6,7 @@
     import Mining from "../../lib/components/landing/Mining.svelte";
     import Community from "../../lib/components/landing/Community.svelte";
     import HuginChat from "../../lib/components/landing/HuginChat.svelte";
-
-    //Hero texts
-    const title = 'A decentralized private communication and payment system.'
-    const pitch = 'A Nordic Cryptocurrency to secure and simplify our future economic system. Sending and receiving money should not be expensive or slow. We work with open source code that allows you to be involved and improve the communication and money of the future.'
-
+    import XkrFaq from "../../lib/components/landing/XkrFaq.svelte";
 
 </script>
 
@@ -37,7 +33,9 @@
     <HuginChat/>
     <Community/>
     <Mining/>
-    <SignupNewsletter/>
+    <div>
+        <SignupNewsletter/>
+    </div>
 </div>
 
 <style lang="scss">
@@ -46,6 +44,10 @@
     display: flex;
     flex-direction: column;
     gap: 10rem;
+
+    @media screen and (max-width: 568px){
+      gap: 5rem;
+    }
   }
 
 </style>

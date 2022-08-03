@@ -1,13 +1,14 @@
 <script>
     import Fan from "./Fan.svelte";
+    import {LL, locale} from "$i18n/i18n-svelte";
     import LinkButton from "../buttons/LinkButton.svelte";
 </script>
 
 <div>
     <div class="text">
-        <h2>Mining</h2>
-        <p>Through what’s known as mining the network looks for Kryptokrona. This mechanism secures the network. You are
-            automatically rewarded by the network for your computer’s work</p>
+        <h2>{$LL.components.mining.title()}</h2>
+        <p>{$LL.components.mining.text()}</p>
+        <LinkButton text={$LL.components.mining.button()} url="/{locale}/mining" />
     </div>
     <div class="grid gap">
         <div class="col">
@@ -19,7 +20,6 @@
         <div class="col hide-desktop">
             <Fan/>
         </div>
-
     </div>
 </div>
 
@@ -33,10 +33,15 @@
 
     h2 {
       font-size: 3rem;
+      margin: 0;
 
       @media screen and (max-width: 568px) {
         font-size: 2rem;
       }
+    }
+
+    p {
+      margin-bottom: 2rem;
     }
   }
 
@@ -48,6 +53,7 @@
 
   .gap {
     gap: 1rem;
+    margin-top: 2rem;
   }
 
   .col {

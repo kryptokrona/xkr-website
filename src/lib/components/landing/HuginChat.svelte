@@ -4,6 +4,7 @@
     import moment from "moment/moment.js";
     import {onMount} from "svelte";
     import {locale, LL} from "$i18n/i18n-svelte";
+    import LinkButton from "../buttons/LinkButton.svelte";
 
 
     let scrolldelay
@@ -25,10 +26,9 @@
 
 <div>
     <div class="text">
-        <h2>Hide with Hugin</h2>
-        <p>Hugin Messenger puts your privacy first. By the use of military grade encryption, your messages are safe from
-            the prying eyes of others. Hugin uses the decentralized structure that makes cryptocurrencies work, meaning
-            that the system cannot be taken down or be controlled by any one entity.</p>
+        <h2>{$LL.components.huginChat.title()}</h2>
+        <p>{$LL.components.huginChat.text()}</p>
+        <LinkButton text={$LL.components.huginChat.button()} url="/{locale}/hugin" />
     </div>
     <div class="chat">
         <div class="fade-top"></div>
@@ -70,10 +70,15 @@
 
     h2 {
       font-size: 3rem;
+      margin: 0;
 
       @media screen and (max-width: 568px) {
         font-size: 2rem;
       }
+    }
+
+    p {
+      margin-bottom: 2rem;
     }
   }
 

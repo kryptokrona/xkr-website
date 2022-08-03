@@ -1,5 +1,6 @@
 <script>
     import LinkArrow from "../icons/LinkArrow.svelte";
+    import {LL, locale} from "$i18n/i18n-svelte";
 
     import {onMount} from "svelte";
 
@@ -11,11 +12,10 @@
     })
 </script>
 
-<div class="grid gap">
+<div class="grid gap" id="community">
     <div class="row text">
-        <h2>Crypto Community.</h2>
-        <p>Join a fast-growing community of developers and innovators connected all over the world, building the new era
-            of the internet.</p>
+        <h2>{$LL.components.community.title()}</h2>
+        <p>{$LL.components.community.text()}</p>
     </div>
     <div class="row grid gap">
         <a class="platform" href="https://hugin.chat">
@@ -23,28 +23,28 @@
                 <h3>Hugin</h3>
                 <LinkArrow/>
             </div>
-            <p>Join our privacy first messenger.</p>
+            <p>{$LL.components.community.huginText()}</p>
         </a>
         <a class="platform" href="https://discord.gg/nRK5k7wYy8">
             <div>
                 <h3>Discord</h3>
                 <LinkArrow/>
             </div>
-            <p>Technical questions about Cosmos tools? Ask a developer on the Community Discord.</p>
+            <p>{$LL.components.community.discordText()}</p>
         </a>
         <a class="platform" href="https://t.me/xkrofficial">
             <div>
                 <h3>Telegram</h3>
                 <LinkArrow/>
             </div>
-            <p>Ask general questions and chat with the worldwide community on Telegram.</p>
+            <p>{$LL.components.community.telegramText()}</p>
         </a>
         <a class="platform" href="https://twitter.com/kryptokrona">
             <div>
                 <h3>Twitter</h3>
                 <LinkArrow/>
             </div>
-            <p>Follow @kryptokrona to get the latest news and updates from across the ecosystem.!</p>
+            <p>{$LL.components.community.twitterText()}</p>
         </a>
     </div>
 </div>
@@ -70,17 +70,23 @@
 
   .row {
     grid-column: span 12 / span 12;
-
-    h2 {
-      margin: 0;
-    }
   }
 
   .text {
+
     @media screen and (max-width: 1000px) {
       text-align: center;
     }
+
+    h2 {
+      font-size: 3rem;
+
+      @media screen and (max-width: 568px) {
+        font-size: 2rem;
+      }
+    }
   }
+
   .platform {
     display: flex;
     flex-direction: column;

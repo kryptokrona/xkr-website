@@ -1,5 +1,6 @@
 <script>
     import {network} from "../stores/store.js";
+    import LL from "$i18n/i18n-svelte";
 </script>
 
 <div class="wrapper">
@@ -12,15 +13,15 @@
     </div>
     <div class="status">
         <div class="status-card">
-            <h3 class="status-title">Height</h3>
+            <h3 class="status-title">{$LL.components.statusBar.height()}</h3>
             <p class="status-text">{$network.blockHeight}</p>
         </div>
         <div class="status-card">
-            <h3 class="status-title">Hashrate</h3>
+            <h3 class="status-title">{$LL.components.statusBar.hashrate()}</h3>
             <p class="status-text">{($network.hashrate / 1000000).toFixed(2)} MH/s</p>
         </div>
         <div class="status-card">
-            <h3 class="status-title">Nodes</h3>
+            <h3 class="status-title">{$LL.components.statusBar.nodes()}</h3>
             <p class="status-text last">{$network.nodes}</p>
         </div>
     </div>

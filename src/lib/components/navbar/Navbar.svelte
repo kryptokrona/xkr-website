@@ -40,6 +40,7 @@
                 <a sveltekit:prefetch href="/{locale}/wallet">{$LL.navbar.wallet()}</a>
                 <a sveltekit:prefetch href="/{locale}/hugin">{$LL.navbar.hugin()}</a>
                 <a sveltekit:prefetch href="/{locale}/mining">{$LL.navbar.mining()}</a>
+
                 <!--
                 <a sveltekit:prefetch href="/{locale}/articles">{$LL.navbar.articles()}</a>
                 -->

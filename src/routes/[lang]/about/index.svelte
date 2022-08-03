@@ -1,28 +1,30 @@
 <script>
     import StatusBar from "$lib/components/StatusBar.svelte";
     import {network} from "$lib/stores/store";
+    import LL from "$i18n/i18n-svelte";
 
     const about = [
         {
-            title: "GPU Mining Algorithm",
-            text: "We currently running on CryptoNight-Pico, which is a fairer algo than Bitcoin's SHA256 and can even be competently mined on ARM based phones!"
+            title: $LL.about.title2(),
+            text: $LL.about.text2()
         },
         {
-            title: "Blocktime",
-            text: "Our network processes new transactions every 90 seconds, in comparison to Bitcoins 10 minute delay."
+            title: $LL.about.title3(),
+            text: $LL.about.text3()
         },
         {
-            title: "Untraceable",
-            text: "XKR transactions make use of ring signatures and stealth addresses to keep prying eyes off of your private transactions!"
+            title: $LL.about.title4(),
+            text: $LL.about.text4()
         },
         {
-            title: "Fungible",
-            text: "The Kryptokrona isn’t dependent on our central banks or servers, thus less fragile than todays financial systems."
+            title: $LL.about.title5(),
+            text: $LL.about.text5()
         },
         {
-            title: "Drama-free emission curve",
-            text: "Our network reduces the amount of new coins minted with every block, making for a drama-free emission."
-        }
+            title: $LL.about.title6(),
+            text: $LL.about.text6()
+        },
+
     ]
 </script>
 
@@ -42,23 +44,17 @@
 
 <div class="container">
     <div class="text-wrapper">
-        <h1>About</h1>
-        <h2>Money for the future</h2>
-        <p>Kryptokrona exists to secure and simplify our future economic system. Sending and receiving money should not be
-            expensive or slow. We work with open source code that allows you to be involved and improve the money of the
-            future.</p>
-        <p>Kryptokrona is a decentralized blockchain based on CryptoNote, which forms the basis for Monero, among others.
-            CryptoNote is a so-called “application layer” protocol further developed by TurtleCoin that enables things like:
-            private transactions, messages and arbitrary data storage, completely decentralized.</p>
-        <p>On 2 April 2019, the platform was launched in part as a response to the Riksbank’s digital e-krona for the
-            people’s
-            right to create money and to safeguard the private economy without either commercial or store control.</p>
+        <h1>{$LL.about.title()}</h1>
+        <h2>{$LL.about.subTitle()}</h2>
+        <p>{$LL.about.mainText1()}</p>
+        <p>{$LL.about.mainText2()}</p>
+        <p>{$LL.about.mainText3()}</p>
     </div>
     <div class="features">
         <div>
-            <h2>Max Supply</h2>
+            <h2>{$LL.about.maxSupply()}</h2>
             <p>1,000,000,000 XKR</p>
-            <h2>Current Supply</h2>
+            <h2>{$LL.about.currentSupply()}</h2>
             <p>{$network.supply} XKR</p>
         </div>
         {#each about as card}

@@ -1,22 +1,26 @@
+<script>
+    import LL from "$i18n/i18n-svelte";
+</script>
+
 <footer>
         <div class="wrapper container">
             <div class="footer-navigation">
                 <div>
-                    <h3>Site</h3>
-                    <a href="/">Home</a>
-                    <a href="/wallet">Wallet</a>
+                    <h3>{$LL.footer.title1()}</h3>
+                    <a href="/">{$LL.footer.home()}</a>
+                    <a href="/wallet">{$LL.footer.wallet()}</a>
                     <a href="/hugin">Hugin</a>
-                    <a href="/mining">Mining</a>
-                    <a href="https://kryptokrona.se/store/">Store</a>
-                    <a href="/about">About</a>
+                    <a href="/mining">{$LL.footer.mining()}</a>
+                    <a href="https://kryptokrona.se/store/">{$LL.footer.store()}</a>
+                    <a href="/about">{$LL.footer.about()}</a>
                 </div>
                 <div>
                     <h3>XKR</h3>
                     <a href="https://explorer.kryptokrona.se">Explorer</a>
                     <a href="https://github.com/kryptokrona/xkr-website/blob/main/static/Whitepaper/Proposal_for_a_New_Nordic_Digital_Currency.pdf">Whitepaper</a>
-                    <a href="/blog">Blog</a>
-                    <a href="https://github.com/kryptokrona/kryptokrona-stickers">Stickers</a>
-                    <a href="https://docs.kryptokrona.se">Docs</a>
+                    <a href="/blog">{$LL.footer.articles()}</a>
+                    <a href="https://github.com/kryptokrona/kryptokrona-stickers">{$LL.footer.stickers()}</a>
+                    <a href="https://docs.kryptokrona.se">{$LL.footer.docs()}</a>
                     <a href="https://github.com/kryptokrona">Github</a>
                 </div>
                 <div>

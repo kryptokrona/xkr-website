@@ -1,30 +1,32 @@
 <script>
     //Feature texts
+    import {LL, locale} from "$i18n/i18n-svelte";
+
     const features = [
         {
-            title: "Nordic Crypto",
-            text: "A growing cryptocurrency from the Nordics, with the vision ensure Nordic excellence in development of secure systems and economic tools."
+            title: $LL.components.features.title1(),
+            text: $LL.components.features.text1()
         },
         {
-            title: "Decentralized",
-            text: "Kryptokrona adds value to the region as a robust decentralized payment and communication system. Securing our freedom as citizens."
+            title: $LL.components.features.title2(),
+            text: $LL.components.features.text2()
         },
         {
-            title: "Crypto Community",
-            text: "Strong local roots with an understanding of politics, culture & language. A feature that should not be underestimated."
+            title: $LL.components.features.title3(),
+            text: $LL.components.features.text3()
         },
         {
-            title: "A response",
-            text: "Kryptokrona launched as an open-source alternative to a digital e-krona/e-krone and the growing cashless society in the Nordics."
+            title: $LL.components.features.title4(),
+            text: $LL.components.features.text4()
         },
         {
-            title: "No middleman",
-            text: "The Kryptokrona isn’t dependent on any central bank or server, thus less fragile than today's financial systems."
+            title: $LL.components.features.title5(),
+            text: $LL.components.features.text5()
         },
         {
-            title: "Private ",
-            text: "The basics of Kryptokrona allow users to stay anonymous by default, to send value and data without being revealed or traced."
-        }
+            title: $LL.components.features.title6(),
+            text: $LL.components.features.text6()
+        },
     ]
 </script>
 

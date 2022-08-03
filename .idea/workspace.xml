@@ -2,38 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd63994d-c0a8-4925-b092-d7282cc60cf4" name="Changes" comment="img">
-      <change afterPath="$PROJECT_DIR$/src/hooks.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/i18n/no/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/blog/BlogCard.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/blog/LatestPosts.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/blog/PageHeader.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/directus.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/get-asset-url.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/[lang]/__layout.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/[lang]/blog/[post].js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/[lang]/blog/[post].svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/[lang]/blog/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/[lang]/blog/index.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/[lang]/index.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/components/icons/ArrowDown.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/components/landing/XkrFaq.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/components/mining/MiningFaq.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/__layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/__layout.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/about/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/[lang]/about/index.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/benchmarks/cpu/amd/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/[lang]/benchmarks/cpu/amd/data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/benchmarks/cpu/amd/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/[lang]/benchmarks/cpu/amd/index.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/benchmarks/cpu/intel/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/[lang]/benchmarks/cpu/intel/index.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/benchmarks/gpu/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/[lang]/benchmarks/gpu/index.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/benchmarks/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/[lang]/benchmarks/index.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/faucet/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/[lang]/faucet/index.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/hugin/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/[lang]/hugin/index.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/hugin/whitepaper.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/[lang]/hugin/whitepaper.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/mining/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/[lang]/mining/index.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/sponsor/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/[lang]/sponsor/index.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/stickers/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/[lang]/stickers/index.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/wallet/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/[lang]/wallet/index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/i18n/en/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/i18n/en/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/i18n/i18n-types.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/i18n/i18n-types.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/Footer.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Footer.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/StatusBar.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/StatusBar.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/landing/Community.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/landing/Community.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/landing/Features.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/landing/Features.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/landing/HuginChat.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/landing/HuginChat.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/landing/Mining.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/landing/Mining.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/navbar/Navbar.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/navbar/Navbar.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/navbar/Sidebar.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/navbar/Sidebar.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/theme/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/theme/global.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/[lang]/about/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/[lang]/about/index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/[lang]/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/[lang]/index.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +58,19 @@
         <option value="Question" />
         <option value="tools/index" />
         <option value="JavaScript File" />
+        <option value="Hero" />
+        <option value="Features" />
+        <option value="HuginChat" />
+        <option value="Roadmap" />
+        <option value="fan" />
+        <option value="Mining" />
+        <option value="WhatIsXkr" />
+        <option value="Cpu" />
+        <option value="Community" />
+        <option value="LinkArrow" />
+        <option value="Store" />
+        <option value="Faq" />
+        <option value="ArrowDown" />
       </list>
     </option>
   </component>
@@ -110,7 +108,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/luknyb/Developer/GitHub/xkr-website/src/i18n",
+    "last_opened_file_path": "/Users/luknyb/Developer/GitHub/xkr-website/src/lib/components/landing",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -121,18 +119,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/lib/components/landing" />
+      <recent name="$PROJECT_DIR$/static" />
+      <recent name="$PROJECT_DIR$/src/lib/components" />
       <recent name="$PROJECT_DIR$/src/i18n" />
       <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/i18n/da" />
-      <recent name="$PROJECT_DIR$/src/lib/components" />
-      <recent name="$PROJECT_DIR$/src/lib/components/blog" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/lib/components/mining" />
+      <recent name="$PROJECT_DIR$/src/lib/components/navbar" />
+      <recent name="$PROJECT_DIR$/src/lib/components/landing" />
       <recent name="$PROJECT_DIR$/src/i18n" />
       <recent name="$PROJECT_DIR$/src/routes/[lang]" />
-      <recent name="$PROJECT_DIR$/src/lib/utils" />
-      <recent name="$PROJECT_DIR$/src/lib" />
-      <recent name="$PROJECT_DIR$/static" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -168,6 +166,24 @@
       <workItem from="1651866915643" duration="2257000" />
       <workItem from="1656759815714" duration="809000" />
       <workItem from="1658221526948" duration="3283000" />
+      <workItem from="1658229557624" duration="6697000" />
+      <workItem from="1658237239791" duration="8000" />
+      <workItem from="1658240683350" duration="1216000" />
+      <workItem from="1658252384126" duration="10338000" />
+      <workItem from="1658314096695" duration="745000" />
+      <workItem from="1658345103729" duration="2859000" />
+      <workItem from="1658507092302" duration="2805000" />
+      <workItem from="1658580581425" duration="550000" />
+      <workItem from="1658581378689" duration="2014000" />
+      <workItem from="1658585435783" duration="25000" />
+      <workItem from="1658592553855" duration="699000" />
+      <workItem from="1658606176000" duration="1686000" />
+      <workItem from="1658850671644" duration="1232000" />
+      <workItem from="1659266237919" duration="1724000" />
+      <workItem from="1659360416034" duration="18771000" />
+      <workItem from="1659436093194" duration="14355000" />
+      <workItem from="1659512703566" duration="11612000" />
+      <workItem from="1659536251235" duration="14619000" />
     </task>
     <task id="LOCAL-00001" summary="img">
       <created>1651366433380</created>
