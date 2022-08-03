@@ -10,7 +10,7 @@ export const handle = async ({ event, resolve }) => {
 	const [, lang] = event.url.pathname.split('/')
 
 	// replace html lang attribute with correct language
-	return resolve(event, { transformPage: htmlLanguageAttributeReplacer(lang) })
+	return resolve(event, { transformPageChunk: htmlLanguageAttributeReplacer(lang) })
 }
 
 
@@ -21,6 +21,7 @@ export const getSession = (event) => {
 	const headers = getHeaders(event)
 	const acceptLanguageDetector = initAcceptLanguageHeaderDetector({ headers })
 	const locale = detectLocale(acceptLanguageDetector)
+
 
 	return {
 		locale,

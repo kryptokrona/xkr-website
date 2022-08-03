@@ -1,5 +1,5 @@
 // replaces the locale slug in a relative url
-// e.g. /en/blog/article-1 => /sv/blog/article-1
+// e.g. /en/articles/article-1 => /sv/articles/article-1
 
 /**
  * @param { string } path
