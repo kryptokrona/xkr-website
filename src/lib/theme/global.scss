@@ -1,9 +1,8 @@
-@media (prefers-color-scheme: dark) {
-  :root {
+ :root {
     --logo-color: #ffffff;
     --backgound-color: #121212;
-    --title-color: rgba(255, 255, 255, 0.8);
-    --text-color: rgba(255, 255, 255, 0.6);
+    --title-color: rgb(255, 255, 255);
+    --text-color: rgba(255, 255, 255, 0.7);
 
     --hamburger: rgba(255, 255, 255, 0.5);
     --nav-backgound-color: rgba(32, 32, 32, 0.9);
@@ -14,18 +13,18 @@
     --card-border: #252525;
     --card-background: #171717;
 
-    --website-max-width: 1400px;
+    --website-max-width: 1200px;
     --website-padding-desktop: 0 40px;
     --website-padding-tablet: 0 30px;
-    --website-padding-mobile: 0 20px;
+    --website-padding-mobile: 0 30px;
 
     --success-color: #3fd782;
     --warn-color: #f25f61;
     --info-color: #5f86f2;
     --alert-color: #f2cb5f;
   }
-}
 
+/*
 @media (prefers-color-scheme: light) {
   :root {
     --logo-color: #121212;
@@ -53,12 +52,13 @@
     --alert-color: #f2cb5f;
   }
 }
+ */
 
 
 @font-face {
   font-family: 'Roboto Mono';
-  src: url('/static/fonts/RobotoMono-Regular.woff') format('woff'),
-  url('/static/fonts/RobotoMono-Regular.woff2') format('woff2');
+  src: url('/fonts/RobotoMono-Regular.woff') format('woff'),
+  url('/fonts/RobotoMono-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: auto;
@@ -66,8 +66,8 @@
 
 @font-face {
   font-family: 'Montserrat';
-  src: url('/static/fonts/Montserrat-Regular.woff') format('woff'),
-  url('/static/fonts/Montserrat-Regular.woff2') format('woff2');
+  src: url('/fonts/Montserrat-Regular.woff') format('woff'),
+  url('/fonts/Montserrat-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: auto;
@@ -95,18 +95,9 @@ body {
 
 .container {
   margin: 0 auto;
-  padding: var(--website-padding-desktop);
+  padding: 0 25px;
   max-width: var(--website-max-width);
   width: 100%;
-
-  @media screen and (max-width: 1000px) {
-    padding: var(--website-padding-tablet);
-  }
-
-
-  @media screen and (max-width: 500px) {
-    padding: var(--website-padding-mobile);
-  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -173,6 +164,9 @@ code {
   87.5% {
     background: #5ff2f0;
   }
+  100% {
+    background: #5f86f2;
+  }
 }
 
 .rgb {
@@ -208,6 +202,9 @@ code {
   87.5% {
     stroke: #5ff2f0;
   }
+  87.5% {
+    stroke: #5f86f2;
+  }
 }
 
 .rgbStroke {
@@ -242,6 +239,9 @@ code {
   }
   87.5% {
     fill: #5ff2f0;
+  }
+  100% {
+    fill: #5f86f2;
   }
 }
 
@@ -293,4 +293,36 @@ code {
 .box_light {
   border: 1px solid #fff;
   box-shadow: 0 0 10px #fff;
+}
+
+.post {
+  img, video, iframe {
+    max-width: 100%;
+    max-height: 450px;
+    border-radius: var(--border-radius);
+  }
+}
+
+:global(.accordion-item) {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border: var(--border-width) solid var(--border-color);
+  margin-bottom: 20px;
+  border-radius: var(--border-radius);
+
+  .question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      width: 30px;
+      height: 17px;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
 }
