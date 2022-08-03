@@ -8,7 +8,7 @@
     <meta name="description" content=""/>
 </svelte:head>
 
-<div class="wrapper">
+<div class="container wrapper">
     <HuginApp/>
 </div>
 
