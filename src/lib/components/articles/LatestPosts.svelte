@@ -1,5 +1,5 @@
 <script>
-    import BlogCard from "./BlogCard.svelte";
+    import BlogCard from "./Card.svelte";
     import LL, {locale} from "$i18n/i18n-svelte";
     
     export let latest = []
@@ -11,7 +11,7 @@
         <a href="/{$locale}/blog">{$LL.buttons.show_all()}</a>
     </div>
 </div>
-<div class="latest">
+<div class="container latest">
     <div class="roll">
         <div class="wrapper">
             {#each latest as post}
@@ -55,20 +55,10 @@
   .wrapper {
     min-width: 980px;
     max-width: var(--website-max-width);
-    padding: var(--website-padding-desktop);
     display: flex;
     margin-top: 30px;
     box-sizing: border-box;
     gap: 20px;
-
-    @media screen and (max-width: 1000px) {
-      padding: var(--website-padding-tablet);
-    }
-
-
-    @media screen and (max-width: 500px) {
-      padding: var(--website-padding-mobile);
-    }
   }
 
 </style>

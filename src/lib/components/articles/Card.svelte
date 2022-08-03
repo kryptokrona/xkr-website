@@ -1,19 +1,15 @@
 <script>
-    import {getAssetURL} from "../../get-asset-url.js";
-    import {locale} from "../../../i18n/i18n-svelte.js";
-
+    import {locale} from "$i18n/i18n-svelte";
     export let post
-    export let loading
 </script>
 
 <div class="card">
     <div class="card-header">
-        <img src="{getAssetURL(post.image)}" alt="thumbnail" loading="{loading}">
+        <h2>{post.title}</h2>
     </div>
     <div class="card-body">
-        <h2>{post.title}</h2>
         <p>{post.summary}</p>
-        <a href={`/${$locale}/blog/${post.slug}`}>Read post</a>
+        <a href={`/${$locale}/articles/${post.slug}`}>Read post</a>
     </div>
 </div>
 
@@ -32,11 +28,18 @@
       grid-column: span 6/span 6;
     }
 
-    .card-header img {
-      border-radius: var(--border-radius);
+    .card-header {
+      background-color: var(--card-background);
+      border: 1px solid var(--card-border);
+      border-radius: 5px;
+      padding: 20px;
+      height: 200px;
       max-width: 100%;
-      height: auto;
-      object-fit: cover;
+      transition: 200ms ease-in-out;
+
+      h2 {
+        margin: 0;
+      }
     }
 
     .card-body {
@@ -45,9 +48,11 @@
       padding-top: 20px;
       align-items: start;
       min-height: 250px;
+    }
 
-      h2 {
-        margin: 0;
+    &:hover {
+      .card-header {
+        border-color: var(--success-color);
       }
     }
   }
