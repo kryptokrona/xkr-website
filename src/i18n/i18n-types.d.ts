@@ -165,7 +165,7 @@ type RootTranslation = {
 			 */
 			huginText: string
 			/**
-			 * Technical questions about Cosmos tools? Ask a developer on the Community Discord.
+			 * Technical questions about our tools? Ask a developer on the Community Discord.
 			 */
 			discordText: string
 			/**
@@ -429,7 +429,7 @@ export type TranslationFunctions = {
 			 */
 			huginText: () => LocalizedString
 			/**
-			 * Technical questions about Cosmos tools? Ask a developer on the Community Discord.
+			 * Technical questions about our tools? Ask a developer on the Community Discord.
 			 */
 			discordText: () => LocalizedString
 			/**
