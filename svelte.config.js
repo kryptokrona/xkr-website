@@ -30,7 +30,6 @@ const config = {
             }
         }),
     ],
-
     onwarn: (warning, handler) => {
         const { code } = warning;
         if (code === 'css-semicolonexpected' || code === 'css-ruleorselectorexpected' || code === 'css-unused-selector')
