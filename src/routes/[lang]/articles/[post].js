@@ -1,6 +1,6 @@
 import {getDirectusClient} from '$lib/directus';
 
-export async function get({params, url}) {
+export async function GET({params, url}) {
     const directus = await getDirectusClient();
     const lang = (url.pathname.split('/')[1])
 

@@ -1,8 +1,8 @@
 <script>
-    import BlogCard from "$lib/components/blog/BlogCard.svelte";
+    import BlogCard from "$lib/components/articles/Card.svelte";
     import {getAssetURL} from "$lib/get-asset-url";
     import {locale} from "$i18n/i18n-svelte";
-    import PageHeader from "../../../lib/components/PageHeader.svelte";
+    import PageHeader from "$lib/components/articles/PageHeader.svelte";
 
     //Incoming data
     export let posts = []
@@ -14,40 +14,23 @@
     <link rel="alternate" href="https://nbx.com/no/blog " hreflang="no"/>
     <link rel="alternate" href="https://nbx.com/sv/blog " hreflang="sv"/>
     <link rel="alternate" href="https://nbx.com/da/blog " hreflang="da"/>
-    <title>NBX | BLOG</title>
+    <title>Kryptokrona | Blog</title>
     <meta name="description"
-          content="Invest in your future. Trade Bitcoin, Ethereum, and other tokens using NOK, SEK, DKK & EUR">
+          content="Read the blog bitch">
 </svelte:head>
 
-<PageHeader title="Articles" />
+<PageHeader title="Articles"/>
 
-<div class="container">
-    <div class="featured">
-        <div>
-            <img src={getAssetURL(posts.data[0].image)} loading="eager">
-        </div>
-        <div class="featured-text">
+<div class="wrapper">
+    {#if posts}
+        {#each posts.data as post}
             <div>
-                <h2>{posts.data[0].title}</h2>
-                <p>{posts.data[0].summary}</p>
+                <BlogCard post={post}/>
             </div>
-            <a href="/{$locale}/blog/{posts.data[0].slug}">Read post</a>
-
-        </div>
-    </div>
-    <div class="button-wrapper">
-
-    </div>
-    <div class="wrapper">
-        {#if posts}
-            {#each posts.data as post}
-                <div>
-                    <BlogCard post={post}/>
-                </div>
-            {/each}
-        {/if}
-    </div>
+        {/each}
+    {/if}
 </div>
+
 
 <style lang="scss">
 
@@ -91,14 +74,6 @@
       @media screen and (max-width: 1024px) {
         grid-column: span 6/span 6;
         gap: 2rem;
-      }
-
-      &:first-child {
-        display: none;
-
-        @media screen and (max-width: 1024px) {
-          display: block;
-        }
       }
     }
 
