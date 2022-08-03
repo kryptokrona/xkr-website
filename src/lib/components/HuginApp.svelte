@@ -75,6 +75,7 @@ const avatar = (adr) => {
         @media only screen and (max-width: 700px) {
           display: block;
         }
+
       }
     }
 
@@ -151,7 +152,8 @@ const avatar = (adr) => {
     }
 
     .left {
-      justify-content: space-between;
+      display: flex;
+      flex-direction: column;
       padding-bottom: 2rem;
       padding-right: 2rem;
 
@@ -165,6 +167,10 @@ const avatar = (adr) => {
 
       .small {
         display: none;
+
+        p {
+          margin-bottom: 2rem;
+        }
         @media only screen and (max-width: 1000px) {
           display: block;
         }
