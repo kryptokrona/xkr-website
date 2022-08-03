@@ -1,5 +1,5 @@
 <script>
-    import LL from "$i18n/i18n-svelte";
+    import {LL, locale} from "$i18n/i18n-svelte";
 </script>
 
 <footer>
@@ -7,18 +7,20 @@
             <div class="footer-navigation">
                 <div>
                     <h3>{$LL.footer.title1()}</h3>
-                    <a href="/">{$LL.footer.home()}</a>
-                    <a href="/wallet">{$LL.footer.wallet()}</a>
-                    <a href="/hugin">Hugin</a>
-                    <a href="/mining">{$LL.footer.mining()}</a>
+                    <a href="/{locale}">{$LL.footer.home()}</a>
+                    <a href="/{locale}/wallet">{$LL.footer.wallet()}</a>
+                    <a href="/{locale}/hugin">Hugin</a>
+                    <a href="/{locale}/mining">{$LL.footer.mining()}</a>
                     <a href="https://kryptokrona.se/store/">{$LL.footer.store()}</a>
-                    <a href="/about">{$LL.footer.about()}</a>
+                    <a href="/{locale}/about">{$LL.footer.about()}</a>
                 </div>
                 <div>
                     <h3>XKR</h3>
                     <a href="https://explorer.kryptokrona.se">Explorer</a>
                     <a href="https://github.com/kryptokrona/xkr-website/blob/main/static/Whitepaper/Proposal_for_a_New_Nordic_Digital_Currency.pdf">Whitepaper</a>
+                    <!--
                     <a href="/blog">{$LL.footer.articles()}</a>
+                    -->
                     <a href="https://github.com/kryptokrona/kryptokrona-stickers">{$LL.footer.stickers()}</a>
                     <a href="https://docs.kryptokrona.se">{$LL.footer.docs()}</a>
                     <a href="https://github.com/kryptokrona">Github</a>
@@ -26,7 +28,7 @@
                 <div>
                     <h3>Hugin</h3>
                     <a href="https://github.com/kryptokrona/xkr-website/blob/main/static/Whitepaper/Hugin_Whitepaper.pdf">Whitepaper</a>
-                    <a href="/faucet">Faucet</a>
+                    <a href="/{locale}/faucet">Faucet</a>
                     <a href="https://github.com/kryptokrona/hugin-messenger">Github</a>
                 </div>
             </div>
