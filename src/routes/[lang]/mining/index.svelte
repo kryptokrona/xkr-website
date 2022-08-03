@@ -46,6 +46,10 @@
     margin-top: 160px;
     margin-bottom: 40px;
     box-sizing: border-box;
+
+    @media screen and (max-width: 568px) {
+      margin-top: 60px;
+    }
   }
 
   .text-wrapper {

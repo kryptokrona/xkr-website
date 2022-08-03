@@ -83,6 +83,10 @@
       margin: 0;
     }
 
+    @media screen and (max-width: 568px) {
+      margin-top: 60px;
+    }
+
   }
 
   .features {

@@ -33,5 +33,9 @@ import DownloadWallet from "$lib/components/DownloadWallet.svelte";
     h1 {
       margin: 0;
     }
+
+    @media screen and (max-width: 568px) {
+      margin-top: 60px;
+    }
   }
 </style>

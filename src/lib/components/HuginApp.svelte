@@ -72,10 +72,21 @@ const avatar = (adr) => {
       .action-mobile {
         display: none;
 
+        p {
+          margin-bottom: 2rem;
+        }
+
+
         @media only screen and (max-width: 700px) {
           display: block;
         }
 
+      }
+    }
+
+    .action {
+      p {
+        margin-bottom: 2rem;
       }
     }
 
@@ -168,9 +179,6 @@ const avatar = (adr) => {
       .small {
         display: none;
 
-        p {
-          margin-bottom: 2rem;
-        }
         @media only screen and (max-width: 1000px) {
           display: block;
         }
