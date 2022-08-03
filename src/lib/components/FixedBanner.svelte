@@ -15,7 +15,7 @@
         <div class="dot"></div>
         <h3>{online} Online</h3>
     </div>
-    <LinkButton text="Join Discord" url="https://discord.gg/nRK5k7wYy8" target="_blank"/>
+    <LinkButton text="Join Discord" url="https://discord.gg/nRK5k7wYy8" target="_blank" rgb={true}/>
 </div>
 
 <style lang="scss">
