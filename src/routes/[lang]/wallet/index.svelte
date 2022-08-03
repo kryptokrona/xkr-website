@@ -15,7 +15,7 @@ import DownloadWallet from "$lib/components/DownloadWallet.svelte";
     <link rel="alternate" href="https://kryptokrona.org/wallet" hreflang="en"/>
 </svelte:head>
 
-<div class="wrapper">
+<div class="wrapper container">
     <h1>Wallet</h1>
 
     <DownloadWallet/>

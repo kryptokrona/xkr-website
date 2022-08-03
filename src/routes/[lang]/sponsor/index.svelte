@@ -1,6 +1,5 @@
 <script>
     import LinkButton from "$lib/components/buttons/LinkButton.svelte";
-    import star from '/static/star.svg'
     import novastack from '/static/novastack-white.png'
 </script>
 
@@ -10,11 +9,11 @@
         <h2>Novastack Hosting is a proud sponsor of the Kryptokrona project</h2>
         <div>
             <div class="novastack-desc">
-                <img src={star} alt="star" height="16px" style="margin-top: 5px">
+                <img src="/star.svg" alt="star" height="16px" style="margin-top: 5px">
                 <p>Novastack Hosting provides special prices for VPS, and is used to power the development for Kryptokrona!</p>
             </div>
             <div class="novastack-desc">
-                <img src={star} alt="star" height="16px" style="margin-top: 5px">
+                <img src="/star.svg" alt="star" height="16px" style="margin-top: 5px">
                 <p>Whether you are looking for a personal VPS hosting plan or a business website hosting plan, Novastack can help you with it. Novastacks powerful server services will not only help you achieve your overall goals, but will also provide you with the confidence you need in knowing that you are partnered with a reliable and secure hosting platform.</p>
             </div>
             <br/>
