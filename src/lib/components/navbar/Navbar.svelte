@@ -64,6 +64,10 @@
     position: fixed;
     top: 0;
     width: 100%;
+
+    @media screen and (max-width: 568px){
+      position: relative;
+    }
   }
 
   .wrapper {
