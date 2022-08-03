@@ -8,6 +8,7 @@
 
     //Global scss
     import '$lib/theme/global.scss'
+    import FixedBanner from "../../lib/components/FixedBanner.svelte";
 
     let ready
 
@@ -38,5 +39,6 @@
 <main>
     <slot/>
 </main>
+<FixedBanner/>
 <Footer/>
 

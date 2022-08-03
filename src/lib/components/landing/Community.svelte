@@ -1,15 +1,6 @@
 <script>
     import LinkArrow from "../icons/LinkArrow.svelte";
     import {LL, locale} from "$i18n/i18n-svelte";
-
-    import {onMount} from "svelte";
-
-    let online
-    onMount(async () => {
-        const response = await fetch('https://discord.com/api/guilds/562673808582901793/widget.json')
-        const data = await response.json()
-        online = data.presence_count
-    })
 </script>
 
 <div class="grid gap" id="community">
