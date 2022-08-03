@@ -18,7 +18,7 @@
     })
 
     function pageScroll() {
-        document.getElementById('scroll').scrollBy(0, 0.5);
+        document.getElementById('scroll').scrollBy(0, 1);
         scrolldelay = setTimeout(pageScroll, 20);
     }
 
