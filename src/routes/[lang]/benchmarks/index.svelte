@@ -4,8 +4,7 @@
 </svelte:head>
 
 <script>
-    import LinkButton from "../../../lib/components/buttons/LinkButton.svelte";
-    import JoinDiscord from "$lib/components/JoinDiscord.svelte";
+    import LinkButton from "$lib/components/buttons/LinkButton.svelte";
 </script>
 
 <div class="wrapper">
