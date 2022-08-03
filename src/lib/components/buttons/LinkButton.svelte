@@ -7,7 +7,7 @@
     export let info = false
 </script>
 
-<a href={url}
+<a sveltekit:prefetch href={url}
    target={target}
    class:enabled
    class:info
@@ -19,9 +19,9 @@
     background-color: var(--card-background);
     border: 1px solid var(--border-color);
     color: var(--text-color);
-    border-radius: 0.4rem;
+    border-radius: 5px;
     padding: 9px 20px;
-    width: 100px;
+    max-width: 180px;
     cursor: pointer;
     transition: 250ms ease-in-out;
     text-align: center;
@@ -35,7 +35,7 @@
   .enabled {
     background-color: #3FD782;
     border-color: #63e79f;
-    color: #fff;
+    color: #121212;
     font-weight: 600;
 
     &:hover {
