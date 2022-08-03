@@ -1,12 +1,10 @@
 <script>
     import {network} from "../stores/store.js";
-
-
 </script>
 
 <div class="wrapper">
     <div class="text-wrapper">
-        <p><span style="opacity: 100%; color: white">💰</span> {$network.supply}</p>
+        <p><span style="opacity: 100%; color: white">💰</span> {$network.supply} XKR</p>
         <p>{$network.percentage}%</p>
     </div>
     <div class="goal">
@@ -32,7 +30,6 @@
 
   .wrapper {
     width: 100%;
-    margin-top: 20px;
   }
 
     .text-wrapper {
@@ -55,15 +52,11 @@
       .progress {
         animation: load 3s normal forwards;
         box-shadow: 0 10px 40px -10px #ffffff;
-        background-color: #ffffff;
+        background-color: var(--success-color);
         height: 8px;
         border-radius: 10em;
         width: 8%;
         transition: all 3s;
-
-        @media (prefers-color-scheme: light) {
-          background-color: var(--info-color);
-        }
       }
     }
 
