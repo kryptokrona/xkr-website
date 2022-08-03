@@ -53,7 +53,7 @@ const en = {
             title: 'Crypto Community',
             text: 'Join a fast-growing community of developers and innovators connected all over the world. The project is open-source and maintained by the Community. You can for example make changes to this site, suggest awesome new features, or help us squash bugs. Not a developer? No worries, there\'s tons of things to\ndo!',
             huginText: 'Join our privacy first messenger.',
-            discordText: 'Technical questions about Cosmos tools? Ask a developer on the Community Discord.',
+            discordText: 'Technical questions about our tools? Ask a developer on the Community Discord.',
             telegramText: 'Ask general questions and chat with the worldwide community on Telegram.',
             twitterText: 'Follow @kryptokrona to get the latest news and updates from across the ecosystem.!'
         },
