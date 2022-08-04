@@ -6,7 +6,6 @@
     import Mining from "$lib/components/landing/Mining.svelte";
     import Community from "$lib/components/landing/Community.svelte";
     import HuginChat from "$lib/components/landing/HuginChat.svelte";
-    import Store from "$lib/components/landing/Store.svelte";
 
 </script>
 
