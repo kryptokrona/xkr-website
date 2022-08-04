@@ -8,7 +8,7 @@
     <div class="text">
         <h2>{$LL.components.mining.title()}</h2>
         <p>{$LL.components.mining.text()}</p>
-        <LinkButton text={$LL.components.mining.button()} url="/{locale}/mining" />
+        <LinkButton text={$LL.components.mining.button()} url="/{locale}/mining" enabled={true}/>
     </div>
     <div class="grid gap">
         <div class="col">
