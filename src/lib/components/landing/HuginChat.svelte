@@ -38,7 +38,9 @@
                     <div class="post">
                         <div style="display: flex; justify-content: space-between; align-items: center">
                             <div style="display: flex; align-items: center; margin: 0 0 0 -10px">
+                                <!--
                                 <img width="36px" height="36px" class="avatar" src="data:image/png;base64,{avatar(post.key)}" alt="">
+                                -->
                                 <h4>{post.nickname ? post.nickname : 'Anonymous'}</h4>
                             </div>
                             <h5>{moment(post.time * 1000).fromNow()}</h5>
