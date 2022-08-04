@@ -2,6 +2,7 @@
     import Alert from "./Alert.svelte";
     import Sidebar from "./Sidebar.svelte";
     import {locale, LL} from "$i18n/i18n-svelte";
+    import LinkButton from "../buttons/LinkButton.svelte";
 
 
     let openMenu = false
@@ -45,6 +46,7 @@
                 <a sveltekit:prefetch href="/{locale}/articles">{$LL.navbar.articles()}</a>
                 -->
                 <a sveltekit:prefetch href="/{locale}/about">{$LL.navbar.about()}</a>
+                <LinkButton text="Discord" url="https://discord.gg/nRK5k7wYy8" enabled={true} target="_blank"/>
             </div>
         </div>
     </div>
@@ -99,6 +101,7 @@
   .navigation {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 30px;
 
     a {
