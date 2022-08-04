@@ -33,7 +33,6 @@
     <HuginChat/>
     <Community/>
     <Mining/>
-    <Store/>
     <div>
         <SignupNewsletter/>
     </div>
