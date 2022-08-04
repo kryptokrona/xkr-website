@@ -4,7 +4,7 @@ export const cache = writable([])
 
 //Fetch all posts
 const fetchCache = () => {
-    fetch('https://cache.hugin.chat/api/v1/posts?size=200')
+    fetch('https://cache.hugin.chat/api/v1/posts?size=100')
         .then(res => {
                 if(!res.ok) throw new Error(res.status);
                 else return res.json();
