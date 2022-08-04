@@ -6,7 +6,6 @@ export const cache = writable([])
 const fetchCache = () => {
     fetch('https://cache.hugin.chat/api/v1/posts?size=100', {
         headers: {
-            'Content-Type': 'application/json',
             "Accept-Encoding": "gzip",
         }
     })
