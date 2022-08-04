@@ -37,7 +37,7 @@
                 {#each $cache as post}
                     <div class="post">
                         <div style="display: flex; justify-content: space-between; align-items: center">
-                            <div style="display: flex; align-items: center; margin: 0 0 0 -10px">
+                            <div style="display: flex; align-items: center;">
                                 <!--
                                 <img width="36px" height="36px" class="avatar" src="data:image/png;base64,{avatar(post.key)}" alt="">
                                 -->
