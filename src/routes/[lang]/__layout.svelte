@@ -1,6 +1,5 @@
 <script>
     import {onMount} from "svelte";
-    import {page} from "$app/stores";
     import {state} from "$lib/stores/store";
     import LoadingScreen from "$lib/components/LoadingScreen.svelte";
     import Navbar from "$lib/components/navbar/Navbar.svelte";
