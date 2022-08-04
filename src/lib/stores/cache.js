@@ -6,7 +6,8 @@ export const cache = writable([])
 const fetchCache = () => {
     fetch('https://cache.hugin.chat/api/v1/posts?size=100', {
         headers: {
-            "Accept-Encoding": "gzip"
+            'Content-Type': 'application/json',
+            "Accept-Encoding": "gzip",
         }
     })
         .then(res => {
@@ -21,4 +22,3 @@ const fetchCache = () => {
 }
 
 fetchCache()
-setInterval(fetchCache, 10000)
