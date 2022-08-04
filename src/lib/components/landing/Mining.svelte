@@ -64,5 +64,20 @@
         font-size: 2rem;
       }
     }
+
+    img {
+      width: 400px;
+      height: 400px;
+      align-self: end;
+
+      @media screen and (max-width: 768px) {
+        align-self: center;
+      }
+
+      @media screen and (max-width: 568px) {
+        width: 320px;
+        height: 320px;
+      }
+    }
   }
 </style>
