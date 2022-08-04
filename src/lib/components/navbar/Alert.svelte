@@ -3,14 +3,13 @@
     //enable alert
     import {page} from "$app/stores";
     import {locale} from "$i18n/i18n-svelte";
-    import * as url from "url";
-
+    import {network} from "../../stores/store.js";
 
     let setAlert = true
 
     //Add alert text here
     // eslint-disable-next-line no-unused-vars
-    let alertText = "New release! Please update your nodes"
+    let alertText = "Please update your nodes"
 
     //Add a link to your alert
     // eslint-disable-next-line no-unused-vars
@@ -25,7 +24,16 @@
     //Red
     let warning
     //Yellow
-    let alert = true
+    let alert
+
+    // Temporary for node upgrade
+    if ($network.blockHeight < 1300000) {
+        info = true
+    } else if ($network.blockHeight < 1400000) {
+        alert = true
+    } else if ($network.blockHeight < 1500000) {
+        warning = true
+    }
 
 </script>
 
