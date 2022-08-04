@@ -41,6 +41,7 @@
                 <a sveltekit:prefetch href="/{locale}/wallet">{$LL.navbar.wallet()}</a>
                 <a sveltekit:prefetch href="/{locale}/hugin">{$LL.navbar.hugin()}</a>
                 <a sveltekit:prefetch href="/{locale}/mining">{$LL.navbar.mining()}</a>
+                <a href="https://store.kryptokrona.org/" target="_blank">Store</a>
 
                 <!--
                 <a sveltekit:prefetch href="/{locale}/articles">{$LL.navbar.articles()}</a>

@@ -12,6 +12,7 @@
             <a sveltekit:prefetch class="mobile-link" in:fade="{{delay: 250, duration: 500}}" out:fade="{{delay: 550}}" href="/{locale}/wallet">{$LL.navbar.wallet()}</a>
             <a sveltekit:prefetch class="mobile-link" in:fade="{{delay: 350, duration: 500}}" out:fade="{{delay: 450}}" href="https://hugin.chat" target="_blank">Hugin</a>
             <a sveltekit:prefetch class="mobile-link" in:fade="{{delay: 450, duration: 500}}" out:fade="{{delay: 350}}" href="/{locale}/mining">{$LL.navbar.mining()}</a>
+            <a class="mobile-link" in:fade="{{delay: 550, duration: 500}}" out:fade="{{delay: 250}}" href="https://store.kryptokrona.org/">Store</a>
             <!--
             <a sveltekit:prefetch class="mobile-link" in:fade="{{delay: 550, duration: 500}}" out:fade="{{delay: 250}}" href="/{locale}/articles">Articles</a>
             -->
