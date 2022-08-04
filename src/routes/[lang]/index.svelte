@@ -1,12 +1,12 @@
 <script>
     import StatusBar from "$lib/components/StatusBar.svelte";
     import SignupNewsletter from "$lib/components/SignupNewsletter.svelte";
-    import Hero from "../../lib/components/landing/Hero.svelte";
-    import Features from "../../lib/components/landing/Features.svelte";
-    import Mining from "../../lib/components/landing/Mining.svelte";
-    import Community from "../../lib/components/landing/Community.svelte";
-    import HuginChat from "../../lib/components/landing/HuginChat.svelte";
-    import XkrFaq from "../../lib/components/landing/XkrFaq.svelte";
+    import Hero from "$lib/components/landing/Hero.svelte";
+    import Features from "$lib/components/landing/Features.svelte";
+    import Mining from "$lib/components/landing/Mining.svelte";
+    import Community from "$lib/components/landing/Community.svelte";
+    import HuginChat from "$lib/components/landing/HuginChat.svelte";
+    import Store from "$lib/components/landing/Store.svelte";
 
 </script>
 
@@ -33,6 +33,7 @@
     <HuginChat/>
     <Community/>
     <Mining/>
+    <Store/>
     <div>
         <SignupNewsletter/>
     </div>
