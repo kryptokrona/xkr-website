@@ -16,11 +16,11 @@
     text-align: center;
 
     @media screen and (max-width: 1000px) {
-      margin-top: 120px;
+      margin-top: 100px;
     }
 
     @media screen and (max-width: 568px) {
-      margin-top: 60px;
+      margin-top: 40px;
     }
 
     h1 {

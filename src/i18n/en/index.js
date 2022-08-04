@@ -66,6 +66,9 @@ const en = {
             title: 'Hide with Hugin',
             text: 'Hugin Messenger puts your privacy first. By the use of military grade encryption, your messages are safe from the prying eyes of others. Hugin uses the decentralized structure that makes cryptocurrencies work, meaning that the system cannot be taken down or be controlled by any one entity.',
             button: 'Learn more'
+        },
+        fixedBanner: {
+            button: 'Join us!'
         }
     },
     about: {

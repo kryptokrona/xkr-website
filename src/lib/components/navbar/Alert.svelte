@@ -24,19 +24,19 @@
 
 </script>
 
-    {#if setAlert}
-        <div class:warn={warning} class:alert={alert} class:info={info} class:news={news}>
-            <div class="wrapper">
-                <p>{alertText}
-                    {#if link}
-                        <a href={link} > Link</a>
-                    {/if}
-                </p>
-            </div>
+{#if setAlert}
+    <div class:warn={warning} class:alert={alert} class:info={info} class:news={news}>
+        <div class="wrapper">
+            <p>
+                {alertText}
+                {#if link}
+                    <a href={link} target="_blank"> Link</a>
+                {/if}
         </div>
-    {:else}
-        <div class=" border_rgb"></div>
-    {/if}
+    </div>
+{:else}
+    <div class=" border_rgb"></div>
+{/if}
 
 <style lang="scss">
 
@@ -107,6 +107,7 @@
     p {
       margin: 0;
       font-size: 0.85rem;
+      text-align: center;
     }
 
     a {

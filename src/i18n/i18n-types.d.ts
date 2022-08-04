@@ -205,6 +205,12 @@ type RootTranslation = {
 			 */
 			button: string
 		}
+		fixedBanner: {
+			/**
+			 * Join us!
+			 */
+			button: string
+		}
 	}
 	about: {
 		/**
@@ -466,6 +472,12 @@ export type TranslationFunctions = {
 			text: () => LocalizedString
 			/**
 			 * Learn more
+			 */
+			button: () => LocalizedString
+		}
+		fixedBanner: {
+			/**
+			 * Join us!
 			 */
 			button: () => LocalizedString
 		}
