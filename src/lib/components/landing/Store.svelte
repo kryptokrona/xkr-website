@@ -5,13 +5,13 @@
     </div>
     <div class="grid">
         <a href="https://store.kryptokrona.org/swag/mug" target="_blank">
-            <img class="card" src="/mug.png" alt="Kryptokrona mug">
+            <img class="card" src="/mug.webp" alt="Kryptokrona mug">
         </a>
         <a href="https://store.kryptokrona.org/swag/hat" target="_blank">
-            <img class="card" src="/hat.png" alt="Kryptokrona hat">
+            <img class="card" src="/hat.webp" alt="Kryptokrona hat">
         </a>
         <a href="https://store.kryptokrona.org/swag/mousepad" target="_blank">
-            <img class="card" src="/mousepad.png" alt="Kryptokrona mousepad">
+            <img class="card" src="/mousepad.webp" alt="Kryptokrona mousepad">
         </a>
     </div>
 </div>
