@@ -5,10 +5,10 @@
     import LoadingScreen from "$lib/components/LoadingScreen.svelte";
     import Navbar from "$lib/components/navbar/Navbar.svelte";
     import Footer from "$lib/components/Footer.svelte";
+    import FixedBanner from "$lib/components/FixedBanner.svelte";
 
     //Global scss
     import '$lib/theme/global.scss'
-    import FixedBanner from "../../lib/components/FixedBanner.svelte";
 
     let ready
 
@@ -24,8 +24,6 @@
             }, 1000)
         }
     }
-
-    console.log($page.url)
 </script>
 
 <!--Loading screen with animated logo-->

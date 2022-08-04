@@ -1,6 +1,11 @@
 <script>
 
     //enable alert
+    import {page} from "$app/stores";
+    import {locale} from "$i18n/i18n-svelte";
+    import * as url from "url";
+
+
     let setAlert = true
 
     //Add alert text here
@@ -24,7 +29,7 @@
 
 </script>
 
-{#if setAlert}
+{#if (setAlert && ($page.url.pathname !== `/${$locale}/hugin`))}
     <div class:warn={warning} class:alert={alert} class:info={info} class:news={news}>
         <div class="wrapper">
             <p>
