@@ -1,15 +1,15 @@
 <script>
 
     //enable alert
-    let setAlert
+    let setAlert = true
 
     //Add alert text here
     // eslint-disable-next-line no-unused-vars
-    let alertText = "This site is under construction"
+    let alertText = "New release! Please update your nodes"
 
     //Add a link to your alert
     // eslint-disable-next-line no-unused-vars
-    let link
+    let link = 'https://github.com/kryptokrona/kryptokrona/releases/tag/1.0.0'
 
     //Select type
     //Will change color depending on selection
