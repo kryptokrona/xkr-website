@@ -16,7 +16,7 @@
     text-align: center;
 
     @media screen and (max-width: 1000px) {
-      margin-top: 100px;
+      margin-top: 140px;
     }
 
     @media screen and (max-width: 568px) {
