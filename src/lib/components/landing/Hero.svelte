@@ -36,6 +36,10 @@
       line-height: 150%;
       margin: 0;
     }
+
+    img {
+      margin-bottom: 2rem;
+    }
   }
 
 </style>
