@@ -1,3 +1,7 @@
+<script context="module">
+    export const prerender = false;
+</script>
+
 <script>
     import {onMount} from "svelte";
     import Button from "$lib/components/buttons/Button.svelte";
@@ -21,8 +25,12 @@
             })
 
         window.captchaCallback = res => {
-            console.log(res)
-            captcha = res
+            return new Promise(resolve => {
+                console.log(res)
+                captcha = res
+
+                resolve()
+            })
         };
     })
 
@@ -84,8 +92,8 @@
     <meta property="og:image" content="https://kryptokrona.org/ogfaucet.png">
     <meta property="og:url" content="https://kryptokrona.org/faucet"/>
     <meta property="og:locale" content="en"/>
-    <link rel="alternate" href="https://kryptokrona.org/faucet" hreflang="en"/>
-    <link rel="alternate" href="https://kryptokrona.org/faucet" hreflang="x-default"/>
+    <link rel="alternate" href="https://kryptokrona.org/eb/faucet" hreflang="en"/>
+    <link rel="alternate" href="https://kryptokrona.org/en/faucet" hreflang="x-default"/>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </svelte:head>
 
