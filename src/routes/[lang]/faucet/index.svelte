@@ -106,6 +106,9 @@
         <Button text="Claim" disabled={!enabled} enabled={enabled && captcha} on:click={() => submitForm()}/>
         <p id="status">{status}</p>
     </div>
+    <div>
+        <p>You can also get XKR by <a href="https://kryptokrona.org/en/mining">mining</a> or <a href="https://docs.kryptokrona.org/guides/how-to-buy-xkr">buying on an exchange</a>.</p>
+    </div>
 </div>
 
 <style lang="scss">
