@@ -16,13 +16,13 @@
                 </div>
                 <div>
                     <h3>XKR</h3>
-                    <a href="https://explorer.kryptokrona.se">Explorer</a>
+                    <a href="https://explorer.kryptokrona.org">Explorer</a>
                     <a href="https://github.com/kryptokrona/xkr-website/blob/main/static/Whitepaper/Proposal_for_a_New_Nordic_Digital_Currency.pdf">Whitepaper</a>
                     <!--
                     <a href="/blog">{$LL.footer.articles()}</a>
                     -->
                     <a href="https://github.com/kryptokrona/kryptokrona-stickers">{$LL.footer.stickers()}</a>
-                    <a href="https://docs.kryptokrona.se">{$LL.footer.docs()}</a>
+                    <a href="https://docs.kryptokrona.org">{$LL.footer.docs()}</a>
                     <a href="https://github.com/kryptokrona">Github</a>
                 </div>
                 <div>
