@@ -80,7 +80,7 @@ const en = {
         maxSupply: 'Max Supply',
         currentSupply: 'Current Supply',
         title2: 'GPU Mining Algorithm',
-        text2: 'We currently running on CryptoNight-Pico, which is a fairer algo than Bitcoin\'s SHA256 and can even be competently mined on ARM based phones!',
+        text2: 'We are currently running on CryptoNight-Pico, which is a more fair algorithm than Bitcoin\'s SHA256 and can even be competently mined on ARM based phones!',
         title3: 'Blocktime',
         text3: 'Our network processes new transactions every 90 seconds, in comparison to Bitcoins 10 minute delay.',
         title4: 'Untraceable',
