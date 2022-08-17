@@ -16,11 +16,6 @@ const avatar = (adr) => {
             <div class="nav">
                 <h1>Hugin</h1>
                 <p>This is a live feed from our decentralized encrypted privacy messenger. </p>
-                <!--
-                <div class="nav-link">
-                    <h3>Home</h3>
-                </div>
-                -->
             </div>
             <div class="action small">
                 <h2>Want to join the conversation?</h2>
@@ -68,7 +63,7 @@ const avatar = (adr) => {
 
     .wrapper {
       display: flex;
-      height: 800px;
+      height: 100vh;
 
       @media only screen and (max-width: 700px) {
         flex-direction: column;
@@ -77,9 +72,21 @@ const avatar = (adr) => {
       .action-mobile {
         display: none;
 
+        p {
+          margin-bottom: 2rem;
+        }
+
+
         @media only screen and (max-width: 700px) {
           display: block;
         }
+
+      }
+    }
+
+    .action {
+      p {
+        margin-bottom: 2rem;
       }
     }
 
@@ -156,7 +163,8 @@ const avatar = (adr) => {
     }
 
     .left {
-      justify-content: space-between;
+      display: flex;
+      flex-direction: column;
       padding-bottom: 2rem;
       padding-right: 2rem;
 
@@ -170,6 +178,7 @@ const avatar = (adr) => {
 
       .small {
         display: none;
+
         @media only screen and (max-width: 1000px) {
           display: block;
         }

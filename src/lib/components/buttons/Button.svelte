@@ -17,12 +17,13 @@
 
 <style lang="scss">
   button {
+    height: 36px;
     background-color: var(--card-background);
     border: 1px solid var(--border-color);
     color: var(--text-color);
     border-radius: 0.4rem;
-    padding: 9px 10px;
-    width: 100px;
+    min-width: 100px;
+    max-width: 180px;
     cursor: pointer;
     font-weight: 600;
     transition: 250ms ease-in-out;
