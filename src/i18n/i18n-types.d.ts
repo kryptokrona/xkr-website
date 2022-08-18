@@ -246,7 +246,7 @@ type RootTranslation = {
 		 */
 		title2: string
 		/**
-		 * We currently running on CryptoNight-Pico, which is a fairer algo than Bitcoin's SHA256 and can even be competently mined on ARM based phones!
+		 * We are currently running on CryptoNight-Pico, which is a more fair algorithm than Bitcoin's SHA256 and can even be competently mined on ARM based phones!
 		 */
 		text2: string
 		/**
@@ -516,7 +516,7 @@ export type TranslationFunctions = {
 		 */
 		title2: () => LocalizedString
 		/**
-		 * We currently running on CryptoNight-Pico, which is a fairer algo than Bitcoin's SHA256 and can even be competently mined on ARM based phones!
+		 * We are currently running on CryptoNight-Pico, which is a more fair algorithm than Bitcoin's SHA256 and can even be competently mined on ARM based phones!
 		 */
 		text2: () => LocalizedString
 		/**
