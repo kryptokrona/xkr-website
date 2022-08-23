@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd63994d-c0a8-4925-b092-d7282cc60cf4" name="Changes" comment="img">
-      <change afterPath="$PROJECT_DIR$/static/grain.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/small-grain.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/xkr-website.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/xkr-website.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/HuginApp.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/HuginApp.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/landing/Features.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/landing/Features.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/theme/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/theme/global.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/xkr.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/xkr.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svelte.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/svelte.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +202,7 @@
       <workItem from="1660984078740" duration="10000" />
       <workItem from="1660992958980" duration="80000" />
       <workItem from="1660993812241" duration="6000" />
-      <workItem from="1661271327318" duration="382000" />
+      <workItem from="1661271327318" duration="761000" />
     </task>
     <task id="LOCAL-00001" summary="img">
       <created>1651366433380</created>
