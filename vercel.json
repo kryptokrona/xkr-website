@@ -1,7 +1,15 @@
 {
   "redirects": [
     {
-      "source": "/*/faucet",
+      "source": "/en/faucet",
+      "destination": "https://faucet.kryptokrona.org"
+    },
+    {
+      "source": "/sv/faucet",
+      "destination": "https://faucet.kryptokrona.org"
+    },
+    {
+      "source": "/no/faucet",
       "destination": "https://faucet.kryptokrona.org"
     },
     {
