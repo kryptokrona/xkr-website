@@ -67,7 +67,7 @@
     {#if desktop}
 
         <div class="selection-wrapper">
-            <div class="card">
+            <div class="card layered-shadow">
                 <div>
                     <h3>Desktop Wallet</h3>
                     <p>Using our wallet you can store, send and receive Kryptokrona.

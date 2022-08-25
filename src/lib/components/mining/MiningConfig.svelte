@@ -5,7 +5,7 @@
     let address
 </script>
 
-<div class="card">
+<div class="card layered-shadow">
     <div>
         <h3>Generate config</h3>
         <p>Enter address to generate a ready-to-go config for xmrig.</p>

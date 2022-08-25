@@ -40,7 +40,7 @@
 
 </script>
 
-<div class="card">
+<div class="card layered-shadow">
     {#if !submitted}
         <h2>Get on the mailing list</h2>
         <form name="Portfolio Contact" method="POST" on:submit|preventDefault={() => handleSubmit(email)}>

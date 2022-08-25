@@ -58,7 +58,7 @@
             <p>{$network.supply} XKR</p>
         </div>
         {#each about as card}
-            <div>
+            <div class="layered-shadow">
                 <h2>{card.title}</h2>
                 <p>{card.text}</p>
             </div>

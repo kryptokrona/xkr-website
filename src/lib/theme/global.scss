@@ -1,28 +1,28 @@
- :root {
-    --logo-color: #ffffff;
-    --backgound-color: #121212;
-    --title-color: rgb(255, 255, 255);
-    --text-color: rgba(255, 255, 255, 0.7);
+:root {
+  --logo-color: #ffffff;
+  --backgound-color: #121212;
+  --title-color: rgb(255, 255, 255);
+  --text-color: rgba(255, 255, 255, 0.7);
 
-    --hamburger: rgba(255, 255, 255, 0.5);
-    --nav-backgound-color: rgba(32, 32, 32, 0.9);
-    --nav-link-color: #ffffff;
-    --link-color: #ffffff;
+  --hamburger: rgba(255, 255, 255, 0.5);
+  --nav-backgound-color: rgba(32, 32, 32, 0.9);
+  --nav-link-color: #ffffff;
+  --link-color: #ffffff;
 
-    --border-color: rgba(255, 255, 255, 0.1);
-    --card-border: #252525;
-    --card-background: #171717;
+  --border-color: rgba(255, 255, 255, 0.1);
+  --card-border: #252525;
+  --card-background: #171717;
 
-    --website-max-width: 1200px;
-    --website-padding-desktop: 0 40px;
-    --website-padding-tablet: 0 30px;
-    --website-padding-mobile: 0 30px;
+  --website-max-width: 1200px;
+  --website-padding-desktop: 0 40px;
+  --website-padding-tablet: 0 30px;
+  --website-padding-mobile: 0 30px;
 
-    --success-color: #3fd782;
-    --warn-color: #f25f61;
-    --info-color: #5f86f2;
-    --alert-color: #f2cb5f;
-  }
+  --success-color: #3fd782;
+  --warn-color: #f25f61;
+  --info-color: #5f86f2;
+  --alert-color: #f2cb5f;
+}
 
 /*
 @media (prefers-color-scheme: light) {
@@ -284,6 +284,11 @@ code {
     border: 1px solid #5ff2f0;
     box-shadow: 0 0 10px #5ff2f0;
   }
+}
+
+.layered-shadow {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15),
+  0 6px 6px rgba(0, 0, 0, 0.20);
 }
 
 .fixed {
