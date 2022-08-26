@@ -24,6 +24,7 @@
                     <a href="https://github.com/kryptokrona/kryptokrona-stickers">{$LL.footer.stickers()}</a>
                     <a href="https://docs.kryptokrona.org">{$LL.footer.docs()}</a>
                     <a href="https://github.com/kryptokrona">Github</a>
+                    <a href="https://github.com/kryptokrona/Styleguide">Sylegudie</a>
                 </div>
                 <div>
                     <h3>Hugin</h3>
