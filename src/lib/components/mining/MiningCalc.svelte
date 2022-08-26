@@ -37,7 +37,7 @@
 
 </script>
 
-<div class="card">
+<div class="card layered-shadow">
     <h3>Mining Calculator</h3>
     <p>Enter your hashrate to calculate your potential earnings</p>
     <div>

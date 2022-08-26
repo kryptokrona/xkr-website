@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd63994d-c0a8-4925-b092-d7282cc60cf4" name="Changes" comment="img">
-      <change afterPath="$PROJECT_DIR$/src/lib/components/icons/ArrowDown.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/landing/XkrFaq.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/mining/MiningFaq.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/i18n/en/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/i18n/en/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/i18n/i18n-types.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/i18n/i18n-types.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/Footer.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Footer.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/StatusBar.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/StatusBar.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/landing/Community.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/landing/Community.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/landing/Features.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/landing/Features.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/landing/HuginChat.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/landing/HuginChat.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/landing/Mining.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/landing/Mining.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/navbar/Navbar.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/navbar/Navbar.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/navbar/Sidebar.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/navbar/Sidebar.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/theme/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/theme/global.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/[lang]/about/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/[lang]/about/index.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/[lang]/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/[lang]/index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/xkr.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/xkr.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svelte.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/svelte.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +56,7 @@
         <option value="Store" />
         <option value="Faq" />
         <option value="ArrowDown" />
+        <option value="FixedBanner" />
       </list>
     </option>
   </component>
@@ -93,6 +79,12 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/lib/stores/store.js" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="lsa0y9ga" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -103,34 +95,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/luknyb/Developer/GitHub/xkr-website/src/lib/components/landing",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/lukas/Documents/GitHub/xkr-website/node_modules/prettier",
-    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/luknyb/Developer/GitHub/xkr-website/static&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/lukas/Documents/GitHub/xkr-website/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/lib/components/landing" />
       <recent name="$PROJECT_DIR$/static" />
+      <recent name="$PROJECT_DIR$/static/store" />
+      <recent name="$PROJECT_DIR$/src/lib/components/landing" />
       <recent name="$PROJECT_DIR$/src/lib/components" />
       <recent name="$PROJECT_DIR$/src/i18n" />
-      <recent name="$PROJECT_DIR$/src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static" />
       <recent name="$PROJECT_DIR$/src/lib/components/mining" />
       <recent name="$PROJECT_DIR$/src/lib/components/navbar" />
       <recent name="$PROJECT_DIR$/src/lib/components/landing" />
       <recent name="$PROJECT_DIR$/src/i18n" />
-      <recent name="$PROJECT_DIR$/src/routes/[lang]" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -183,7 +176,33 @@
       <workItem from="1659360416034" duration="18771000" />
       <workItem from="1659436093194" duration="14355000" />
       <workItem from="1659512703566" duration="11612000" />
-      <workItem from="1659536251235" duration="14619000" />
+      <workItem from="1659536251235" duration="23121000" />
+      <workItem from="1659617789795" duration="15883000" />
+      <workItem from="1659651708700" duration="312000" />
+      <workItem from="1659652036586" duration="170000" />
+      <workItem from="1659652213936" duration="296000" />
+      <workItem from="1659652516818" duration="718000" />
+      <workItem from="1659653247066" duration="435000" />
+      <workItem from="1659955269565" duration="5000" />
+      <workItem from="1659961062082" duration="6000" />
+      <workItem from="1660074837282" duration="331000" />
+      <workItem from="1660082181310" duration="4761000" />
+      <workItem from="1660162468382" duration="68000" />
+      <workItem from="1660162552546" duration="252000" />
+      <workItem from="1660215917602" duration="780000" />
+      <workItem from="1660338673843" duration="32000" />
+      <workItem from="1660380520868" duration="12000" />
+      <workItem from="1660391426990" duration="40000" />
+      <workItem from="1660519999222" duration="642000" />
+      <workItem from="1660573553790" duration="178000" />
+      <workItem from="1660861089455" duration="663000" />
+      <workItem from="1660893850552" duration="658000" />
+      <workItem from="1660948067836" duration="677000" />
+      <workItem from="1660948801676" duration="430000" />
+      <workItem from="1660984078740" duration="10000" />
+      <workItem from="1660992958980" duration="80000" />
+      <workItem from="1660993812241" duration="6000" />
+      <workItem from="1661271327318" duration="761000" />
     </task>
     <task id="LOCAL-00001" summary="img">
       <created>1651366433380</created>
@@ -222,5 +241,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="img" />
     <option name="LAST_COMMIT_MESSAGE" value="img" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

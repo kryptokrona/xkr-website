@@ -28,7 +28,7 @@
                 <div>
                     <h3>Hugin</h3>
                     <a href="https://github.com/kryptokrona/xkr-website/blob/main/static/Whitepaper/Hugin_Whitepaper.pdf">Whitepaper</a>
-                    <a href="/{locale}/faucet">Faucet</a>
+                    <a href="https://faucet.kryptokrona.org">Faucet</a>
                     <a href="https://github.com/kryptokrona/hugin-messenger">Github</a>
                 </div>
             </div>

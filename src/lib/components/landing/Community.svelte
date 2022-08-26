@@ -9,28 +9,28 @@
         <p>{$LL.components.community.text()}</p>
     </div>
     <div class="row grid gap">
-        <a class="platform" href="https://hugin.chat" target="_blank">
+        <a class="platform layered-shadow" href="https://hugin.chat" target="_blank">
             <div>
                 <h3>Hugin</h3>
                 <LinkArrow/>
             </div>
             <p>{$LL.components.community.huginText()}</p>
         </a>
-        <a class="platform" href="https://discord.gg/nRK5k7wYy8" target="_blank">
+        <a class="platform layered-shadow" href="https://discord.gg/nRK5k7wYy8" target="_blank">
             <div>
                 <h3>Discord</h3>
                 <LinkArrow/>
             </div>
             <p>{$LL.components.community.discordText()}</p>
         </a>
-        <a class="platform" href="https://t.me/xkrofficial" target="_blank">
+        <a class="platform layered-shadow" href="https://t.me/xkrofficial" target="_blank">
             <div>
                 <h3>Telegram</h3>
                 <LinkArrow/>
             </div>
             <p>{$LL.components.community.telegramText()}</p>
         </a>
-        <a class="platform" href="https://twitter.com/kryptokrona" target="_blank">
+        <a class="platform layered-shadow" href="https://twitter.com/kryptokrona" target="_blank">
             <div>
                 <h3>Twitter</h3>
                 <LinkArrow/>
