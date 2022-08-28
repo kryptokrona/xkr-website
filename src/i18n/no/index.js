@@ -90,7 +90,6 @@ const no = {
         title6: 'Drama-free',
         text6: 'Nettverket vårt reduserer mengden av nye mynter preget med hver blokk, noe som gir en dramafri utslipp.',
     }
-    benchmarks
 }
 
 export default no
