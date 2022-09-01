@@ -282,6 +282,32 @@ type RootTranslation = {
 		 */
 		text6: string
 	}
+	mining: {
+		/**
+		 * Mining
+		 */
+		title: string
+		/**
+		 * Kryptokrona is a cryptocurrency that relies on proof-of-work mining to achieve distributed consensus. It utilizes the Cryptonight Turtle algorithm. This algorithm is primarily mined on CPUs and is ASIC resistant. With Kryptokrona being ASIC resistant, the whole network gets decentralized. This means that the algorithm is purposefully designed to stop mining from being dominated by a set of specialized miners with the most expensive equipment. Therefore Kryptokrona should be easily mineable through regular computers
+		 */
+		mainText1: string
+		/**
+		 * Hardware for mining
+		 */
+		title2: string
+		/**
+		 * You can mine Kryptokrona on CPUs, GPUs & Android Phones. Compare your hashrate to others, and even help expand the list!
+		 */
+		text2: string
+		/**
+		 * Software
+		 */
+		title3: string
+		/**
+		 * There are several options when it comes to mining software.The most common mining software for mining such algorithms is XMRig. Guide on how to mine XKR is coming up soon.
+		 */
+		text3: string
+	}
 }
 
 export type TranslationFunctions = {
@@ -551,6 +577,32 @@ export type TranslationFunctions = {
 		 * Our network reduces the amount of new coins minted with every block, making for a drama-free emission.
 		 */
 		text6: () => LocalizedString
+	}
+	mining: {
+		/**
+		 * Mining
+		 */
+		title: () => LocalizedString
+		/**
+		 * Kryptokrona is a cryptocurrency that relies on proof-of-work mining to achieve distributed consensus. It utilizes the Cryptonight Turtle algorithm. This algorithm is primarily mined on CPUs and is ASIC resistant. With Kryptokrona being ASIC resistant, the whole network gets decentralized. This means that the algorithm is purposefully designed to stop mining from being dominated by a set of specialized miners with the most expensive equipment. Therefore Kryptokrona should be easily mineable through regular computers
+		 */
+		mainText1: () => LocalizedString
+		/**
+		 * Hardware for mining
+		 */
+		title2: () => LocalizedString
+		/**
+		 * You can mine Kryptokrona on CPUs, GPUs & Android Phones. Compare your hashrate to others, and even help expand the list!
+		 */
+		text2: () => LocalizedString
+		/**
+		 * Software
+		 */
+		title3: () => LocalizedString
+		/**
+		 * There are several options when it comes to mining software.The most common mining software for mining such algorithms is XMRig. Guide on how to mine XKR is coming up soon.
+		 */
+		text3: () => LocalizedString
 	}
 }
 
