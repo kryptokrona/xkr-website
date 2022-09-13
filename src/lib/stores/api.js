@@ -1,10 +1,10 @@
 import {writable} from "svelte/store";
 
-export const cache = writable([])
+export const api = writable([])
 
 //Fetch all posts
-const fetchCache = () => {
-    fetch('https://cache.hugin.chat/api/v1/posts?size=50', {
+const fetchAPI = () => {
+    fetch('https://api.hugin.chat/api/v2/posts?size=50', {
         headers: {
             "Accept-Encoding": "gzip",
         }
@@ -15,9 +15,9 @@ const fetchCache = () => {
             })
         .then(data => {
             let filter = data.items.filter(post => post.key !== null)
-            cache.set(filter)
+            api.set(filter)
         })
         .catch(error => console.log(error))
 }
 
-fetchCache()
+fetchAPI()

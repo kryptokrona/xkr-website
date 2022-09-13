@@ -1,5 +1,5 @@
 <script>
-    import {cache} from "$lib/stores/cache";
+    import {api} from "$lib/stores/api";
     import {get_avatar} from "$lib/utils/get-avatar";
     import moment from "moment/moment.js";
     import {onMount} from "svelte";
@@ -33,8 +33,8 @@
     <div class="chat">
         <div class="fade-top"></div>
         <div class="posts" id="scroll">
-            {#if $cache.length > 0}
-                {#each $cache as post}
+            {#if $api.length > 0}
+                {#each $api as post}
                     <div class="post">
                         <div style="display: flex; justify-content: space-between; align-items: center">
                             <div style="display: flex; align-items: center;">
@@ -50,7 +50,7 @@
                 {/each}
             {:else}
                 <div class="no-msg">
-                    <h2>Cache not connected 😭</h2>
+                    <h2>API not connected 😭</h2>
                 </div>
             {/if}
         </div>

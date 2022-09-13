@@ -1,7 +1,7 @@
 <script>
 import {fade} from "svelte/transition";
 import LinkButton from "./buttons/LinkButton.svelte";
-import {cache} from "../stores/cache.js";
+import {api} from "../stores/api.js";
 import moment from "moment/moment.js";
 import {get_avatar} from "../utils/get-avatar.js";
 
@@ -29,7 +29,7 @@ const avatar = (adr) => {
             <LinkButton text="Download" url="https://hugin.chat" target="_blank" enabled={true}/>
         </div>
         <div class="posts">
-                {#each $cache as post}
+                {#each $api as post}
                     <div in:fade class="post">
                         <div style="display: flex; justify-content: space-between">
                             <div style="display: flex; align-items: center; margin: -10px 0 0 -10px">
