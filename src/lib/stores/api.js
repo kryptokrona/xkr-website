@@ -4,7 +4,7 @@ export const api = writable([])
 
 //Fetch all posts
 const fetchAPI = () => {
-    fetch('https://api.hugin.chat/api/v2/posts?size=50', {
+    fetch('https://api.hugin.chat/api/v1/posts?size=50', {
         headers: {
             "Accept-Encoding": "gzip",
         }
