@@ -29,7 +29,6 @@
         <StatusBar/>
         <Features/>
     </div>
-    <HuginChat/>
     <Community/>
     <Mining/>
     <div>

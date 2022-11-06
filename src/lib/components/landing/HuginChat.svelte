@@ -28,7 +28,7 @@
     <div class="text">
         <h2>{$LL.components.huginChat.title()}</h2>
         <p>{$LL.components.huginChat.text()}</p>
-        <LinkButton text={$LL.components.huginChat.button()} url="/{locale}/hugin" enabled={true}/>
+        <LinkButton text={$LL.components.huginChat.button()} url="/{$locale}/hugin" enabled={true}/>
     </div>
     <div class="chat">
         <div class="fade-top"></div>

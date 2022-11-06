@@ -19,7 +19,7 @@
     <Alert/>
     <div class="wrapper container">
         <div class="nav-wrapper">
-            <a href="/{locale}">
+            <a href="/{$locale}">
                 <svg width="79px" height="20px" viewBox="0 0 176 54" version="1.1" xmlns="http://www.w3.org/2000/svg"
                      xmlns:xlink="http://www.w3.org/1999/xlink">
                     <title>Path</title>
@@ -38,15 +38,15 @@
                 </g>
             </svg>
             <div class="navigation">
-                <a sveltekit:prefetch href="/{locale}/wallet">{$LL.navbar.wallet()}</a>
-                <a sveltekit:prefetch href="/{locale}/hugin">{$LL.navbar.hugin()}</a>
-                <a sveltekit:prefetch href="/{locale}/mining">{$LL.navbar.mining()}</a>
+                <a sveltekit:prefetch href="/{$locale}/wallet">{$LL.navbar.wallet()}</a>
+                <a sveltekit:prefetch href="/{$locale}/hugin">{$LL.navbar.hugin()}</a>
+                <a sveltekit:prefetch href="/{$locale}/mining">{$LL.navbar.mining()}</a>
                 <a href="https://store.kryptokrona.org/" target="_blank">Store</a>
 
                 <!--
                 <a sveltekit:prefetch href="/{locale}/articles">{$LL.navbar.articles()}</a>
                 -->
-                <a sveltekit:prefetch href="/{locale}/about">{$LL.navbar.about()}</a>
+                <a sveltekit:prefetch href="/{$locale}/about">{$LL.navbar.about()}</a>
                 <LinkButton text="Discord" url="https://discord.gg/nRK5k7wYy8" enabled={true} target="_blank"/>
             </div>
         </div>

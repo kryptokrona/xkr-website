@@ -9,14 +9,14 @@
     <div class="nav-mobile-wrapper">
         <div></div>
         <div class="navigation">
-            <a sveltekit:prefetch class="mobile-link" in:fade="{{delay: 250, duration: 500}}" out:fade="{{delay: 550}}" href="/{locale}/wallet">{$LL.navbar.wallet()}</a>
+            <a sveltekit:prefetch class="mobile-link" in:fade="{{delay: 250, duration: 500}}" out:fade="{{delay: 550}}" href="/{$locale}/wallet">{$LL.navbar.wallet()}</a>
             <a sveltekit:prefetch class="mobile-link" in:fade="{{delay: 350, duration: 500}}" out:fade="{{delay: 450}}" href="https://hugin.chat" target="_blank">Hugin</a>
-            <a sveltekit:prefetch class="mobile-link" in:fade="{{delay: 450, duration: 500}}" out:fade="{{delay: 350}}" href="/{locale}/mining">{$LL.navbar.mining()}</a>
+            <a sveltekit:prefetch class="mobile-link" in:fade="{{delay: 450, duration: 500}}" out:fade="{{delay: 350}}" href="/{$locale}/mining">{$LL.navbar.mining()}</a>
             <a class="mobile-link" in:fade="{{delay: 550, duration: 500}}" out:fade="{{delay: 250}}" href="https://store.kryptokrona.org/">Store</a>
             <!--
             <a sveltekit:prefetch class="mobile-link" in:fade="{{delay: 550, duration: 500}}" out:fade="{{delay: 250}}" href="/{locale}/articles">Articles</a>
             -->
-            <a sveltekit:prefetch class="mobile-link" in:fade="{{delay: 650, duration: 500}}" out:fade="{{delay: 150}}" href="/{locale}/about">{$LL.navbar.about()}</a>
+            <a sveltekit:prefetch class="mobile-link" in:fade="{{delay: 650, duration: 500}}" out:fade="{{delay: 150}}" href="/{$locale}/about">{$LL.navbar.about()}</a>
         </div>
         <div class="socials">
             <svg  height="18px" viewBox="0 0 176 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">

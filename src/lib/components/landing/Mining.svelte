@@ -7,7 +7,7 @@
     <div class="col text">
         <h2>{$LL.components.mining.title()}</h2>
         <p>{$LL.components.mining.text()}</p>
-        <LinkButton text={$LL.components.mining.button()} url="/{locale}/mining" enabled={true}/>
+        <LinkButton text={$LL.components.mining.button()} url="/{$locale}/mining" enabled={true}/>
     </div>
     <div class="col">
         <img width="100%" src="/fan.webp" alt="">
