@@ -13,7 +13,7 @@
 
     //Add a link to your alert
     // eslint-disable-next-line no-unused-vars
-    let link = 'https://github.com/kryptokrona/kryptokrona/releases/tag/1.0.0'
+    let link = 'https://github.com/kryptokrona/kryptokrona/releases/tag/1.0.1'
 
     //Select type
     //Will change color depending on selection
