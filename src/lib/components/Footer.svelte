@@ -7,12 +7,12 @@
             <div class="footer-navigation">
                 <div>
                     <h3>{$LL.footer.title1()}</h3>
-                    <a href="/{locale}">{$LL.footer.home()}</a>
-                    <a href="/{locale}/wallet">{$LL.footer.wallet()}</a>
-                    <a href="/{locale}/hugin">Hugin</a>
-                    <a href="/{locale}/mining">{$LL.footer.mining()}</a>
+                    <a href="/{$locale}">{$LL.footer.home()}</a>
+                    <a href="/{$locale}/wallet">{$LL.footer.wallet()}</a>
+                    <a href="/{$locale}/hugin">Hugin</a>
+                    <a href="/{$locale}/mining">{$LL.footer.mining()}</a>
                     <a href="https://kryptokrona.se/store/">{$LL.footer.store()}</a>
-                    <a href="/{locale}/about">{$LL.footer.about()}</a>
+                    <a href="/{$locale}/about">{$LL.footer.about()}</a>
                 </div>
                 <div>
                     <h3>XKR</h3>
