@@ -29,6 +29,16 @@
     {
       "source": "/stats/api/event",
       "destination": "https://plausible.io/api/event"
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "sdk.kryptokrona.org"
+        }
+      ],
+      "destination": "https://kryptokrona.github.io/kryptokrona-kotlin-sdk/:path*"
     }
   ]
 }
